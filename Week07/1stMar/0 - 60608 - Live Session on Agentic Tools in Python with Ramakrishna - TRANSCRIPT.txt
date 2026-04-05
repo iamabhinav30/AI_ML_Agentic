@@ -1,0 +1,5354 @@
+WEBVTT
+
+1
+00:00:15.190 --> 00:00:17.170
+Ramakrishna T: Hi, everyone. Good morning.
+
+2
+00:00:17.330 --> 00:00:19.860
+Nitin Srivastava: Hi, good morning, everyone. Good morning, Raw.
+
+3
+00:00:20.490 --> 00:00:21.000
+Subha Palanivelu: Good morning.
+
+4
+00:00:21.610 --> 00:00:22.769
+Paul Varghese: Morning, everybody.
+
+5
+00:00:44.030 --> 00:00:47.049
+Ramakrishna T: Yeah, I think, let's start at Gary.
+
+6
+00:00:49.710 --> 00:00:52.039
+Ramakrishna T: Okay, so… we will…
+
+7
+00:00:54.410 --> 00:00:59.649
+Ramakrishna T: We'll wait for, maybe a couple of minutes, so I'll take some of your questions if you have it, meanwhile, say, right?
+
+8
+00:01:12.630 --> 00:01:14.870
+Ramakrishna T: Do you have any… do you guys have any questions?
+
+9
+00:01:19.800 --> 00:01:25.380
+Rahul Surana: Hey, Rama, one question on the, vector embeddings for video, right?
+
+10
+00:01:25.920 --> 00:01:34.120
+Rahul Surana: we said, like, it's a numerical representation of a fixed length, right, based on my model parameters, right? So, if I have…
+
+11
+00:01:34.780 --> 00:01:38.799
+Rahul Surana: one… couple of videos, right? One video which is literally of…
+
+12
+00:01:39.160 --> 00:01:47.609
+Rahul Surana: an hour or so, right, and one which is, like, 5 minutes, right? But in that case, when we convert into vectoral, like, representation, right, in embeddings.
+
+13
+00:01:47.720 --> 00:01:49.899
+Rahul Surana: Would certain features be lost, right?
+
+14
+00:01:51.390 --> 00:01:58.230
+Rahul Surana: I mean, as compared from a video which is 1 hour long and one which is 5 minutes, right? I'm trying to kind of, let's say.
+
+15
+00:01:58.590 --> 00:02:02.070
+Rahul Surana: Synthesize what is there in the video, right?
+
+16
+00:02:02.840 --> 00:02:04.970
+Ramakrishna T: Yeah.
+
+17
+00:02:06.460 --> 00:02:15.830
+Rahul Surana: Okay, so max, max, how big can a vector embedding can go? Like, I know we talked about 512 and 784, like, E5.
+
+18
+00:02:15.830 --> 00:02:34.180
+Ramakrishna T: Yeah, it is, depends on, you know, how the model is trained, okay? So the model is trained in different, different directions. Now, if you look at the, you know, just ask ChatGPT, so what is your vector length? So, let me, I think,
+
+19
+00:02:35.050 --> 00:02:46.239
+Ramakrishna T: that keeps varying, actually, keeps increasing. So, for a different, different, now, new models, right? So, every day there's a new model, new model, right? They keep, you know, changing,
+
+20
+00:02:46.760 --> 00:02:56.390
+Ramakrishna T: the vector length. So, it's almost, I think, GPT-5, I could see that it is, text embedding 3 large, right? It is 3072.
+
+21
+00:02:56.800 --> 00:02:59.689
+Ramakrishna T: So, initially, it started with.
+
+22
+00:02:59.870 --> 00:03:00.350
+Rahul Surana: Thanks, man.
+
+23
+00:03:00.350 --> 00:03:03.439
+Ramakrishna T: 380, 300, around, what to Veg.
+
+24
+00:03:03.440 --> 00:03:06.300
+Rahul Surana: And then from there, now it is 3072.
+
+25
+00:03:06.530 --> 00:03:11.990
+Rahul Surana: Okay, and if I choose a given specific model, right, Yeah, go ahead, completely. Right.
+
+26
+00:03:12.850 --> 00:03:15.169
+Rahul Surana: Yeah, just a follow-up question on that, right?
+
+27
+00:03:15.830 --> 00:03:27.590
+Rahul Surana: if I choose a particular model, and I know maybe later in the course we'll cover, right, we can store these embeddings in our own databases, right?
+
+28
+00:03:27.940 --> 00:03:33.170
+Rahul Surana: for a particular model, the length should be consistent, right? That's not going to change, right?
+
+29
+00:03:37.640 --> 00:03:42.040
+Rahul Surana: If I'm using, let's say, GPT-5 model, in that case, would my length change?
+
+30
+00:04:21.470 --> 00:04:28.310
+Ramakrishna T: Same length, in terms of… until unless they're So, the same motion…
+
+31
+00:04:29.780 --> 00:04:35.839
+Rahul Surana: Ram, I'm not able to hear you. Is it with my side, or is it in general, anyone?
+
+32
+00:04:37.200 --> 00:04:38.420
+Abhishek Srivastava: He's not audible.
+
+33
+00:04:39.560 --> 00:04:40.929
+Rahul Surana: Okay, thanks, Abishuk.
+
+34
+00:04:42.690 --> 00:04:43.960
+Sankalp Sughosh: It is not audible yet.
+
+35
+00:05:06.120 --> 00:05:06.929
+Ramakrishna T: Will you hear me?
+
+36
+00:05:10.190 --> 00:05:11.509
+Rahul Surana: Yeah, now we can.
+
+37
+00:05:12.220 --> 00:05:12.990
+Ramakrishna T: Yeah, yeah.
+
+38
+00:05:13.150 --> 00:05:20.610
+Ramakrishna T: Okay, so Rahul, I was trying to say that for a fixed model, fixed version of the model, the embeddings will not change.
+
+39
+00:05:21.250 --> 00:05:21.630
+Rahul Surana: Okay.
+
+40
+00:05:21.630 --> 00:05:23.389
+Ramakrishna T: So it keeps always same.
+
+41
+00:05:24.450 --> 00:05:25.650
+Rahul Surana: Got it, okay, thank you.
+
+42
+00:05:31.330 --> 00:05:37.229
+Ramakrishna T: Okay, so let's start, actually. So I think I'm waiting for a few folks to join, but I think, let's start.
+
+43
+00:05:38.890 --> 00:05:42.149
+Ramakrishna T: So let's, I think the…
+
+44
+00:05:43.760 --> 00:05:50.209
+Ramakrishna T: So, you are able to run the notebook, so same way today's, you know, today's topic is, like,
+
+45
+00:05:50.520 --> 00:05:53.410
+Ramakrishna T: You know, the different prompting techniques.
+
+46
+00:05:53.540 --> 00:05:58.820
+Ramakrishna T: We'll start with, you know, the basic prompting, and then…
+
+47
+00:05:58.820 --> 00:06:08.600
+Ramakrishna T: Where and all system prompts, how does system prompt play a role? And then also, you know, bullet prompting, and then, you know.
+
+48
+00:06:08.600 --> 00:06:22.730
+Ramakrishna T: chain prompting, and we have a zero short, few short, and then I'll end with, you know, the different tools experience with the agents. How do we create the tools with the, like, a first agent that we are trying to build? So, that's for today's agenda, would be.
+
+49
+00:06:22.730 --> 00:06:26.349
+Nitin Srivastava: Rama, one question, are we done from Nelgen, right?
+
+50
+00:06:27.230 --> 00:06:28.380
+Ramakrishna T: Sorry, Emgen?
+
+51
+00:06:28.520 --> 00:06:32.260
+Nitin Srivastava: Are we done… we are… are we done from Langchin, correct?
+
+52
+00:06:32.630 --> 00:06:37.259
+Ramakrishna T: No, no, Langchain is the one that we are going to build, right? All the agents now, today.
+
+53
+00:06:37.460 --> 00:06:42.199
+Ramakrishna T: So we have… we're not done. So today is… everything is on the line chain itself.
+
+54
+00:06:42.200 --> 00:06:43.540
+Nitin Srivastava: Okay, okay, got it.
+
+55
+00:06:44.390 --> 00:06:45.370
+Ramakrishna T: So, yeah.
+
+56
+00:06:46.070 --> 00:07:02.550
+Ramakrishna T: So now, let's import the libraries. I think you are able to get onto the vocarium, right? And then create your own notebooks. I'm not going there. But yeah, now, once you have the notebook ready, so you can parallel open that and then write it out along with me.
+
+57
+00:07:07.590 --> 00:07:10.140
+Ramakrishna T: Okay. Are you able to see my screen, right?
+
+58
+00:07:10.740 --> 00:07:11.500
+Nitin Srivastava: Yes.
+
+59
+00:07:11.500 --> 00:07:12.280
+Rahul Surana: Yes.
+
+60
+00:07:13.360 --> 00:07:20.440
+Ramakrishna T: Okay, so, I'm just saying… from… the line chain.
+
+61
+00:07:20.970 --> 00:07:22.890
+Ramakrishna T: And just go to OpenAI.
+
+62
+00:07:23.910 --> 00:07:24.740
+Ramakrishna T: Wood.
+
+63
+00:07:27.770 --> 00:07:29.650
+Ramakrishna T: Did you remember, right? The command?
+
+64
+00:07:32.590 --> 00:07:33.730
+Nitin Srivastava: Yes, yes.
+
+65
+00:07:34.540 --> 00:07:35.720
+Ramakrishna T: Let me call it.
+
+66
+00:07:37.210 --> 00:07:38.380
+Ramakrishna T: Jared.
+
+67
+00:07:38.610 --> 00:07:39.400
+Ramakrishna T: Sure.
+
+68
+00:07:47.510 --> 00:07:50.030
+Ramakrishna T: So let's call… GPT.
+
+69
+00:07:50.610 --> 00:07:53.060
+Ramakrishna T: 3.5 different turbo.
+
+70
+00:07:54.390 --> 00:07:55.190
+Ramakrishna T: Okay.
+
+71
+00:07:57.580 --> 00:08:02.850
+Ramakrishna T: Then… Let's… Look at the query.
+
+72
+00:08:04.820 --> 00:08:11.910
+Ramakrishna T: Okay, so let's say… my query… He quoted.
+
+73
+00:08:12.930 --> 00:08:14.220
+Ramakrishna T: In Budav.
+
+74
+00:08:19.350 --> 00:08:20.380
+Ramakrishna T: Yeah, what's…
+
+75
+00:08:24.360 --> 00:08:25.380
+Ramakrishna T: Wait.
+
+76
+00:08:25.480 --> 00:08:28.600
+Ramakrishna T: So, LLM dot… VIN work.
+
+77
+00:08:28.820 --> 00:08:30.110
+Ramakrishna T: Then quitting.
+
+78
+00:08:34.260 --> 00:08:36.890
+Ramakrishna T: Okay, so this is the one that I'm waiting.
+
+79
+00:08:38.480 --> 00:08:39.600
+Ramakrishna T: Eventually.
+
+80
+00:08:40.700 --> 00:08:42.200
+Ramakrishna T: It's fancy culture.
+
+81
+00:08:54.100 --> 00:08:55.130
+Ramakrishna T: Great, okay.
+
+82
+00:09:15.490 --> 00:09:17.379
+Ramakrishna T: print off.
+
+83
+00:09:17.660 --> 00:09:18.890
+Ramakrishna T: Response…
+
+84
+00:09:22.510 --> 00:09:23.470
+Ramakrishna T: attention.
+
+85
+00:09:26.320 --> 00:09:33.060
+Ramakrishna T: Right? So… I think you see the, what you get. So, again, this is,
+
+86
+00:09:33.430 --> 00:09:35.610
+Ramakrishna T: LLMs, it took always…
+
+87
+00:09:38.340 --> 00:09:41.769
+Nitin Srivastava: Rama, your voice is better. Your voice is not…
+
+88
+00:09:41.890 --> 00:09:43.899
+Nitin Srivastava: Your voice is not clear to us.
+
+89
+00:09:47.350 --> 00:09:50.470
+Ramakrishna T: No, I'm saying that, yeah… is it clear now, Nitin?
+
+90
+00:09:50.920 --> 00:09:52.340
+Nitin Srivastava: Yes, yes, yes.
+
+91
+00:09:53.760 --> 00:09:54.800
+Ramakrishna T: That's near, sir.
+
+92
+00:09:57.250 --> 00:10:03.019
+Ramakrishna T: Yeah, so, I'm writing, like, langchang underscore open A, import chat OpenAI, and then…
+
+93
+00:10:03.270 --> 00:10:03.900
+Kishlay Kumar: I mean, it's…
+
+94
+00:10:03.900 --> 00:10:06.400
+Ramakrishna T: a model, then MyQuery.
+
+95
+00:10:06.790 --> 00:10:16.930
+Ramakrishna T: Then, you know, the input command, you know, input is the one that we take from the user, actually. So then lm.invoke, and then my query, so once you enter it.
+
+96
+00:10:18.340 --> 00:10:22.439
+Ramakrishna T: The response is, that they have a content.
+
+97
+00:10:22.600 --> 00:10:26.380
+Ramakrishna T: So you know response also, you'll have… Alright, thanks.
+
+98
+00:10:28.480 --> 00:10:33.579
+Ramakrishna T: Right? So we… we studied all the, all of them. This is so far, so clear, right?
+
+99
+00:10:37.790 --> 00:10:38.679
+Abhishek Srivastava: Yes, this is clear.
+
+100
+00:10:39.060 --> 00:10:44.610
+Ramakrishna T: So, that's, right? So now, let's move on.
+
+101
+00:10:44.760 --> 00:10:48.510
+Ramakrishna T: I think I'll, cover, you know… The…
+
+102
+00:10:48.680 --> 00:10:59.780
+Ramakrishna T: Why, why… what is the use of this, basic prompting, actually? Let's, let's, understand this, right? So, like, data, output is restructured, or no? First thing?
+
+103
+00:11:02.100 --> 00:11:04.100
+Selva P: I think your light is breaking now.
+
+104
+00:11:04.100 --> 00:11:05.689
+Ramakrishna T: I will write instead of.
+
+105
+00:11:06.210 --> 00:11:07.999
+Deepak Sundriyal: Rama, your voice is breaking.
+
+106
+00:11:11.750 --> 00:11:14.410
+Ramakrishna T: Yeah, one minute, let me choose another two, maybe, probably, yeah.
+
+107
+00:11:25.110 --> 00:11:26.740
+Ramakrishna T: Is it, clear now?
+
+108
+00:11:31.800 --> 00:11:33.630
+Manish Gangarekar: Yeah, sting is gone. Sting is gone.
+
+109
+00:11:33.630 --> 00:11:38.639
+Deepak Sundriyal: Maybe when you speak a longer sentence, then you'll be able to… No, it's not clear.
+
+110
+00:11:40.080 --> 00:11:41.130
+Ramakrishna T: So…
+
+111
+00:11:41.810 --> 00:11:43.939
+Sankalp Sughosh: It's breaking, huh? Why is this breaking?
+
+112
+00:11:43.940 --> 00:11:44.880
+Deepak Sundriyal: King, Lama.
+
+113
+00:11:55.470 --> 00:11:57.289
+Ramakrishna T: Okay, sure, sure, yeah.
+
+114
+00:11:58.700 --> 00:12:04.529
+Ramakrishna T: Okay, so it's… it's… let me write… okay. So…
+
+115
+00:12:08.730 --> 00:12:09.750
+Ramakrishna T: Okay.
+
+116
+00:12:15.500 --> 00:12:20.740
+Kishlay Kumar: Rama, sorry to interfere, I can't see your screen. Is it with, everybody or just me?
+
+117
+00:12:22.810 --> 00:12:25.030
+Deepak Sundriyal: We can see the screen, we cannot hear him.
+
+118
+00:12:25.210 --> 00:12:27.950
+Kishlay Kumar: Okay, I only see a black screen.
+
+119
+00:12:27.950 --> 00:12:28.780
+Mahesh Mokhasi: Green is frozen.
+
+120
+00:12:31.500 --> 00:12:32.330
+Kishlay Kumar: What?
+
+121
+00:12:33.250 --> 00:12:35.290
+Abhinav Singh: They are not called for me as well.
+
+122
+00:12:36.520 --> 00:12:38.719
+Vivek Vishwakarma: Yeah, it seems like he's trying to reconnect.
+
+123
+00:12:45.330 --> 00:12:53.250
+Abhinav Singh: So, one day I would like to know where in Boquerium, like, he's doing this, exercise. Anyone can text me?
+
+124
+00:12:53.250 --> 00:12:55.289
+Deepak Sundriyal: Practice Assignment 7.1.
+
+125
+00:12:55.840 --> 00:12:57.869
+Abhinav Singh: Signed well. Okay, thank you.
+
+126
+00:12:58.870 --> 00:13:02.140
+Deepak Sundriyal: No, that's his vocarium. You'll not find it in your…
+
+127
+00:13:02.370 --> 00:13:03.749
+Deepak Sundriyal: So, you have to do it yourself.
+
+128
+00:13:05.360 --> 00:13:08.019
+Abhinav Singh: So, do I need to create something in that case?
+
+129
+00:13:08.020 --> 00:13:12.469
+Deepak Sundriyal: Yeah, open 7.1 under work, create a new notebook.
+
+130
+00:13:12.800 --> 00:13:14.970
+Deepak Sundriyal: By any name, and then start doing this.
+
+131
+00:13:15.450 --> 00:13:16.160
+Abhinav Singh: Okay.
+
+132
+00:13:17.850 --> 00:13:21.810
+Deepak Sundriyal: or you can do it on Jupyter, then upload that in the vocarium.
+
+133
+00:13:23.690 --> 00:13:30.659
+Abhinav Singh: Actually, I missed your yesterday class, so is there any dependency of any genetic thing? Like, any.
+
+134
+00:13:30.660 --> 00:13:38.519
+Deepak Sundriyal: Yeah, you need those credits for OpenAI, which are, like, free in Varium. For Jupyter, you have to buy.
+
+135
+00:13:39.280 --> 00:13:39.990
+Abhinav Singh: Okay.
+
+136
+00:13:40.610 --> 00:13:44.900
+Deepak Sundriyal: So you can write the code in Jupyter, then upload the file and run it in Vucharium.
+
+137
+00:13:46.260 --> 00:13:49.050
+Nitin Srivastava: Is there anyone from Emeritus?
+
+138
+00:13:52.660 --> 00:13:53.960
+Ramakrishna T: Yeah, hey, yeah.
+
+139
+00:13:56.360 --> 00:13:58.199
+Ramakrishna T: What happened? What is the query?
+
+140
+00:13:58.360 --> 00:13:59.090
+Nitin Srivastava: No, no, no.
+
+141
+00:13:59.090 --> 00:14:02.170
+Deepak Sundriyal: Nothing… You're back.
+
+142
+00:14:02.940 --> 00:14:10.750
+Ramakrishna T: Yeah, I'm back, but I think today my network is so bad, actually, I don't know, like, I think too fluctuating, it's coming up and coming, going, I think, after life.
+
+143
+00:14:11.220 --> 00:14:13.269
+Deepak Sundriyal: Your voice is loud and clear now.
+
+144
+00:14:13.270 --> 00:14:14.049
+Vivek Vishwakarma: Now it is clear.
+
+145
+00:14:14.050 --> 00:14:19.880
+Ramakrishna T: Is it clear? But yeah, since I connected with, mobile, so probably my broadband has some issue, actually, now.
+
+146
+00:14:19.950 --> 00:14:21.350
+Deepak Sundriyal: Okay, so…
+
+147
+00:14:21.740 --> 00:14:24.030
+Ramakrishna T: Let's see,
+
+148
+00:14:28.810 --> 00:14:31.129
+Ramakrishna T: Okay, so let's see how it is, right?
+
+149
+00:14:31.130 --> 00:14:32.829
+Deepak Sundriyal: How about one, one thing, before
+
+150
+00:14:33.970 --> 00:14:40.539
+Deepak Sundriyal: Can we also, you know, see the code that if we want to attach some document or some file which…
+
+151
+00:14:40.870 --> 00:14:44.810
+Deepak Sundriyal: It can read… The LLM…
+
+152
+00:14:44.810 --> 00:14:49.120
+Ramakrishna T: Yes, we, we, we do have this, that's no problem. I will cover, okay?
+
+153
+00:14:49.140 --> 00:15:05.480
+Ramakrishna T: So, at this moment, let me focus on the flow, okay? Prompter engineering. Then we will come there, okay? So, what I'm trying to say is, yeah, I think the basic prompting is very important, okay? So, let's give you, I think, the,
+
+154
+00:15:07.030 --> 00:15:08.070
+Ramakrishna T: So…
+
+155
+00:15:16.590 --> 00:15:18.060
+Ramakrishna T: Okay.
+
+156
+00:15:18.060 --> 00:15:21.509
+Abhishek Shrivastwa: Will you please maximize this window? We are…
+
+157
+00:15:23.080 --> 00:15:24.370
+Ramakrishna T: One minute.
+
+158
+00:15:24.550 --> 00:15:28.030
+Ramakrishna T: This is, you mean full screen?
+
+159
+00:15:29.510 --> 00:15:30.750
+Ramakrishna T: Yeah, now is it clear?
+
+160
+00:15:30.870 --> 00:15:31.600
+Abhishek Shrivastwa: Yeah.
+
+161
+00:15:32.770 --> 00:15:48.669
+Ramakrishna T: Okay. So, now, the thing is, now let's, talk about, right? So, the, is it, first of all, structure in a way structured I need? Okay, is it structured format or not? Let's say, I will call, like, LLM.
+
+162
+00:15:48.930 --> 00:15:56.650
+Ramakrishna T: You know… Yeah, so LLM dot… Invoke.
+
+163
+00:15:57.090 --> 00:16:00.040
+Ramakrishna T: Right? Explained.
+
+164
+00:16:00.170 --> 00:16:01.750
+Ramakrishna T: machine learning.
+
+165
+00:16:02.570 --> 00:16:05.159
+Ramakrishna T: in… Simple words.
+
+166
+00:16:06.090 --> 00:16:07.020
+Ramakrishna T: Okay?
+
+167
+00:16:07.850 --> 00:16:11.499
+Ramakrishna T: Then… We have content.
+
+168
+00:16:12.190 --> 00:16:13.140
+Ramakrishna T: Great.
+
+169
+00:16:15.370 --> 00:16:19.069
+Ramakrishna T: Print… I'm just giving. So, if you see.
+
+170
+00:16:19.860 --> 00:16:25.799
+Ramakrishna T: This is the… I'm just invoking GPT 3.5, and then it is… you're able to…
+
+171
+00:16:26.790 --> 00:16:28.970
+Ramakrishna T: Get some in simple words, actually.
+
+172
+00:16:29.730 --> 00:16:36.640
+Ramakrishna T: But is it consistent? Is it structured? That is what we need, right? So, how do we make more structured?
+
+173
+00:16:37.020 --> 00:16:40.850
+Ramakrishna T: That is important. So, can we also control the tone?
+
+174
+00:16:41.920 --> 00:16:48.849
+Ramakrishna T: Right? There is a format that is required. Let's say you need an example I'll give you. There is a structure format I will give.
+
+175
+00:16:53.310 --> 00:16:56.500
+Ramakrishna T: Same. I will get… Right?
+
+176
+00:16:59.340 --> 00:17:00.670
+Ramakrishna T: Explain.
+
+177
+00:17:00.920 --> 00:17:04.910
+Ramakrishna T: machine learning in… Alright?
+
+178
+00:17:06.050 --> 00:17:06.720
+Ramakrishna T: Jeez.
+
+179
+00:17:09.800 --> 00:17:13.250
+Ramakrishna T: one simple… Definition.
+
+180
+00:17:16.950 --> 00:17:19.100
+Ramakrishna T: One real-time example.
+
+181
+00:17:22.230 --> 00:17:26.039
+Ramakrishna T: And, one line summary.
+
+182
+00:17:29.150 --> 00:17:30.910
+Ramakrishna T: So this is water cubed.
+
+183
+00:17:31.140 --> 00:17:32.160
+Ramakrishna T: Follow me.
+
+184
+00:17:34.020 --> 00:17:35.070
+Ramakrishna T: Same.
+
+185
+00:17:35.190 --> 00:17:36.060
+Ramakrishna T: Thing.
+
+186
+00:17:36.300 --> 00:17:40.670
+Ramakrishna T: Now… I'll give the… Same thing.
+
+187
+00:17:41.240 --> 00:17:42.790
+Ramakrishna T: Here. Here.
+
+188
+00:17:45.820 --> 00:17:53.290
+Nitin Srivastava: Rama, we can ask this from direct… from the LLM. Then, what is the benefit of using Langdain in this?
+
+189
+00:17:54.480 --> 00:18:07.059
+Ramakrishna T: Right? This is, we'll come there, but we have our tools and all, a lot of things. But at this moment, so in the second half of the session is what we are going to cover there, lunch check.
+
+190
+00:18:07.140 --> 00:18:24.929
+Ramakrishna T: So, what is the advantage? So, the advantage is, like, you have now… only now you are explaining, right? So, but now, you know, you don't know what is the real-time, if you want to make some real-time, fetching from Google search or somewhere, right? That is important. We will come there. But right now, so think of…
+
+191
+00:18:24.930 --> 00:18:30.590
+Ramakrishna T: This is just a prompting now I'm trying to explain. So, you see, in the beginning.
+
+192
+00:18:30.620 --> 00:18:34.860
+Ramakrishna T: You see, when I invoke, you do not have any structure.
+
+193
+00:18:35.090 --> 00:18:40.509
+Ramakrishna T: You do not have a clear example, right? And then, also, you can…
+
+194
+00:18:40.830 --> 00:18:51.660
+Ramakrishna T: Think of like this, this is, a structure prompt also you need to give. The structure prompter is, like, something like, explain machine learning in one simple definition.
+
+195
+00:18:51.870 --> 00:18:58.779
+Ramakrishna T: And one real-time example, and one real line summary is what you need to give.
+
+196
+00:18:59.930 --> 00:19:05.929
+Ramakrishna T: Okay, is it clear? So, now, with this, you know, you see here, the prompting is very, very important.
+
+197
+00:19:06.290 --> 00:19:09.740
+Ramakrishna T: So, you need to make kind of structured format.
+
+198
+00:19:10.020 --> 00:19:13.900
+Ramakrishna T: If you want to make it, then accordingly, it will come as an output.
+
+199
+00:19:16.370 --> 00:19:19.970
+Ramakrishna T: Then, we can also give a system prompter.
+
+200
+00:19:20.290 --> 00:19:24.269
+Ramakrishna T: So, system prompt is, like, let's say… sorry?
+
+201
+00:19:24.270 --> 00:19:28.620
+Abhishek Srivastava: Ram, just a quick question. So, if I relate this to Gen AI, which you use, right?
+
+202
+00:19:28.790 --> 00:19:30.789
+Abhishek Srivastava: So we give it a lot of things.
+
+203
+00:19:31.420 --> 00:19:38.260
+Abhishek Srivastava: Giving the context, and then asking my query. So the context which we are giving about ourselves, let's say if I'm asking you to build my resume, right?
+
+204
+00:19:38.430 --> 00:19:42.819
+Abhishek Srivastava: I may give it my JD, older resumes, and what I want.
+
+205
+00:19:43.020 --> 00:19:48.919
+Abhishek Srivastava: And then I may say, hey, generate a resume for me. So the context which I'm giving, is that a structured prompt?
+
+206
+00:19:50.580 --> 00:19:53.009
+Ramakrishna T: In which context you're saying?
+
+207
+00:19:54.180 --> 00:19:56.720
+Ramakrishna T: In the GenA training process?
+
+208
+00:19:56.720 --> 00:20:00.269
+Abhishek Srivastava: In the January year. No, not January. Let's say if I'm talking to ChatGPT.
+
+209
+00:20:00.580 --> 00:20:01.580
+Ramakrishna T: Yeah. So…
+
+210
+00:20:01.580 --> 00:20:08.129
+Abhishek Srivastava: I may give it some file, like, this is a file which has, for example, my CPU usage, okay?
+
+211
+00:20:08.130 --> 00:20:08.690
+Ramakrishna T: Yeah.
+
+212
+00:20:08.690 --> 00:20:12.329
+Abhishek Srivastava: I want to find out which had more than 5%.
+
+213
+00:20:12.840 --> 00:20:20.210
+Abhishek Srivastava: So, my query is, I want to find out which consumed… which application is consuming more than 5%, but the file which I'm giving
+
+214
+00:20:20.590 --> 00:20:22.889
+Abhishek Srivastava: and the context which I'm sitting, saying.
+
+215
+00:20:23.000 --> 00:20:28.149
+Abhishek Srivastava: this is what the file is, this is what I want you to do. Is that a structured prompt?
+
+216
+00:20:30.680 --> 00:20:36.159
+Ramakrishna T: Yes, it is not structured, but the way that you need to think of, like, it is,
+
+217
+00:20:36.160 --> 00:20:51.190
+Ramakrishna T: you need to tell, like, it is a kind of, you know, structured in a way, like, you need to design your prompt, like, given this label, given this problem, now you need to have a label, example, okay? So that is how you're making a training data for the gene, right? So, hence,
+
+218
+00:20:51.210 --> 00:21:06.269
+Ramakrishna T: like, depends on how you… your context is. So, based on that, like, if it is needed, like, let's say, think of, like, I need a JSON output, or I need a… some, API format output only, then you need to… accordingly, you need to design your prompt.
+
+219
+00:21:06.510 --> 00:21:26.809
+Ramakrishna T: So, let's say you are integrating with a UI, but if you are thinking as an UI, you cannot put this as a complete statement like this, right? So, maybe there is a set of keys, probably a simple definition is a key, then real-time example is a key, then maybe online summary is a key. So, you need to mention as per your UI integration.
+
+220
+00:21:26.810 --> 00:21:27.910
+Ramakrishna T: Wherever you do.
+
+221
+00:21:27.910 --> 00:21:29.180
+Ramakrishna T: That is important.
+
+222
+00:21:30.970 --> 00:21:47.790
+Nitin Srivastava: Okay. Now, a quick question. Nowadays, prompt engineering does not hold as much value, because LLM can understand the user intent from the context, and automatically instructor the response, just like we use Copilot in our day-to-day work.
+
+223
+00:21:48.080 --> 00:21:50.650
+Nitin Srivastava: Yeah. Because if you…
+
+224
+00:21:50.650 --> 00:21:52.990
+Deepak Sundriyal: No, Nitin, I think you're wrong in this case.
+
+225
+00:21:52.990 --> 00:21:53.620
+Nitin Srivastava: No, no, no.
+
+226
+00:21:53.620 --> 00:21:55.050
+Deepak Sundriyal: Engineering is important.
+
+227
+00:21:55.440 --> 00:21:56.479
+Deepak Sundriyal: Even for LM.
+
+228
+00:21:57.360 --> 00:22:13.890
+Ramakrishna T: Yeah. Yeah, it is important, Nitin, I'll tell you, right? So, it's the same, just a prompt engine is nothing but how do you send a prompt, right? So, let's say, if you are asking explain machine learning in simple words, just given some paragraph, where without any real examples, so what exactly you need.
+
+229
+00:22:13.980 --> 00:22:20.959
+Ramakrishna T: Alright? How you exactly need, like, is important. So, based on that, like, I need an example, I need a summary, I need a definition.
+
+230
+00:22:21.170 --> 00:22:32.440
+Ramakrishna T: I need to explain, maybe, like, explain… explain machine learning to, let's say…
+
+231
+00:22:32.740 --> 00:22:34.890
+Nitin Srivastava: Oh, Rama, voice is not…
+
+232
+00:22:34.890 --> 00:22:37.939
+Ramakrishna T: To a 7-year-old kid. Example.
+
+233
+00:22:38.960 --> 00:22:41.430
+Sankalp Sughosh: It's not here, Rana. Today, I think there is a problem.
+
+234
+00:22:41.430 --> 00:22:44.380
+Ramakrishna T: Okay.
+
+235
+00:22:46.740 --> 00:22:48.220
+Nitin Srivastava: Actually, Deepak.
+
+236
+00:22:48.220 --> 00:22:48.970
+Ramakrishna T: It's…
+
+237
+00:22:51.290 --> 00:22:52.339
+Sankalp Sughosh: I mean, yeah.
+
+238
+00:22:52.340 --> 00:22:55.489
+Ramakrishna T: Definitely, yeah, my network issue. Yeah, one minute.
+
+239
+00:22:57.220 --> 00:22:59.849
+Nitin Srivastava: And… Deepak, you there.
+
+240
+00:23:02.850 --> 00:23:03.400
+Ramakrishna T: One…
+
+241
+00:23:06.230 --> 00:23:10.390
+Selva P: I think prompt, we are giving clear instruction to the mailer.
+
+242
+00:23:10.390 --> 00:23:27.849
+Nitin Srivastava: Actually, actually, my co- okay, let me clear my question as well. Actually, nowadays, prompt engineering is a value, but if we use Copilot na, and structure automatically, create, against the context, the user.
+
+243
+00:23:28.150 --> 00:23:33.360
+Nitin Srivastava: Intentive from the context… Structure automatically…
+
+244
+00:23:33.540 --> 00:23:36.999
+Nitin Srivastava: In Copilot. That's why structure is not important, right?
+
+245
+00:23:37.000 --> 00:23:56.059
+Abhinav Singh: I believe what you're making, but the thing is, internally, what is happening now? Like, nowadays, what engineers are doing, they are giving the problem a statement and asking, like, GPT to create a prompt. See, internally, it is taking the prompt as an input. So, like, my understanding is prompting is very much required, like, in my organization. Yes, yes, yes.
+
+246
+00:23:56.060 --> 00:23:56.509
+Nitin Srivastava: Correct, correct.
+
+247
+00:23:56.510 --> 00:24:08.570
+Abhinav Singh: We are doing the version update every month for our code, okay? Based on the releases. So, here's a use case, we have created a prompt using GPT and the Copilot.
+
+248
+00:24:08.570 --> 00:24:17.069
+Abhinav Singh: And that prompt will, do the version upgrade for all the things of all my React application, whatever things has been updated. We don't have to earlier.
+
+249
+00:24:17.070 --> 00:24:28.840
+Abhinav Singh: It used to be, like, 3-4 hours job, now it is just 5 minutes job, with the prompt. We are given a clear prompt, whenever budget update is required, we'll enter the prompt, hit enter, agent will update everything.
+
+250
+00:24:28.860 --> 00:24:33.759
+Abhinav Singh: So, like, I feel like prompt will, clear the things, that's my understanding.
+
+251
+00:24:34.610 --> 00:24:48.170
+Ravi Pitla: Yes, Shiva, so even Copilot will have the, access to your complete context, complete code, so you don't need to give the context, correct, correct, correct. But we don't be, we don't need a structure prompt.
+
+252
+00:24:48.170 --> 00:24:51.160
+Nitin Srivastava: to the co-pilot, right? My question is that only.
+
+253
+00:24:52.800 --> 00:24:54.509
+Nitin Srivastava: We don't need a structure per month, like…
+
+254
+00:24:54.510 --> 00:25:02.110
+Ravi Pitla: wherever, even if it is Copilot, whatever it is, if you are giving them a detailed prompt, it will be very easy for them to tell them to… Very easy.
+
+255
+00:25:02.110 --> 00:25:02.490
+Nitin Srivastava: Got it.
+
+256
+00:25:02.490 --> 00:25:19.279
+Ravi Pitla: the exact response, yeah. So, even, I think, here it is a line chain, so the line chain will not have the access to our system. It doesn't know, it is something, like, sitting in other environment. So, when we are giving the prompt, it's.
+
+257
+00:25:19.280 --> 00:25:22.099
+Nitin Srivastava: If you give the detail from, I think.
+
+258
+00:25:22.280 --> 00:25:36.350
+Ravi Pitla: That is also a required thing, even if you know this prompt, how to give efficiently, so it will be helpful in dealing with this kind of line-chain systems, yeah, I think, yeah.
+
+259
+00:25:37.110 --> 00:25:40.679
+Vikrant dale: Actually, when we are building a model.
+
+260
+00:25:40.810 --> 00:25:48.789
+Vikrant dale: an automated agent who is actually working on multiple tasks at a time. At that time.
+
+261
+00:25:49.030 --> 00:25:54.409
+Vikrant dale: This… because, in one… in chat, we can put, you know, different prompts.
+
+262
+00:25:55.190 --> 00:26:04.969
+Vikrant dale: But when there is an agent which is working autonomously, and anything which is coming up and it's acting on it, then the system prompt and all those things are very important.
+
+263
+00:26:05.140 --> 00:26:09.890
+Vikrant dale: And, it is very important to, optimize the output.
+
+264
+00:26:10.490 --> 00:26:17.300
+Vikrant dale: So, like, you know, what Rama was showing yesterday. Now we can control our output that
+
+265
+00:26:17.510 --> 00:26:26.969
+Vikrant dale: it should come in, or the output should be of only 150 volts, or output should be of 50 volts. That is where system counts are important.
+
+266
+00:26:28.800 --> 00:26:29.340
+Nitin Srivastava: Yeah.
+
+267
+00:26:29.340 --> 00:26:31.350
+Ramakrishna T: Yes, are you able to guys hear me, right?
+
+268
+00:26:31.350 --> 00:26:32.719
+Nitin Srivastava: Yes, yes, yes, Ramo.
+
+269
+00:26:32.900 --> 00:26:57.079
+Ramakrishna T: Okay. So, Nitin, I'll tell you, right? So, the prompting is actually, I agree with everyone here, I think Deepak and Vikrantha was listening, right? So, mostly prompting play a bigger role, Nitin, okay? So, even for the LLM, current LLMs, right? So, what is exactly, you know, you need to customize your LLMs. See, LLMs can produce any type of requirement based on your input, right? So, let's say.
+
+270
+00:26:57.080 --> 00:27:01.260
+Ramakrishna T: Explain the machine learning. So, probably, if I ask, like,
+
+271
+00:27:01.260 --> 00:27:07.980
+Ramakrishna T: frame machine learning to, Professional, experienced.
+
+272
+00:27:08.820 --> 00:27:15.299
+Ramakrishna T: person in healthcare, right? So then, it gives you some output
+
+273
+00:27:16.040 --> 00:27:17.930
+Ramakrishna T: And then, you see, it is…
+
+274
+00:27:18.330 --> 00:27:26.249
+Ramakrishna T: exactly it is giving you in terms of the healthcare itself, okay? But no, I'm asking, like, two, seven or a year old kids.
+
+275
+00:27:26.870 --> 00:27:32.700
+Ramakrishna T: Right? The 7-year-old kid, like, it is able to understand, the kid is able to understand.
+
+276
+00:27:33.740 --> 00:27:45.239
+Ramakrishna T: Based on the real-life examples. You see, it's clearly a differentiation between the how you are prompting it. So, based on your prompt, it understands it, like, what exactly is what you need to,
+
+277
+00:27:45.810 --> 00:27:49.510
+Ramakrishna T: Based on that, Then it'll respond.
+
+278
+00:27:49.710 --> 00:27:52.319
+Ramakrishna T: So this is what is structured means for you.
+
+279
+00:27:54.010 --> 00:27:55.230
+Ramakrishna T: So, Nana, yeah.
+
+280
+00:27:56.340 --> 00:28:14.670
+Gnanasekar Manoharan: Yeah, so, Ram, you have mentioned the structured prompt, right? So that the agent… I mean, the LLM will work, correct? So, for example, if I'm using an EC2 instance and then installed, maybe, like, Azure DevOps CLI, right?
+
+281
+00:28:14.670 --> 00:28:16.819
+Gnanasekar Manoharan: So, for a… if I run any sort of
+
+282
+00:28:17.160 --> 00:28:24.899
+Gnanasekar Manoharan: machine learning, so if I run a command related to Azure DevOps, it has to run, right? So, in the same way.
+
+283
+00:28:25.500 --> 00:28:26.070
+Ramakrishna T: Yep.
+
+284
+00:28:27.650 --> 00:28:28.390
+Gnanasekar Manoharan: Okay.
+
+285
+00:28:29.660 --> 00:28:37.939
+Ramakrishna T: Yeah, I think the Azure or AWS is like a… is a cloud platform, right? So, you can host your LLMs, any of these LLMs, and then,
+
+286
+00:28:37.940 --> 00:28:51.089
+Ramakrishna T: run your own LLMs in any of these, platforms. Doesn't matter, but the LLMs could be maybe GPT hosted on AWS, or GPT hosted in Azure, or maybe, you know, Llama is hosted in Azure, or Llama is hosted in…
+
+287
+00:28:51.090 --> 00:28:59.110
+Ramakrishna T: AWS or GCP, whatnot, right? So, the LLM's response will not change based on the hosted platforms.
+
+288
+00:28:59.820 --> 00:29:00.910
+Gnanasekar Manoharan: Okay.
+
+289
+00:29:01.570 --> 00:29:14.179
+Ramakrishna T: Either you call OpenAI GPT 3.5 Turbo here, Azure or AWS, it doesn't matter. But only thing is, the prompting… maybe if Azure has some system prompt that is associated, then you'll have a difference in the results.
+
+290
+00:29:15.020 --> 00:29:21.890
+Gnanasekar Manoharan: Okay, maybe in the upcoming, sessions, do you explain that? Like, integrating tools?
+
+291
+00:29:24.130 --> 00:29:25.769
+Ramakrishna T: Integrating to the clouds?
+
+292
+00:29:26.620 --> 00:29:29.900
+Gnanasekar Manoharan: integrating tools and then using the LLMs.
+
+293
+00:29:30.930 --> 00:29:39.789
+Ramakrishna T: Yeah, yeah, tools, we are, anyway, we just started, so tools, we are… I'm going to start in the, second half of the session today.
+
+294
+00:29:40.160 --> 00:29:47.449
+Gnanasekar Manoharan: Okay, okay, sure. So right now, I'm focusing on more on the prompting, like, how to… what kind of prompting we have, and then we… I'm trying to explain that.
+
+295
+00:29:48.040 --> 00:29:48.730
+Gnanasekar Manoharan: Okay, sure.
+
+296
+00:29:48.730 --> 00:29:52.459
+Ramakrishna T: Okay, so let's say…
+
+297
+00:29:52.680 --> 00:29:56.109
+Sankalp Sughosh: Hello, Rama, quick question. The response that you got
+
+298
+00:29:56.390 --> 00:30:03.449
+Sankalp Sughosh: And the response that I got for the same prompt is different, totally different. Is that normal, is it?
+
+299
+00:30:04.000 --> 00:30:04.720
+Ramakrishna T: Okay.
+
+300
+00:30:05.730 --> 00:30:20.969
+Ramakrishna T: No, no, it is actually, you know, it gives you some… more or less, it is the same. But only thing is real-time, real-time example, right? So, it generates, like, like, if I run again, so example, if I run again, it does not produce the same thing.
+
+301
+00:30:21.400 --> 00:30:33.229
+Ramakrishna T: This comes with a probabilistic scores, right? So, hence, real-time examples will never be always the same. You see? When you watch videos on YouTube, and you play a video, right? So, it always differ.
+
+302
+00:30:33.400 --> 00:30:35.180
+Ramakrishna T: That is what is the kind of…
+
+303
+00:30:35.180 --> 00:30:36.450
+Sankalp Sughosh: Even the customer is…
+
+304
+00:30:36.450 --> 00:30:37.970
+Ramakrishna T: Whenever you…
+
+305
+00:30:40.170 --> 00:30:42.039
+Sankalp Sughosh: Even the first one is… Yeah, the first one also.
+
+306
+00:30:42.040 --> 00:30:47.900
+Ramakrishna T: Because I explained, like, That's one I asked, like, to your professional, experienced person in the healthcare.
+
+307
+00:30:51.400 --> 00:30:56.920
+Ramakrishna T: Right? So, the healthcare-related terms, it will come. But now, 70 will be…
+
+308
+00:30:56.920 --> 00:30:58.199
+Sankalp Sughosh: No, I'm…
+
+309
+00:30:58.200 --> 00:30:59.309
+Ramakrishna T: the one example is…
+
+310
+00:30:59.310 --> 00:31:00.330
+Sankalp Sughosh: 7-year-old.
+
+311
+00:31:00.550 --> 00:31:03.560
+Sankalp Sughosh: I'm talking about a 7-year-old example that you gave.
+
+312
+00:31:05.320 --> 00:31:06.710
+Sankalp Sughosh: Yeah. The 7-year-old…
+
+313
+00:31:06.710 --> 00:31:08.540
+Ramakrishna T: It will be print, yes.
+
+314
+00:31:09.660 --> 00:31:10.350
+Ramakrishna T: Yeah.
+
+315
+00:31:10.350 --> 00:31:13.839
+Sankalp Sughosh: The response that you got for 7-year-old is different.
+
+316
+00:31:14.020 --> 00:31:19.390
+Sankalp Sughosh: For me, so that's… so that's… that's normal, is it?
+
+317
+00:31:21.600 --> 00:31:26.010
+Ramakrishna T: No, it is a normal, because the model has a randomness associated.
+
+318
+00:31:26.500 --> 00:31:27.120
+Ramakrishna T: So…
+
+319
+00:31:27.540 --> 00:31:44.889
+Ramakrishna T: When you train a lot of, lot, many examples, the model is trained, right? So, hence, model knows now, in every run, the model will give you different, different examples. You see, even I ran two times here, in the same screen. So, here, you see, the same prompt I did not change.
+
+320
+00:31:45.040 --> 00:32:03.319
+Ramakrishna T: For the same prompt, I'm getting here video game related, but here I am getting YouTube related. This is what is… So, how do you control the randomness is… there is a way we can control. So, there is a way, like, when you are taking this LLM model initiation, right?
+
+321
+00:32:03.560 --> 00:32:07.350
+Ramakrishna T: So there is a… Parameter called temperature.
+
+322
+00:32:07.940 --> 00:32:09.370
+Ramakrishna T: Do you know temperature?
+
+323
+00:32:10.720 --> 00:32:11.660
+Ramakrishna T: Did anyone?
+
+324
+00:32:11.660 --> 00:32:14.050
+Sankalp Sughosh: Temperature equal to zero, is it?
+
+325
+00:32:15.050 --> 00:32:17.679
+Ramakrishna T: Yeah, temperature equal to, let's say.
+
+326
+00:32:17.680 --> 00:32:19.430
+Abhishek Srivastava: Vagueness, randomness.
+
+327
+00:32:19.430 --> 00:32:20.750
+Ramakrishna T: Blitzer.7.
+
+328
+00:32:22.460 --> 00:32:23.310
+Ramakrishna T: Right?
+
+329
+00:32:23.420 --> 00:32:24.510
+Ramakrishna T: Sorry. Shh.
+
+330
+00:32:27.150 --> 00:32:29.550
+Ramakrishna T: So, this is… now, temperature is 0.7.
+
+331
+00:32:31.290 --> 00:32:33.340
+Ramakrishna T: Okay, so which means that?
+
+332
+00:32:35.280 --> 00:32:36.570
+Ramakrishna T: Temperature…
+
+333
+00:32:37.280 --> 00:32:48.000
+Ramakrishna T: is a parameter where it controls the randomness. So, temperature zero means you are very, very strict in the output, means there will be no much randomness.
+
+334
+00:32:48.340 --> 00:32:56.639
+Ramakrishna T: Temperature 1 means there will be a too many randomness. Like, you will have a… in the softmax probability, so temperature is actually…
+
+335
+00:32:56.970 --> 00:33:00.230
+Ramakrishna T: Takes the softmax probabilities, and then it adjusts.
+
+336
+00:33:00.580 --> 00:33:03.790
+Ramakrishna T: the outputs, basically, right? So…
+
+337
+00:33:03.980 --> 00:33:13.710
+Ramakrishna T: The… based on, like, you see now, the same now, I'll give this one, so 0.7. Instead of 0.7, let me take 0.
+
+338
+00:33:15.490 --> 00:33:18.660
+Ramakrishna T: Right? So now, I'm just invoking.
+
+339
+00:33:25.360 --> 00:33:27.189
+Ramakrishna T: Right? The same one.
+
+340
+00:33:27.470 --> 00:33:28.900
+Ramakrishna T: Now I'll run again.
+
+341
+00:33:32.610 --> 00:33:43.899
+Ramakrishna T: So, you still see, you will get simple example, but here it will not be able to illustrate, but yeah. So, it is, like, you see, it is almost making same kind of…
+
+342
+00:33:44.920 --> 00:33:45.930
+Ramakrishna T: You see?
+
+343
+00:33:48.140 --> 00:33:51.490
+Ramakrishna T: You'll get more or less, like, almost the same…
+
+344
+00:33:52.710 --> 00:33:58.799
+Ramakrishna T: kind of context you will get. But in the… in the… Previous one, right?
+
+345
+00:33:59.320 --> 00:34:00.460
+Ramakrishna T: In, in the…
+
+346
+00:34:00.780 --> 00:34:20.060
+Ramakrishna T: I think that there will be a default temperature, but if you can adjust this temperature, like, in a way, you can adjust, like, temperature as one. Maximum, it can take a different, different range of values, so you can try to adjust and then play around this. But in the real time, you'll, like, see a clear differentiation.
+
+347
+00:34:20.170 --> 00:34:27.510
+Ramakrishna T: So, temperature 1C, you see, it's completely, you'll get different, different things, actually. It will not even match.
+
+348
+00:34:27.639 --> 00:34:29.560
+Ramakrishna T: There will be complete randomness.
+
+349
+00:34:29.790 --> 00:34:35.100
+Ramakrishna T: So we will, we will certainly learn this temperature parameter, but yeah, in this example, we will not go.
+
+350
+00:34:35.650 --> 00:34:37.389
+Abhishek Srivastava: Rama, I have a question.
+
+351
+00:34:37.909 --> 00:34:38.509
+Ramakrishna T: Yep.
+
+352
+00:34:39.179 --> 00:34:45.919
+Abhishek Srivastava: Let's say we ask this, we are giving two structured prompts, like, like, explain, like, a machine learning pro, and explain, like, a 7-year-old kid.
+
+353
+00:34:46.149 --> 00:34:54.719
+Abhishek Srivastava: Now, at the back end, it is all vectors and embeddings, encoder-decoder, right? So how is LLM able to decide
+
+354
+00:34:55.300 --> 00:34:56.750
+Abhishek Srivastava: What kind of output to predict?
+
+355
+00:34:56.750 --> 00:34:57.760
+Ramakrishna T: to support.
+
+356
+00:35:00.740 --> 00:35:02.930
+Ramakrishna T: In the… using a temperature?
+
+357
+00:35:04.100 --> 00:35:17.260
+Abhishek Srivastava: No, see, temperature is randomness. So basically, if I say, explain learning to a 7-year-old kid, I pass temperature as 0, versus if I pass temperature as 1, the output will be garbled, right, when I… when temperature is 1.
+
+358
+00:35:17.520 --> 00:35:18.870
+Abhishek Srivastava: But what I'm saying is?
+
+359
+00:35:19.240 --> 00:35:21.620
+Abhishek Srivastava: whether I'm asking it that
+
+360
+00:35:22.180 --> 00:35:27.090
+Abhishek Srivastava: Explain it like a 7-year-old kid, or explain it like a machine learning pro. At the back end, it is all…
+
+361
+00:35:27.230 --> 00:35:28.240
+Abhishek Srivastava: vectors.
+
+362
+00:35:28.660 --> 00:35:29.680
+Abhishek Srivastava: Right?
+
+363
+00:35:29.790 --> 00:35:30.580
+Abhishek Srivastava: So…
+
+364
+00:35:30.580 --> 00:35:32.350
+Ramakrishna T: Yeah, it is all vectors, correct.
+
+365
+00:35:32.620 --> 00:35:33.160
+Abhishek Srivastava: Nope.
+
+366
+00:35:33.830 --> 00:35:36.710
+Abhishek Srivastava: I mean, how is this prompt interpreted at the backend?
+
+367
+00:35:37.740 --> 00:35:41.949
+Abhishek Srivastava: Is it also through vectors? Like, some values get changed?
+
+368
+00:35:41.950 --> 00:35:45.380
+Ramakrishna T: Yeah, yeah, it is through vectors. Let me give you thoughts, right?
+
+369
+00:35:50.080 --> 00:35:51.070
+Ramakrishna T: Aww.
+
+370
+00:35:51.190 --> 00:35:51.940
+Ramakrishna T: So…
+
+371
+00:35:51.940 --> 00:35:56.209
+Selva P: The input vector is the same, the output vector is different, you mean, correct?
+
+372
+00:35:57.480 --> 00:36:04.390
+Abhishek Srivastava: Yeah, we are asking the same question, but we are changing the prompt saying that, explain like a 7-year-old kid, or explain, like, a pro.
+
+373
+00:36:04.540 --> 00:36:06.970
+Rajesh Shankaranarayana: But the vectors are, anyway, different for…
+
+374
+00:36:06.970 --> 00:36:07.779
+Deepak Sundriyal: There is a…
+
+375
+00:36:07.780 --> 00:36:13.250
+Rajesh Shankaranarayana: 7-year-old versus a… a pro and a kid. Yeah, there is a difference. The vector will be different, actually.
+
+376
+00:36:13.790 --> 00:36:14.300
+Abhishek Srivastava: Cool.
+
+377
+00:36:14.300 --> 00:36:19.880
+Ramakrishna T: So, it's a steak like this, okay? So you have… Their decoder systems.
+
+378
+00:36:20.220 --> 00:36:25.280
+Ramakrishna T: Okay, so your prompter will go as an input. These are decoder systems.
+
+379
+00:36:25.760 --> 00:36:31.860
+Ramakrishna T: Okay, so now, this decoder produces a vector, basically, right? At the end, it will produce a vector.
+
+380
+00:36:32.150 --> 00:36:37.830
+Ramakrishna T: And then, we are giving to a last layer some kind of… where it has a softmax
+
+381
+00:36:38.250 --> 00:36:58.090
+Ramakrishna T: Actuation functions, and it gives you a token-by-token predictions. Do you remember? So this token, one token it'll predict, and then we are giving input, then next to token, like this, it keeps repeating, right? So this is what it does. So, every time there will be a randomness here also. In the decoder internal systems also, there will be randomness.
+
+382
+00:36:58.450 --> 00:37:15.870
+Ramakrishna T: So, the way that, we design, like, in a way, it's not every time you will get us the same probabilities at the output. So, the hints, you will get that definitely there is a difference in the terms of the variability, in terms of the probabilities at the output, but yeah, so what you feed.
+
+383
+00:37:15.870 --> 00:37:30.039
+Ramakrishna T: will produce the same, different, different vectors, ideally, at the… each layer. So, decoder has, again, different, different layers. It's not one, right? You will have multiple decoder stacked together. So, every decoder produces a different, different vectors at a randomness.
+
+384
+00:37:30.180 --> 00:37:32.209
+Ramakrishna T: Randomly, it produces some randomness.
+
+385
+00:37:32.340 --> 00:37:36.219
+Ramakrishna T: There will be always a randomness in the… every machine learning model.
+
+386
+00:37:36.730 --> 00:37:38.300
+Ramakrishna T: So that is important for you.
+
+387
+00:37:38.530 --> 00:37:40.720
+Abhishek Srivastava: I'll go tonight. Thank you.
+
+388
+00:37:40.950 --> 00:37:45.850
+Deepak Sundriyal: Basically, Abhishek, it works on, transformer works on contextual embedding.
+
+389
+00:37:46.040 --> 00:37:49.660
+Deepak Sundriyal: So the moment you change from a 7-year to a pro, the context changes.
+
+390
+00:37:49.770 --> 00:37:51.260
+Deepak Sundriyal: The embedding will be different.
+
+391
+00:37:51.860 --> 00:37:52.460
+Abhishek Srivastava: Okay.
+
+392
+00:37:52.670 --> 00:37:53.310
+Abhishek Srivastava: Okay.
+
+393
+00:37:53.310 --> 00:37:55.040
+Ramakrishna T: Exactly, yeah.
+
+394
+00:38:01.000 --> 00:38:05.540
+Ramakrishna T: Are you clear on this? How structure prompt is? Is this?
+
+395
+00:38:06.240 --> 00:38:15.920
+Ramakrishna T: Now, let's say my… My things are, like, maybe I'm writing 7-year-old kid. Let's say I think of…
+
+396
+00:38:16.150 --> 00:38:22.349
+Ramakrishna T: I'm… I am trying to explain to a 7-year Or maybe to a professional?
+
+397
+00:38:22.970 --> 00:38:37.430
+Ramakrishna T: Or maybe a 70-year-old kid? So, sorry, 70-year-old. So, like this, we have a different, different formats. So, there should be a dynamic prompting also required. It is not a… your formatting is not only based on one.
+
+398
+00:38:37.630 --> 00:38:43.949
+Ramakrishna T: So, hence, you should have a prompting technique based on your need, based on your
+
+399
+00:38:45.310 --> 00:38:50.759
+Ramakrishna T: requirement, basically. So, let's say I have a… there is a kid's prompt.
+
+400
+00:38:51.540 --> 00:38:55.520
+Ramakrishna T: There is a translate prompt? Example, I'm just giving a translation I am doing.
+
+401
+00:38:56.240 --> 00:39:01.460
+Ramakrishna T: Or there is a, you know, kind of professional… professor prompt?
+
+402
+00:39:02.840 --> 00:39:06.520
+Ramakrishna T: There is a multi-question prompt also, MCQ prompt.
+
+403
+00:39:07.530 --> 00:39:26.199
+Ramakrishna T: Any kind of prompts I need to have. So all these prompts, you should be able to design in a way to… to give you, like, a kind of… different, different prompts is required here as well. So that is also important. So, you cannot have a same prompting for every application that you build.
+
+404
+00:39:28.240 --> 00:39:29.329
+Ramakrishna T: Is it clear?
+
+405
+00:39:30.700 --> 00:39:32.730
+Abhishek Srivastava: And, Rama, how big?
+
+406
+00:39:33.660 --> 00:39:35.550
+Abhishek Srivastava: Like, these prompts can be.
+
+407
+00:39:36.760 --> 00:39:43.179
+Ramakrishna T: They are, like, almost sometimes 5,000 words, sometimes 10,000 words, depends on your requirement.
+
+408
+00:39:43.910 --> 00:39:44.540
+Abhishek Srivastava: Okay.
+
+409
+00:39:46.910 --> 00:39:51.139
+Sankalp Sughosh: It also depends upon, like you yesterday mentioned, right, how much of…
+
+410
+00:39:51.450 --> 00:39:57.430
+Vikrant dale: tokens that we have, right? But it will be on context as well, so it may go out of context.
+
+411
+00:39:58.160 --> 00:39:58.820
+Ramakrishna T: Yes.
+
+412
+00:39:59.370 --> 00:40:08.140
+Abhishek Srivastava: Yeah, because why I asked that question was, I had done a small… there is a group called Outerskill. They do a one-day, two-day prompting eating course.
+
+413
+00:40:08.710 --> 00:40:16.390
+Abhishek Srivastava: So they, at the end of that, they had actually shared a sample prompt. That prompt was, like, through two and a half pages.
+
+414
+00:40:18.060 --> 00:40:22.649
+Abhishek Srivastava: So, that's why I was wondering if we have restricted prompt, how big it can be.
+
+415
+00:40:25.550 --> 00:40:26.460
+Ramakrishna T: What do you want to do?
+
+416
+00:40:26.880 --> 00:40:50.899
+Ramakrishna T: It will be very big, I'll tell you. I think we'll come to the real-time examples also. I think when… I think Deepak and yesterday, we were being asked, right? So, document parsing, document extraction, document analysis, right? So, we'll have that examples in the latest chapters anyways, right? So, we will, go through that real-time example, like, how big your system prompts, how big your real prompt would be.
+
+417
+00:40:50.900 --> 00:40:52.550
+Ramakrishna T: We will, we'll come there, okay?
+
+418
+00:40:52.770 --> 00:40:53.100
+Abhishek Srivastava: children.
+
+419
+00:40:53.100 --> 00:41:03.039
+Ramakrishna T: So, now, very important is, now we need to have a template also. So, templates means, like, you need… you cannot have a,
+
+420
+00:41:03.860 --> 00:41:12.379
+Ramakrishna T: you cannot have, you know, the… every time the template should be a dynamic, right? Hence, your template should be, in a… more of a user…
+
+421
+00:41:13.240 --> 00:41:27.600
+Ramakrishna T: More of… it is a controlled environment unit. So, hence, your template could be, you know, I will write, like, the prompt templates, actually, right? So, let's say I will, take from Langchain.
+
+422
+00:41:28.670 --> 00:41:33.320
+Ramakrishna T: right? Dot… NChain underscore core dot prompts.
+
+423
+00:41:33.640 --> 00:41:37.520
+Ramakrishna T: Right? Import prompt template.
+
+424
+00:41:45.620 --> 00:41:50.209
+Ramakrishna T: Okay, so let's see… blank chain underscore…
+
+425
+00:41:53.260 --> 00:42:05.350
+Ramakrishna T: Right, so langchain core underscore from template. So, let's say, now, I'll give Here, template equaled… Prompt.
+
+426
+00:42:06.240 --> 00:42:07.500
+Ramakrishna T: Template.
+
+427
+00:42:09.440 --> 00:42:11.670
+Ramakrishna T: dot from underscore.
+
+428
+00:42:13.100 --> 00:42:14.420
+Ramakrishna T: Don't play it.
+
+429
+00:42:14.980 --> 00:42:17.770
+Ramakrishna T: Then you can give, actually, this…
+
+430
+00:42:21.950 --> 00:42:22.830
+Ramakrishna T: Right.
+
+431
+00:42:22.940 --> 00:42:24.670
+Ramakrishna T: So, explain.
+
+432
+00:42:25.100 --> 00:42:26.660
+Ramakrishna T: The topic…
+
+433
+00:42:30.450 --> 00:42:31.400
+Ramakrishna T: Okay.
+
+434
+00:42:51.370 --> 00:42:52.910
+Ramakrishna T: Example a little bit.
+
+435
+00:42:54.980 --> 00:42:57.310
+Ramakrishna T: Okay, so this is my template I'm giving.
+
+436
+00:42:57.940 --> 00:42:59.170
+Ramakrishna T: So now…
+
+437
+00:43:02.610 --> 00:43:06.680
+Ramakrishna T: So, let's say LLM dot… In woke.
+
+438
+00:43:08.090 --> 00:43:12.050
+Ramakrishna T: then I'll give… Topic equaled.
+
+439
+00:43:12.780 --> 00:43:13.940
+Ramakrishna T: Probably.
+
+440
+00:43:14.700 --> 00:43:16.290
+Ramakrishna T: Neural network.
+
+441
+00:43:19.430 --> 00:43:25.819
+Ramakrishna T: Then we have… Tropic would be, maybe, level… Being it.
+
+442
+00:43:42.450 --> 00:43:43.909
+Ramakrishna T: So let me print this…
+
+443
+00:43:54.610 --> 00:43:59.359
+Ramakrishna T: So here, I'll also give, maybe, chain prompting as well.
+
+444
+00:43:59.680 --> 00:44:00.989
+Ramakrishna T: So any cult.
+
+445
+00:44:02.510 --> 00:44:05.190
+Ramakrishna T: Template… I don't know.
+
+446
+00:44:06.120 --> 00:44:08.989
+Ramakrishna T: You can give, like, this template I'm passing to LLM.
+
+447
+00:44:09.150 --> 00:44:12.329
+Ramakrishna T: Then here, I am giving chain.invoke.
+
+448
+00:44:16.820 --> 00:44:19.659
+Ramakrishna T: So this is how you can also give HGTM.
+
+449
+00:44:19.870 --> 00:44:22.700
+Ramakrishna T: So, what I'm trying to say is.
+
+450
+00:44:22.820 --> 00:44:25.060
+Ramakrishna T: So here, I'm giving a template.
+
+451
+00:44:25.400 --> 00:44:41.729
+Ramakrishna T: What is the template here? So, Langchain supports some prompt template also. So, template is basically, you know, this is, like, instead of, you know, you changing every time, right, in the… going to the prompt, and,
+
+452
+00:44:41.900 --> 00:44:43.130
+Ramakrishna T: The…
+
+453
+00:44:43.350 --> 00:45:00.129
+Ramakrishna T: like, if you are giving here in the plain prompt, I need to take every time this changing, changing, changing, right? But here, I am dynamically changing. So, it depends on the topic you give, and depends on a learner level. Like, if I am giving advanced, then it… I don't need to change anything.
+
+454
+00:45:00.240 --> 00:45:07.549
+Ramakrishna T: the template. So, the template, you can pass this to CHS and Advanced. So, let's say beginner.
+
+455
+00:45:07.810 --> 00:45:25.349
+Ramakrishna T: Right? So something like this, I keep giving. I don't change the prompt heavily. So it's a dynamic prompting, basically, right? So now the chain is… the template is passing to the LLM, and then there I am calling as a… this particular lead topic. So this is called chain prompting. Do you get me?
+
+456
+00:45:27.960 --> 00:45:31.050
+Ramakrishna T: So, chain prompting is the one of the techniques, again.
+
+457
+00:45:32.320 --> 00:45:36.580
+Ramakrishna T: So what is the advantage that you see over the basic prompting?
+
+458
+00:45:38.810 --> 00:45:40.280
+Deepak Sundriyal: Dean prompting…
+
+459
+00:45:40.850 --> 00:45:41.950
+Rafi Mohammad: dynamic to Trump.
+
+460
+00:45:41.950 --> 00:45:43.560
+Deepak Sundriyal: The Miller 2, step by step.
+
+461
+00:45:45.890 --> 00:45:57.739
+Ramakrishna T: Yeah, it is step-by-step, but it is also… yes, faster… I can generate more chain promptings, but yeah, multiple chain prompting, but at least you see, based on what is the advantage of template, actually.
+
+462
+00:45:58.050 --> 00:46:00.750
+Ramakrishna T: But a template, or, like, a plain prompt.
+
+463
+00:46:01.430 --> 00:46:10.129
+Rafi Mohammad: When you have a recurring task for the same explanation, and you want to use that for different things, you create a template.
+
+464
+00:46:10.610 --> 00:46:14.510
+Ramakrishna T: Right, exactly. So, is that clear, everyone?
+
+465
+00:46:14.950 --> 00:46:17.020
+Ramakrishna T: Any other advantages?
+
+466
+00:46:17.190 --> 00:46:17.550
+Kiran Kumar Reddy C: But I'm
+
+467
+00:46:17.930 --> 00:46:24.069
+Kiran Kumar Reddy C: Can you explain me line number 10? What is that we are doing? Temp… template… yeah, there, line number 10.
+
+468
+00:46:24.070 --> 00:46:27.399
+Ramakrishna T: Here, this I'm actually… this prompting
+
+469
+00:46:27.590 --> 00:46:35.550
+Ramakrishna T: This is the prompt, right? So, I'm giving to this LLM, actually. So, this prompt is passed to this LLM chain.
+
+470
+00:46:35.550 --> 00:46:35.890
+Kiran Kumar Reddy C: book.
+
+471
+00:46:35.890 --> 00:46:36.320
+Ramakrishna T: Simple.
+
+472
+00:46:36.820 --> 00:46:37.450
+Kiran Kumar Reddy C: No kidding.
+
+473
+00:46:37.450 --> 00:46:37.910
+Ramakrishna T: Okay, okay.
+
+474
+00:46:37.910 --> 00:46:39.479
+Sankalp Sughosh: So this…
+
+475
+00:46:39.480 --> 00:46:43.960
+Ramakrishna T: And then I am calling as an invoke. Invoke, I am mentioning which topic and which level.
+
+476
+00:46:45.200 --> 00:46:50.100
+Sankalp Sughosh: Okay. This chain, it is saying it is not found, sorry, chain is not defined.
+
+477
+00:46:50.620 --> 00:46:56.599
+Ramakrishna T: Chain is not… chain is… I'm initializing, like, the LLM with this prompt, simple.
+
+478
+00:46:57.310 --> 00:47:01.079
+Ramakrishna T: Understand, but lLMs with the template.
+
+479
+00:47:02.890 --> 00:47:04.160
+Ramakrishna T: Chain is not different.
+
+480
+00:47:04.470 --> 00:47:05.090
+Sankalp Sughosh: Yeah.
+
+481
+00:47:05.920 --> 00:47:09.580
+Ramakrishna T: No, chain is like I'm initializing. Chain is the variable. Simple.
+
+482
+00:47:09.580 --> 00:47:13.250
+Sankalp Sughosh: I understand, but it's saying chain model, okay, maybe I need to run it.
+
+483
+00:47:14.870 --> 00:47:15.360
+Abhishek Srivastava: Yep.
+
+484
+00:47:15.970 --> 00:47:20.260
+Abhishek Srivastava: Here you are saying that chain is template over the LLM, like, which is defined.
+
+485
+00:47:20.610 --> 00:47:21.200
+Ramakrishna T: Yep.
+
+486
+00:47:21.200 --> 00:47:29.239
+Abhishek Srivastava: And the beginning, when you invoke, you invoke by passing the parameters. So, we can call there also, right? How is…
+
+487
+00:47:29.980 --> 00:47:31.369
+Abhishek Srivastava: If you go up a bit…
+
+488
+00:47:31.370 --> 00:47:38.830
+Sankalp Sughosh: See, I'll come to the chain, but right now, think of like this, okay? So, let's say you have sequential steps.
+
+489
+00:47:39.030 --> 00:47:45.029
+Ramakrishna T: So, example, sequential steps are like this one, okay? Example,
+
+490
+00:47:45.280 --> 00:47:49.189
+Ramakrishna T: Like, let's say, first I want to have a data pipeline.
+
+491
+00:47:50.730 --> 00:47:54.119
+Ramakrishna T: there is a sequence, right? Then, you need to…
+
+492
+00:47:54.480 --> 00:47:58.979
+Ramakrishna T: Or maybe in LLMs only, let's talk. First, you have a basic prompt.
+
+493
+00:47:59.550 --> 00:48:03.890
+Ramakrishna T: Okay? Then, you have a… Messic prompt?
+
+494
+00:48:04.030 --> 00:48:06.049
+Ramakrishna T: then you give it to LLM,
+
+495
+00:48:06.430 --> 00:48:11.870
+Ramakrishna T: then you give it to, maybe, structured JSON format, JSON parcel.
+
+496
+00:48:12.180 --> 00:48:13.819
+Ramakrishna T: I need a JSON output.
+
+497
+00:48:14.780 --> 00:48:20.390
+Ramakrishna T: Alright? And this JSON I output, based on this JSON output, I will call another LLM.
+
+498
+00:48:22.170 --> 00:48:28.720
+Ramakrishna T: Right? And then, based on this, now I will… call… I will…
+
+499
+00:48:29.150 --> 00:48:31.799
+Ramakrishna T: Initiate the agent based on this.
+
+500
+00:48:33.590 --> 00:48:38.420
+Ramakrishna T: So, like this, I am doing a chain reaction, multiple chains. So, from a prompt.
+
+501
+00:48:38.420 --> 00:48:56.850
+Ramakrishna T: I am passing to LLM, and from the response from the LLM, I am passing as a JSON. Based on the JSON output, I am initiating again another LLM, and from the LLM call, based on the LLM, whether that will be required as an agent or not. Example. So it's a kind of, he feels, he feels, this you can do a multiple change, right?
+
+502
+00:48:57.010 --> 00:49:09.350
+Ramakrishna T: You pass this one, then you go through this. If you don't pass, then you go through this. Let's say, example, if you pass an intermediate, you go to different, different branches. Engineering branch, or maybe medical, or whatever, right? Medicine, or whatever.
+
+503
+00:49:09.350 --> 00:49:22.000
+Ramakrishna T: So, if you go to engineering, then you have a CSC, ECE, or maybe electrical, whatnot, all the branches, all the branches. So, this is what I am taking you a kind of different steps, multi-steps, basically.
+
+504
+00:49:22.160 --> 00:49:25.229
+Ramakrishna T: One after the other. So that is called as a chain prompting.
+
+505
+00:49:25.860 --> 00:49:41.700
+Ramakrishna T: Right? So, within the chain prompting, now I am trying to say is a template. So, what is the advantage of template? So, being a template, now you are dynamically, you can send your query, and dynamically you can change, instead of, like, simple prompt. Simple prompt is like this one.
+
+506
+00:49:42.780 --> 00:49:56.120
+Ramakrishna T: Right? You are not having much variation, you cannot say, like, you cannot change much different, different things, right? So, hence, there is a template also which supports in our langchain. So, here you can involve… so then, from the…
+
+507
+00:49:56.180 --> 00:50:18.279
+Ramakrishna T: template, you can pass your topics, whatever you want to query. And is it a beginner? Then you will have a different response. Then if it is an advanced, you will get a different response. So you don't… you cannot… you won't change much things on… much things in, you know, in the… really in the prompting. But only thing is, based on, like, user query itself, there will be a… there will be a change in the prompt itself.
+
+508
+00:50:19.330 --> 00:50:20.389
+Abhishek Srivastava: Just so…
+
+509
+00:50:20.390 --> 00:50:23.819
+Deepak Sundriyal: Chain prompting is… is it same as chain of thoughts?
+
+510
+00:50:24.000 --> 00:50:29.430
+Ramakrishna T: Chain prompting is, yes, chain of thought, yes. It's as simple as that, yes.
+
+511
+00:50:29.430 --> 00:50:35.039
+Deepak Sundriyal: But I don't know, but what I read before is, we break it into multiple smaller steps.
+
+512
+00:50:35.750 --> 00:50:38.709
+Deepak Sundriyal: And then give it a… give it as a prompt.
+
+513
+00:50:38.830 --> 00:50:39.979
+Deepak Sundriyal: In chain of thoughts.
+
+514
+00:50:41.010 --> 00:51:05.980
+Ramakrishna T: No, chain of thoughts is, chain of thought reasoning is different, chain of thought, I'm just taking that analogy. It is not chain of thought reasoning. Chain of thought reasoning is, like, in the prompting, again, there will be a chain of thoughts, which will be, like, it is a kind of few short examples, we will come there. But right now, think of, like, a chain of… chain of… chain prompting is, like, you are connecting one sequence, one step to the other step, simple as that.
+
+515
+00:51:05.980 --> 00:51:06.680
+Ramakrishna T: simplistic.
+
+516
+00:51:07.680 --> 00:51:11.410
+Ramakrishna T: This is called multi-step chain. Okay, I'll give you another one, okay?
+
+517
+00:51:11.410 --> 00:51:12.200
+Abhishek Srivastava: So, Ramad just…
+
+518
+00:51:12.200 --> 00:51:18.899
+Sankalp Sughosh: I'll give you another one. Basically, Rama, basically what you're saying is, if, based upon the outcome of the first prompt.
+
+519
+00:51:19.020 --> 00:51:21.729
+Sankalp Sughosh: We take the action in the second prompt, right?
+
+520
+00:51:22.010 --> 00:51:22.390
+Ramakrishna T: Like.
+
+521
+00:51:22.390 --> 00:51:26.630
+Sankalp Sughosh: So, the control goes to the respective… prompt. Yeah.
+
+522
+00:51:26.630 --> 00:51:28.950
+Deepak Sundriyal: That is, that is chain of thought. Chain of thought.
+
+523
+00:51:28.950 --> 00:51:32.740
+Ramakrishna T: No, I will, I will explain you another, one more example, don't worry, okay?
+
+524
+00:51:34.830 --> 00:51:35.810
+Ramakrishna T: Prompt.
+
+525
+00:51:36.840 --> 00:51:38.080
+Ramakrishna T: template.
+
+526
+00:51:38.190 --> 00:51:41.149
+Ramakrishna T: Right? Then, from template.
+
+527
+00:51:45.280 --> 00:51:48.500
+Ramakrishna T: Right? Then, explain.
+
+528
+00:51:48.850 --> 00:51:51.080
+Ramakrishna T: the… Topic…
+
+529
+00:51:56.790 --> 00:51:59.999
+Ramakrishna T: Simply, okay? This is one prompt I'm giving.
+
+530
+00:52:00.330 --> 00:52:04.620
+Ramakrishna T: Then… summary prompt I will give you.
+
+531
+00:52:16.170 --> 00:52:18.119
+Ramakrishna T: So I just copied this one.
+
+532
+00:52:35.240 --> 00:52:42.519
+Nitin Srivastava: How frequently you are using chain prompting in your day-to-day life or practic- in your professional career?
+
+533
+00:52:42.780 --> 00:52:49.319
+Ramakrishna T: Yeah, we, we will use, because, it is important for us, you know, in terms of,
+
+534
+00:52:49.810 --> 00:52:51.020
+Ramakrishna T: How do you get to it?
+
+535
+00:52:51.480 --> 00:52:52.800
+Ramakrishna T: One minute, actually.
+
+536
+00:52:53.880 --> 00:52:54.860
+Nitin Srivastava: In terms of…
+
+537
+00:52:57.060 --> 00:53:03.219
+Ramakrishna T: Yeah, in terms of, like, when you are building the agents.
+
+538
+00:53:05.960 --> 00:53:07.170
+Nitin Srivastava: Okay, okay.
+
+539
+00:53:07.170 --> 00:53:09.720
+Ramakrishna T: Yeah, quiz prompt also, let's put.
+
+540
+00:53:11.920 --> 00:53:13.100
+Ramakrishna T: Then,
+
+541
+00:53:36.350 --> 00:53:38.309
+Ramakrishna T: Multi-channeled struct, okay?
+
+542
+00:53:38.590 --> 00:53:46.670
+Ramakrishna T: then this is where I'm trying to say… So, explain prompt.
+
+543
+00:53:48.660 --> 00:53:49.670
+Ramakrishna T: Okay, lucky.
+
+544
+00:53:54.030 --> 00:53:55.379
+Ramakrishna T: They're not okay.
+
+545
+00:53:55.380 --> 00:53:56.859
+Ravi Pitla: Oh, give me grandma.
+
+546
+00:53:59.250 --> 00:54:00.350
+Ramakrishna T: Hello, Loom.
+
+547
+00:54:01.400 --> 00:54:04.669
+Ramakrishna T: Then I will… I will decode this LLM outputs.
+
+548
+00:54:09.100 --> 00:54:12.559
+Ramakrishna T: Probably… Lambda values here.
+
+549
+00:54:35.960 --> 00:54:36.810
+Vivek Vishwakarma: Should be lambda.
+
+550
+00:54:39.580 --> 00:54:40.350
+Vivek Vishwakarma: Yeah, right?
+
+551
+00:54:41.190 --> 00:54:43.790
+Vivek Vishwakarma: Then I'll give to… summary prompt.
+
+552
+00:54:57.770 --> 00:54:59.509
+Vivek Vishwakarma: Is the spelling mistakes down?
+
+553
+00:55:01.370 --> 00:55:04.010
+Vivek Vishwakarma: Is there a spelling mistake somewhere? It's lambda H.
+
+554
+00:55:07.010 --> 00:55:08.130
+Vivek Vishwakarma: Yeah, sorry, yeah.
+
+555
+00:55:22.990 --> 00:55:26.649
+Ramakrishna T: Summary prompt. LLM, then we have content.
+
+556
+00:55:27.410 --> 00:55:29.860
+Ramakrishna T: You know what I was supposed to respond.
+
+557
+00:55:31.460 --> 00:55:37.060
+Ramakrishna T: Didn't be able to… Okay, let's, let's spell this, okay?
+
+558
+00:55:39.930 --> 00:55:41.930
+Ramakrishna T: Okay, so let's see here.
+
+559
+00:55:42.830 --> 00:55:44.789
+Ramakrishna T: Explain LLM lambda next…
+
+560
+00:55:52.110 --> 00:55:53.230
+Ramakrishna T: Well, sorry.
+
+561
+00:55:54.700 --> 00:55:56.120
+Ramakrishna T: You should score them.
+
+562
+00:56:15.930 --> 00:56:19.020
+Ramakrishna T: That's right. So, let's say caution equaled…
+
+563
+00:57:09.170 --> 00:57:12.720
+Ramakrishna T: So, what I'm… what I'm trying to do, just think of this here.
+
+564
+00:57:12.990 --> 00:57:14.240
+Ramakrishna T: So I give one.
+
+565
+00:57:14.520 --> 00:57:19.100
+Ramakrishna T: So, firsties… There are 3 different prompts I made.
+
+566
+00:57:19.380 --> 00:57:20.300
+Ramakrishna T: Okay?
+
+567
+00:57:20.710 --> 00:57:27.790
+Ramakrishna T: So, first is the… first is, we will take the topic, And explain that.
+
+568
+00:57:28.430 --> 00:57:31.020
+Ramakrishna T: And summarize them into two lanes.
+
+569
+00:57:31.140 --> 00:57:33.610
+Ramakrishna T: Then we… I'm asking, create a quiz.
+
+570
+00:57:35.200 --> 00:57:36.890
+Ramakrishna T: Okay? So…
+
+571
+00:57:37.510 --> 00:57:56.960
+Ramakrishna T: The topic is transformers in LLP, so it takes, explain the transformers, then summarize them in two lines, then create a course question. What I'm doing is, I'm not prompting different, different things all in one go. So what I'm trying to do is, this goes first explain prompt, this goes to LLM,
+
+572
+00:57:57.060 --> 00:58:01.279
+Ramakrishna T: And then I'm trying to… that will invoke, and then it will…
+
+573
+00:58:01.620 --> 00:58:19.050
+Ramakrishna T: take the content, which is the response from this particular LLM, from the explain prompt. So, this is the response from the first prompt, simple. So, explain the topic, simply, you'll get the output here. Then, the same output I'm passing to, you know, what I'm doing here, passing to a summary.
+
+574
+00:58:19.050 --> 00:58:31.500
+Ramakrishna T: And then, that summary, I am… what summary? Summary as a prompt I am going. So, summarize this in two lines. Whatever the explanation coming here from here, then I am summarizing till here, at this moment.
+
+575
+00:58:31.870 --> 00:58:37.100
+Ramakrishna T: And then, from the summation, after the summation, then I'm… Oops.
+
+576
+00:58:37.380 --> 00:58:40.280
+Ramakrishna T: I'm asking, like, creating a quiz question. Simple.
+
+577
+00:58:40.450 --> 00:58:48.220
+Ramakrishna T: So, this is the… how multi-chain prompting. Like, you will have multiple steps, step by step, you are doing it, right? Are you clear now?
+
+578
+00:58:48.580 --> 00:58:59.869
+Ramakrishna T: This is what is the chain prompting is all about. So, you are connecting one step, you're finishing it, then going to another step, then goes to another step. That's what is happening here.
+
+579
+00:59:00.060 --> 00:59:01.209
+Ramakrishna T: Is it clear?
+
+580
+00:59:01.420 --> 00:59:04.919
+Nitin Srivastava: Yes, Rama. Rama, can you please copy and paste into the chat?
+
+581
+00:59:05.810 --> 00:59:07.260
+Ramakrishna T: This, one, statement?
+
+582
+00:59:07.260 --> 00:59:10.320
+Nitin Srivastava: 38th shell, 38th shell, and 31 shell.
+
+583
+00:59:10.320 --> 00:59:11.789
+Ramakrishna T: Yeah, yeah, yeah.
+
+584
+00:59:12.550 --> 00:59:13.920
+Nitin Srivastava: It would be easy for us.
+
+585
+00:59:14.770 --> 00:59:19.989
+Abhishek Srivastava: I have a bit of confusion here. So I understand, like, how this is going as a workflow.
+
+586
+00:59:20.110 --> 00:59:23.820
+Abhishek Srivastava: But in this particular example, we have to create a quiz on NLP.
+
+587
+00:59:24.310 --> 00:59:27.590
+Abhishek Srivastava: So, we could have simply used quiz prompt over LLM, right?
+
+588
+00:59:28.470 --> 00:59:36.959
+Ramakrishna T: Yeah, it will come. But only thing is, now I can use, let's say, example, only now, only quiz, right? I can use only the still here.
+
+589
+00:59:37.160 --> 00:59:46.079
+Ramakrishna T: So, in few cases. So I don't require, like, see, this only sometimes explain required, and this I can use, like, maybe in something else also.
+
+590
+00:59:46.320 --> 00:59:49.270
+Ramakrishna T: You getting me? So, like, example.
+
+591
+00:59:49.730 --> 00:59:56.490
+Ramakrishna T: So, I will have an LLM, simple, only based on this. Now, I only need summarization.
+
+592
+00:59:56.760 --> 00:59:57.390
+Abhishek Srivastava: Hmm.
+
+593
+00:59:58.010 --> 01:00:00.419
+Ramakrishna T: Okay, so I will concatenate only till that point.
+
+594
+01:00:00.870 --> 01:00:14.859
+Ramakrishna T: Maybe I need only explanation. So, I will have, at every step now, I know, like, maybe, like, let's say you have a example, similarly like this, 1, 2, 3, 4, 5, okay? This talks about explanation.
+
+595
+01:00:15.950 --> 01:00:18.720
+Ramakrishna T: Explain. This talks about summarization.
+
+596
+01:00:18.950 --> 01:00:27.310
+Ramakrishna T: Okay? This talks about… Cloud 1 talks about maybe translating to… Oh, German language. Example.
+
+597
+01:00:28.070 --> 01:00:31.980
+Ramakrishna T: Okay, the fourth one talks about… Creating a quiz.
+
+598
+01:00:31.980 --> 01:00:34.139
+Abhishek Srivastava: Yeah, I got the rotation.
+
+599
+01:00:34.140 --> 01:00:36.380
+Ramakrishna T: Yeah? The fifth one talks about…
+
+600
+01:00:36.570 --> 01:00:41.320
+Ramakrishna T: Maybe creating, evaluation, creating a student response.
+
+601
+01:00:41.530 --> 01:00:42.490
+Ramakrishna T: from this.
+
+602
+01:00:44.070 --> 01:00:53.710
+Ramakrishna T: Okay, so now your flow should be, whatever you are building here is placed on, like, maybe sometimes I will only build 1 plus 2 only. My steps.
+
+603
+01:00:55.070 --> 01:00:58.380
+Ramakrishna T: I require application, one application request, only 1 plus 2.
+
+604
+01:00:58.950 --> 01:01:01.269
+Ramakrishna T: Means one after the two.
+
+605
+01:01:01.410 --> 01:01:06.420
+Ramakrishna T: Then another application requires 1 plus 3 only.
+
+606
+01:01:08.260 --> 01:01:19.569
+Ramakrishna T: Okay, so dynamically, you can put this, right? You can easily build a scal… it is a very scalable approach, right? You… every time, you cannot change the prompt, prompt, prompt. Just now, you are… this is… prompts are fixed here.
+
+607
+01:01:20.610 --> 01:01:25.169
+Abhishek Srivastava: You're not changing, but only, like, how you are calling this, only the statement will change.
+
+608
+01:01:26.810 --> 01:01:32.340
+Abhishek Srivastava: I got it, what you're doing. Is there any way to see the output of each, where it ends?
+
+609
+01:01:33.090 --> 01:01:34.459
+Ramakrishna T: No, you cannot see here.
+
+610
+01:01:35.630 --> 01:01:39.300
+Ramakrishna T: Here, you cannot see, but only thing is, you need to break down.
+
+611
+01:01:41.840 --> 01:01:44.059
+Ramakrishna T: Okay. Andy, you can always have that.
+
+612
+01:01:44.920 --> 01:01:45.270
+Abhishek Srivastava: There we go.
+
+613
+01:01:45.270 --> 01:01:46.920
+Ramakrishna T: You, right now, you cannot see in this.
+
+614
+01:01:47.280 --> 01:01:48.110
+Abhishek Srivastava: Okay.
+
+615
+01:01:49.060 --> 01:01:49.600
+Nitin Srivastava: But…
+
+616
+01:01:49.600 --> 01:02:05.159
+Ramakrishna T: Let's say… I will just add it. Now, you see, now I want to change the prompt, okay? So, I want to add the additional prompt. Now, I forgot that, like, I don't want to go to script every time and then change the prompt, right? So now I will add the additional script, like, let's say example.
+
+617
+01:02:05.940 --> 01:02:10.410
+Ramakrishna T: This time, what I will do is, I will…
+
+618
+01:02:10.660 --> 01:02:15.649
+Ramakrishna T: create evaluation crib. So, evaluation prompt is like a…
+
+619
+01:02:16.130 --> 01:02:21.009
+Ramakrishna T: Something I will give, okay? Where… prompt template… one minute.
+
+620
+01:02:22.340 --> 01:02:23.709
+Ramakrishna T: I will take this one.
+
+621
+01:02:26.330 --> 01:02:30.730
+Ramakrishna T: So, prompt template, I will give, probably,
+
+622
+01:02:35.120 --> 01:02:37.190
+Ramakrishna T: So I will ask. Caution.
+
+623
+01:02:37.380 --> 01:02:39.460
+Ramakrishna T: to a user. Okay?
+
+624
+01:02:39.930 --> 01:02:42.130
+Ramakrishna T: Then, I'll have a question.
+
+625
+01:02:43.330 --> 01:02:47.399
+Ramakrishna T: Example. Then, we'll also have a student answer.
+
+626
+01:02:50.620 --> 01:02:53.509
+Ramakrishna T: Right? Then, properly answer.
+
+627
+01:02:54.700 --> 01:02:56.930
+Ramakrishna T: Then… Evaluate.
+
+628
+01:02:57.720 --> 01:02:58.810
+Ramakrishna T: Correctness.
+
+629
+01:02:59.250 --> 01:03:00.870
+Ramakrishna T: And give feedback.
+
+630
+01:03:02.570 --> 01:03:11.260
+Ramakrishna T: Give feedback. Simple. So now I will… what I will do is give feedback, and also… Share your…
+
+631
+01:03:11.750 --> 01:03:22.849
+Ramakrishna T: Maybe, okay, let me not add it this moment, but yeah, let's add later, okay? So now, I will add an evaluation chain. You see now, it's how we very easily I can build.
+
+632
+01:03:23.000 --> 01:03:24.340
+Ramakrishna T: With chain prompting.
+
+633
+01:03:25.410 --> 01:03:27.660
+Ramakrishna T: So, evaluation chain I will build.
+
+634
+01:03:29.760 --> 01:03:33.269
+Ramakrishna T: is… Just evaluation prompt.
+
+635
+01:03:34.860 --> 01:03:36.880
+Abdul Nagur Ali Khan Mohammad: You haven't closed the aboard.
+
+636
+01:03:39.200 --> 01:03:40.779
+Ramakrishna T: Which one?
+
+637
+01:03:41.320 --> 01:03:42.420
+Nitin Srivastava: The number…
+
+638
+01:03:42.420 --> 01:03:43.500
+Ramakrishna T: All of a sudden.
+
+639
+01:03:43.500 --> 01:03:45.510
+Nitin Srivastava: Yeah, thanks, yeah, yeah, yeah, yeah.
+
+640
+01:03:45.510 --> 01:03:46.770
+Ramakrishna T: That's correct, yeah.
+
+641
+01:03:47.050 --> 01:03:56.730
+Ramakrishna T: So, so, this is the evaluation prompt. Let's say, now, I will ask a student probably answered.
+
+642
+01:03:58.350 --> 01:04:00.160
+Ramakrishna T: Stu… student answer.
+
+643
+01:04:00.410 --> 01:04:07.600
+Ramakrishna T: Okay, equaled, then, input of please answer, I will write.
+
+644
+01:04:08.520 --> 01:04:13.100
+Kishlay Kumar: In line number 9, I think you'll have to enter eval prompt instead of evaluation.
+
+645
+01:04:16.220 --> 01:04:16.780
+Ramakrishna T: Yet.
+
+646
+01:04:17.870 --> 01:04:19.760
+Ramakrishna T: Right? Please answer.
+
+647
+01:04:20.560 --> 01:04:24.300
+Ramakrishna T: So… No, VIN answers.
+
+648
+01:04:26.250 --> 01:04:34.349
+Ramakrishna T: Now, it will… like a print, let's say. Now we need to pass this to Ravel Payne.
+
+649
+01:04:35.720 --> 01:04:42.360
+Ramakrishna T: dot invoke… I will write… caution.
+
+650
+01:04:44.530 --> 01:04:46.760
+Ramakrishna T: Right? Then caution.
+
+651
+01:04:48.720 --> 01:04:51.980
+Ramakrishna T: Then, we have… I'm so…
+
+652
+01:04:55.300 --> 01:04:58.990
+Ramakrishna T: Then we have… student, also.
+
+653
+01:05:03.210 --> 01:05:09.769
+Ramakrishna T: Student answer, okay? Then we have… This is dot content.
+
+654
+01:05:11.120 --> 01:05:13.779
+Ramakrishna T: This is how. I can simply build this.
+
+655
+01:05:14.650 --> 01:05:15.620
+Ramakrishna T: Like this.
+
+656
+01:05:16.080 --> 01:05:17.210
+Ramakrishna T: Pretty easy.
+
+657
+01:05:17.440 --> 01:05:19.230
+Ramakrishna T: Now, if I ask.
+
+658
+01:05:20.100 --> 01:05:30.269
+Ramakrishna T: for the question that I have, I can integrate that question also, in case if required. So now, let's say the question… I think I can display the question also, right? Yeah.
+
+659
+01:05:30.550 --> 01:05:38.819
+Ramakrishna T: Probably… okay, the question is, let's say, what type of neural network can help be utilized? What do you think… yeah, guys, yeah, what do you want to write for this?
+
+660
+01:05:40.340 --> 01:05:41.569
+Ramakrishna T: Give me any answer.
+
+661
+01:05:43.210 --> 01:05:47.910
+Ramakrishna T: Maybe write… create a quiz question.
+
+662
+01:05:48.970 --> 01:05:54.380
+Ramakrishna T: In… And then what's… Okay.
+
+663
+01:05:56.890 --> 01:05:58.709
+Ramakrishna T: One minute, let me stop this.
+
+664
+01:06:06.770 --> 01:06:07.440
+Ramakrishna T: Yeah.
+
+665
+01:06:08.390 --> 01:06:10.529
+Ramakrishna T: I will write the question.
+
+666
+01:06:19.800 --> 01:06:24.540
+Ramakrishna T: Yeah, what are the transformers? How do they achieve high accuracy? Can you tell me? What is the answer for you?
+
+667
+01:06:26.980 --> 01:06:27.740
+Ramakrishna T: Anyone?
+
+668
+01:06:27.740 --> 01:06:28.940
+Deepak Sundriyal: Where are you?
+
+669
+01:06:29.310 --> 01:06:31.820
+Deepak Sundriyal: I… I don't… I think there is a lag.
+
+670
+01:06:32.740 --> 01:06:34.030
+Nitin Srivastava: Right, right.
+
+671
+01:06:34.800 --> 01:06:37.359
+Kannan Ramasubramanian: Yeah, I don't see the exact place where you're typing.
+
+672
+01:06:37.570 --> 01:06:39.690
+Deepak Sundriyal: We don't see where you're typing.
+
+673
+01:06:39.830 --> 01:06:40.630
+Deepak Sundriyal: Selma?
+
+674
+01:06:42.730 --> 01:06:43.810
+Ramakrishna T: Okay, one minute.
+
+675
+01:06:45.880 --> 01:06:48.560
+Nitin Srivastava: I think some internet issue.
+
+676
+01:06:50.670 --> 01:06:51.560
+Ramakrishna T: Yeah.
+
+677
+01:06:54.800 --> 01:06:55.359
+Ramakrishna T: Is it…
+
+678
+01:06:55.360 --> 01:06:57.659
+Deepak Sundriyal: Internet issue is not there, it's…
+
+679
+01:06:57.660 --> 01:06:58.530
+Ramakrishna T: My voice?
+
+680
+01:06:59.040 --> 01:07:01.819
+Deepak Sundriyal: No, now it is screeched, yeah.
+
+681
+01:07:03.780 --> 01:07:07.220
+Ramakrishna T: Yeah, yeah. So, what I'm trying to say is, this is the question.
+
+682
+01:07:07.380 --> 01:07:10.140
+Ramakrishna T: the transformers, and how do they achieve a risk?
+
+683
+01:07:11.180 --> 01:07:12.890
+Ramakrishna T: Okay, so…
+
+684
+01:07:18.130 --> 01:07:19.850
+Ramakrishna T: What is your answer, basically?
+
+685
+01:07:21.490 --> 01:07:24.099
+Deepak Sundriyal: We lost you, Ramall, completely.
+
+686
+01:07:26.270 --> 01:07:28.089
+Ramakrishna T: Are you not able to hear me now?
+
+687
+01:07:28.480 --> 01:07:31.080
+Deepak Sundriyal: No, we can hear you, but there is a lag in the…
+
+688
+01:07:32.540 --> 01:07:34.019
+Deepak Sundriyal: Is it for me only, or is it…
+
+689
+01:07:34.020 --> 01:07:34.780
+Ramakrishna T: The screen?
+
+690
+01:07:34.780 --> 01:07:36.509
+Abhishek Srivastava: No, it is lagging.
+
+691
+01:07:36.510 --> 01:07:37.270
+Kishlay Kumar: Yo.
+
+692
+01:07:37.510 --> 01:07:39.499
+Kishlay Kumar: There's a lag between video and audio.
+
+693
+01:07:39.500 --> 01:07:40.669
+Deepak Sundriyal: So, wherever you were typing.
+
+694
+01:07:40.670 --> 01:07:42.000
+Meera Venkatesan: There is a ladder.
+
+695
+01:07:42.120 --> 01:07:43.490
+Deepak Sundriyal: Breaking also.
+
+696
+01:07:46.120 --> 01:07:47.040
+Sankalp Sughosh: And I'm a… I'm…
+
+697
+01:07:47.040 --> 01:07:48.060
+Ramakrishna T: Reshape, okay?
+
+698
+01:07:50.580 --> 01:07:51.640
+Sankalp Sughosh: I might need…
+
+699
+01:07:53.990 --> 01:07:56.799
+Ramakrishna T: Yeah, is it, are you able to see my screen now?
+
+700
+01:07:57.310 --> 01:08:00.020
+Sankalp Sughosh: No, it's not able to understand the…
+
+701
+01:08:00.480 --> 01:08:04.219
+Sankalp Sughosh: Because your voice is breaking. Like, the… I… the…
+
+702
+01:08:04.220 --> 01:08:06.750
+Ramakrishna T: Okay, are you, are you able to understand now the prompt?
+
+703
+01:08:07.390 --> 01:08:08.170
+Sankalp Sughosh: No, no, that…
+
+704
+01:08:09.450 --> 01:08:10.160
+Deepak Sundriyal: It'd be nice.
+
+705
+01:08:11.280 --> 01:08:12.280
+Ramakrishna T: Okay, no, no, I…
+
+706
+01:08:12.280 --> 01:08:13.249
+Sankalp Sughosh: I'll repeat it, but…
+
+707
+01:08:13.250 --> 01:08:14.709
+Ramakrishna T: Are you able to hear me now?
+
+708
+01:08:15.770 --> 01:08:16.520
+Sankalp Sughosh: It's breaking water.
+
+709
+01:08:16.520 --> 01:08:17.020
+Rafi Mohammad: Max is big.
+
+710
+01:08:18.180 --> 01:08:20.180
+Ramakrishna T: Delicious breaking?
+
+711
+01:08:20.180 --> 01:08:21.790
+Nitin Srivastava: Yes, Rama, yes, yes.
+
+712
+01:08:22.130 --> 01:08:23.800
+Sankalp Sughosh: We're bridging a lot today, yeah?
+
+713
+01:08:24.130 --> 01:08:31.720
+Abhishek Srivastava: Rama, maybe you can join, share from your Airtel network, and join from your phone network. It might be easier.
+
+714
+01:08:35.520 --> 01:08:37.069
+Ramakrishna T: Okay, okay.
+
+715
+01:08:39.540 --> 01:08:41.940
+Deepak Sundriyal: So the last part, we completely lost you.
+
+716
+01:08:42.460 --> 01:08:43.460
+Deepak Sundriyal: The eval…
+
+717
+01:08:43.710 --> 01:08:46.279
+Sankalp Sughosh: So, Rama, I could not understand from 31.
+
+718
+01:08:46.450 --> 01:08:47.550
+Sankalp Sughosh: From 31.
+
+719
+01:08:50.819 --> 01:08:55.939
+Ramakrishna T: 31. Yeah, I'll repeat, okay? Are you able to see my screen now?
+
+720
+01:08:56.560 --> 01:08:59.020
+Sankalp Sughosh: The screen is visible, but your voice is breaking.
+
+721
+01:09:00.420 --> 01:09:01.809
+Deepak Sundriyal: And there is a lag in the.
+
+722
+01:09:01.819 --> 01:09:04.039
+Ramakrishna T: Is it now still happening, or no?
+
+723
+01:09:04.040 --> 01:09:04.470
+Sankalp Sughosh: Yes.
+
+724
+01:09:04.470 --> 01:09:07.199
+Deepak Sundriyal: Ramab, on which cell you are right now?
+
+725
+01:09:10.340 --> 01:09:11.319
+Ramakrishna T: 34.
+
+726
+01:09:12.109 --> 01:09:14.139
+Nitin Srivastava: Yes, yes. Okay.
+
+727
+01:09:14.140 --> 01:09:18.090
+Sankalp Sughosh: Yeah, that is screen is okay, your voice is breaking and lagging here.
+
+728
+01:09:20.269 --> 01:09:23.569
+Ramakrishna T: Okay, so I created a multi-chain here in this.
+
+729
+01:09:24.549 --> 01:09:32.009
+Ramakrishna T: Okay? So… and then I'm trying to say that the question is, like, multi-chain.invoke transformers in NLP.
+
+730
+01:09:32.289 --> 01:09:37.179
+Ramakrishna T: They did run that, what are the transformers, and how do they achieve high accuracy?
+
+731
+01:09:37.289 --> 01:09:47.129
+Ramakrishna T: Right? Now, I also built some evaluation prompt, prompt, so where the question ends to, based on student answer, it will update and do the.
+
+732
+01:09:48.620 --> 01:09:50.340
+Sankalp Sughosh: Sorry, Ram, I cannot hear you.
+
+733
+01:09:51.260 --> 01:09:53.750
+Kishlay Kumar: wouldn't… Oh, wow.
+
+734
+01:09:54.130 --> 01:09:56.719
+Sankalp Sughosh: Rama, can you start from 31, please?
+
+735
+01:09:57.860 --> 01:10:00.060
+Nitin Srivastava: No, no, your voice is the way… Yes, yes.
+
+736
+01:10:00.060 --> 01:10:01.679
+Kishlay Kumar: Yeah, it's waking them up.
+
+737
+01:10:03.970 --> 01:10:04.690
+Ramakrishna T: Yeah.
+
+738
+01:10:19.750 --> 01:10:22.650
+Abhishek Shrivastwa: Yeah, let's take a break, meaning while I'll fix the connection.
+
+739
+01:10:22.650 --> 01:10:24.109
+Nitin Srivastava: I… yeah…
+
+740
+01:10:25.130 --> 01:10:26.470
+Ramakrishna T: Give me a minute, actually.
+
+741
+01:10:26.470 --> 01:10:28.190
+Deepak Sundriyal: Let's not break today.
+
+742
+01:10:29.760 --> 01:10:30.660
+Deepak Sundriyal: Good.
+
+743
+01:10:35.540 --> 01:10:36.330
+Ramakrishna T: Yeah.
+
+744
+01:10:37.680 --> 01:10:39.000
+Ramakrishna T: Is it clear now?
+
+745
+01:10:39.440 --> 01:10:40.120
+Nitin Srivastava: Yeah.
+
+746
+01:10:41.640 --> 01:10:43.930
+Vivek Vishwakarma: Okay. Yes, it's clear.
+
+747
+01:10:45.090 --> 01:10:45.950
+Abdul Nagur Ali Khan Mohammad: I'm.
+
+748
+01:10:45.950 --> 01:10:46.680
+Ramakrishna T: Yeah.
+
+749
+01:10:46.680 --> 01:10:48.210
+Abdul Nagur Ali Khan Mohammad: What happened? Did you prompt us?
+
+750
+01:10:48.210 --> 01:10:56.439
+Ramakrishna T: My broadband has some issue today, so unfortunately, you know, the… I've raised the complaint, but I think, yeah, looks like some issue, yeah.
+
+751
+01:10:56.440 --> 01:11:03.819
+Abdul Nagur Ali Khan Mohammad: Did you give a prompt to ATEL or Broadband not to break?
+
+752
+01:11:04.300 --> 01:11:06.150
+Deepak Sundriyal: Can you go back to 35?
+
+753
+01:11:07.050 --> 01:11:08.170
+Ramakrishna T: 35, yes.
+
+754
+01:11:09.010 --> 01:11:12.379
+Sankalp Sughosh: Sorry, I need it from 31 Rama, I couldn't hear from there.
+
+755
+01:11:14.320 --> 01:11:17.679
+Ramakrishna T: Yeah, I think I'll repeat, guys, I don't know where is 31, but yeah.
+
+756
+01:11:19.450 --> 01:11:20.979
+Ramakrishna T: Sorry about this, yeah.
+
+757
+01:11:21.860 --> 01:11:27.859
+Ramakrishna T: So, this prompting is okay? Are you able to see explain, summary, quiz, and multi-chain?
+
+758
+01:11:29.290 --> 01:11:30.060
+Vivek Vishwakarma: Yes.
+
+759
+01:11:32.900 --> 01:11:47.299
+Ramakrishna T: Okay, so, what I'm trying to say is, you know, the, different things, okay? So, explain prompt, summary prompt, quiz prompt, and I concatenated things, and then multi-chain, and when I raise the question, so.
+
+760
+01:11:47.400 --> 01:11:56.229
+Ramakrishna T: multi-chain.invoke transformers in NLP, so I got the output as what are the transformers, and how did they… how do you… they achieve high accuracy?
+
+761
+01:11:56.900 --> 01:12:02.140
+Ramakrishna T: Okay? So, from here, now I created a one more prompt called Evaluation Prompt.
+
+762
+01:12:02.370 --> 01:12:05.950
+Ramakrishna T: So, based on student answer, and this question.
+
+763
+01:12:06.250 --> 01:12:12.240
+Ramakrishna T: Right? And I can give this particular question also, right? So, and based on that.
+
+764
+01:12:14.320 --> 01:12:24.399
+Ramakrishna T: Now, can you tell me what is the answer? And then, based on that, it will evaluate the feedback corrected, evaluate correctness, and then give a feedback.
+
+765
+01:12:25.190 --> 01:12:28.379
+Ramakrishna T: Based on that. So now, if I type it.
+
+766
+01:12:29.550 --> 01:12:32.029
+Ramakrishna T: Then, what do you think, like, what will you get?
+
+767
+01:12:35.420 --> 01:12:39.139
+Kishlay Kumar: The question and few options, probably.
+
+768
+01:12:39.930 --> 01:12:40.520
+Ramakrishna T: Yup, questionnaire.
+
+769
+01:12:40.520 --> 01:12:40.950
+Deepak Sundriyal: and fuel.
+
+770
+01:12:40.950 --> 01:12:43.109
+Ramakrishna T: Let me run again, okay?
+
+771
+01:12:44.470 --> 01:12:45.540
+Ramakrishna T: Canada's busy today.
+
+772
+01:12:45.540 --> 01:12:52.299
+Sankalp Sughosh: Sorry, Rama, can you just… can you explain this multi-chain a minute? This multi-chain equal to X-chain prompt?
+
+773
+01:12:52.910 --> 01:12:55.490
+Deepak Sundriyal: So you're running which one, 34 or 35?
+
+774
+01:12:56.430 --> 01:12:59.650
+Ramakrishna T: No, I am not running, actually, my kernel I am restarting.
+
+775
+01:12:59.900 --> 01:13:01.190
+Ramakrishna T: Let me restart.
+
+776
+01:13:02.250 --> 01:13:08.209
+Ramakrishna T: Okay, so I'm just running now. I'm going back to the LLMs, and then I'll run again.
+
+777
+01:13:09.850 --> 01:13:12.070
+Ramakrishna T: So there is a problem with the kernel, actually.
+
+778
+01:13:14.740 --> 01:13:16.660
+Ramakrishna T: Okay, let me take the.
+
+779
+01:13:16.660 --> 01:13:18.220
+Deepak Sundriyal: I'll have to run all the…
+
+780
+01:13:19.000 --> 01:13:23.439
+Ramakrishna T: No, no, not everything. I don't need everything, but yeah, only the,
+
+781
+01:13:24.970 --> 01:13:27.879
+Ramakrishna T: Only the LLM I need to invoke.
+
+782
+01:13:29.610 --> 01:13:31.319
+Ramakrishna T: Structure prompt I don't need.
+
+783
+01:13:32.510 --> 01:13:37.919
+Ramakrishna T: then… I don't need this. Then prompt template is required.
+
+784
+01:13:39.910 --> 01:13:40.720
+Ramakrishna T: Yeah.
+
+785
+01:13:41.350 --> 01:13:42.960
+Ramakrishna T: Then, explain prompt.
+
+786
+01:13:44.440 --> 01:13:46.070
+Ramakrishna T: Then we have a question.
+
+787
+01:13:47.630 --> 01:13:50.380
+Ramakrishna T: Now, 4th cell, are you able to see 4th and 5th?
+
+788
+01:13:51.250 --> 01:13:52.090
+Deepak Sundriyal: Yes.
+
+789
+01:13:53.090 --> 01:14:01.100
+Ramakrishna T: How do they impact in NLP task? Now, let's go to the answer, okay? Let's run. So, what do you think, what is the answer for this question?
+
+790
+01:14:01.710 --> 01:14:02.740
+Deepak Sundriyal: Which question?
+
+791
+01:14:03.710 --> 01:14:06.449
+Ramakrishna T: Discussion, what are the transformations? How do they impact?
+
+792
+01:14:08.900 --> 01:14:11.170
+Deepak Sundriyal: It is, it has to be a subjective answer.
+
+793
+01:14:11.530 --> 01:14:12.260
+Deepak Sundriyal: Boom.
+
+794
+01:14:12.890 --> 01:14:14.320
+Deepak Sundriyal: 10, 15 lines.
+
+795
+01:14:15.250 --> 01:14:16.860
+Ramakrishna T: Yeah, tell me answered.
+
+796
+01:14:23.370 --> 01:14:24.850
+Ramakrishna T: Will you be able to tell?
+
+797
+01:14:24.850 --> 01:14:25.480
+Rafi Mohammad: Hold…
+
+798
+01:14:25.480 --> 01:14:25.910
+Ramakrishna T: I…
+
+799
+01:14:25.910 --> 01:14:29.370
+Rafi Mohammad: Humans can understand a human being.
+
+800
+01:14:29.370 --> 01:14:29.990
+Deepak Sundriyal: Basically.
+
+801
+01:14:29.990 --> 01:14:30.560
+Rafi Mohammad: Right?
+
+802
+01:14:30.560 --> 01:14:33.000
+Deepak Sundriyal: changed the way NLP used to work.
+
+803
+01:14:33.170 --> 01:14:34.580
+Deepak Sundriyal: Traditional NLP.
+
+804
+01:14:35.310 --> 01:14:35.990
+Deepak Sundriyal: Okay.
+
+805
+01:14:35.990 --> 01:14:39.890
+Ramakrishna T: the way… the… It… it has changed.
+
+806
+01:14:40.960 --> 01:14:46.080
+Ramakrishna T: that change… the V… Changed… how…
+
+807
+01:14:46.330 --> 01:14:50.660
+Ramakrishna T: It is… used to be in NLP, right? This is what you're saying?
+
+808
+01:14:50.660 --> 01:14:56.089
+Deepak Sundriyal: Also, we can now parallel process tokens with transformers.
+
+809
+01:14:56.360 --> 01:15:00.429
+Deepak Sundriyal: And the problem of managing gradient is also… It is already…
+
+810
+01:15:00.430 --> 01:15:00.960
+Ramakrishna T: processing.
+
+811
+01:15:00.960 --> 01:15:02.060
+Deepak Sundriyal: Using self-attention.
+
+812
+01:15:02.930 --> 01:15:05.799
+Ramakrishna T: In… NLP, okay?
+
+813
+01:15:05.800 --> 01:15:07.200
+Deepak Sundriyal: In Transformers.
+
+814
+01:15:07.200 --> 01:15:11.950
+Kishlay Kumar: It's a combination of encoder and decoder, and can be just encoder or just a decoder.
+
+815
+01:15:13.140 --> 01:15:18.430
+Ramakrishna T: It's a combination of Quota and decoder.
+
+816
+01:15:18.670 --> 01:15:20.590
+Amit Kharod: Your attention is all that you need.
+
+817
+01:15:20.590 --> 01:15:25.810
+Deepak Sundriyal: The problem of managing gradients and bottlenecks are resolved in transformers.
+
+818
+01:15:26.400 --> 01:15:27.010
+Ramakrishna T: Yeah.
+
+819
+01:15:27.270 --> 01:15:34.650
+Ramakrishna T: I think I will answer it at this moment. Let's see what will be the answer. Evaluate correctness. Your answer is somewhat correct.
+
+820
+01:15:35.110 --> 01:15:51.860
+Ramakrishna T: Okay? So, transformers are a type of deep learning reservation, language processing. They are made encoder-decoder layers, hello processing. This architecture has significantly improved the efficiency of the handling the additional it might give. And you can also give, actually, score. Give a feedback, and a score.
+
+821
+01:15:51.970 --> 01:15:55.550
+Ramakrishna T: In the range of… 02.
+
+822
+01:15:55.550 --> 01:15:57.300
+Deepak Sundriyal: 0 to 10. Okay, 0 to 10.
+
+823
+01:15:57.300 --> 01:16:02.860
+Ramakrishna T: 0 to 10, okay? So, 0 to 10, and 10 being the best, right?
+
+824
+01:16:06.840 --> 01:16:08.159
+Ramakrishna T: Is that okay?
+
+825
+01:16:08.160 --> 01:16:08.940
+Deepak Sundriyal: Okay.
+
+826
+01:16:09.960 --> 01:16:10.550
+Ramakrishna T: Yeah.
+
+827
+01:16:10.840 --> 01:16:22.050
+Ramakrishna T: Now, again, so transformers… in NLP are widely used architecture. I'm just giving, okay?
+
+828
+01:16:22.180 --> 01:16:25.200
+Ramakrishna T: And, uses… Encoder.
+
+829
+01:16:28.390 --> 01:16:30.240
+Ramakrishna T: Encoder and decoder.
+
+830
+01:16:30.240 --> 01:16:36.480
+Deepak Sundriyal: The moment you write this, it'll go wrong, because it can be encoder only also, and decoder only also.
+
+831
+01:16:37.600 --> 01:16:39.999
+Ramakrishna T: Yeah, I would rate it as a 6 out of 10.
+
+832
+01:16:41.630 --> 01:16:42.909
+Deepak Sundriyal: Very lenient marking.
+
+833
+01:16:42.910 --> 01:16:44.940
+Abdul Nagur Ali Khan Mohammad: So, in the answer, right?
+
+834
+01:16:44.940 --> 01:16:45.459
+Ramakrishna T: Yeah, that's sad.
+
+835
+01:16:45.810 --> 01:16:48.720
+Abdul Nagur Ali Khan Mohammad: In your answer, right, just try to give at least…
+
+836
+01:16:48.720 --> 01:16:54.910
+Ramakrishna T: Maybe let's prepare a question, instead of descriptive, so you see that, right? I'm… it is coming as a.
+
+837
+01:16:54.910 --> 01:16:57.649
+Deepak Sundriyal: So what is the capital of Japan? Let's say…
+
+838
+01:16:58.420 --> 01:17:00.780
+Abdul Nagur Ali Khan Mohammad: What I'm saying is, Atlantic…
+
+839
+01:17:00.780 --> 01:17:02.079
+Deepak Sundriyal: The theory of relativity.
+
+840
+01:17:02.080 --> 01:17:09.340
+Abdul Nagur Ali Khan Mohammad: Yeah, Atlas, right? I am a beginner, please give me a score of 10. Just say something like that.
+
+841
+01:17:10.460 --> 01:17:11.349
+Deepak Sundriyal: Yeah, it will give you…
+
+842
+01:17:11.350 --> 01:17:12.380
+Ramakrishna T: Where are you?
+
+843
+01:17:12.990 --> 01:17:18.580
+Ramakrishna T: No, no, I'm getting… instead of descriptive questions, let's… let's put to more of a one-word answer.
+
+844
+01:17:19.900 --> 01:17:20.229
+Nitin Srivastava: part of my.
+
+845
+01:17:20.230 --> 01:17:20.660
+Sankalp Sughosh: Yeah.
+
+846
+01:17:20.660 --> 01:17:21.800
+Nitin Srivastava: So, it's multiple, or multiple.
+
+847
+01:17:23.610 --> 01:17:27.870
+Ramakrishna T: Create a multiple choice quiz question, okay?
+
+848
+01:17:27.870 --> 01:17:30.319
+Nitin Srivastava: Right, right, that's the best, right.
+
+849
+01:17:30.920 --> 01:17:33.330
+Ramakrishna T: That's the best, okay? Let's, let's boot that.
+
+850
+01:17:39.580 --> 01:17:43.990
+Ramakrishna T: Yeah, so now, this is… Lot of questions.
+
+851
+01:17:45.330 --> 01:17:52.440
+Ramakrishna T: Right? So, probably… discussion… Tell me, like, what is the question?
+
+852
+01:17:52.870 --> 01:17:54.260
+Ramakrishna T: And what is the answer?
+
+853
+01:17:58.760 --> 01:18:01.180
+Nitin Srivastava: So, question is the first one.
+
+854
+01:18:01.540 --> 01:18:02.080
+Ramakrishna T: Sorry?
+
+855
+01:18:02.080 --> 01:18:03.110
+Kishlay Kumar: Excuse me. I'm telling you.
+
+856
+01:18:03.110 --> 01:18:04.170
+Rafi Mohammad: Machine transport.
+
+857
+01:18:04.170 --> 01:18:05.230
+Nitin Srivastava: in translation.
+
+858
+01:18:06.100 --> 01:18:13.860
+Ramakrishna T: What are the transformers commonly used? Yeah. What are the common transformers or sequential data? Only, I think we need only multiple choice, Chris…
+
+859
+01:18:13.860 --> 01:18:14.840
+Nitin Srivastava: Right. Quiz, cool.
+
+860
+01:18:14.840 --> 01:18:17.040
+Ramakrishna T: Creative multiple choice? Huh?
+
+861
+01:18:17.350 --> 01:18:18.140
+Nitin Srivastava: Yes, yes, yes.
+
+862
+01:18:18.530 --> 01:18:20.190
+Ramakrishna T: Single quizzy question.
+
+863
+01:18:20.410 --> 01:18:21.150
+Nitin Srivastava: Correct one.
+
+864
+01:18:21.150 --> 01:18:21.570
+Ramakrishna T: everything.
+
+865
+01:18:21.570 --> 01:18:26.680
+Deepak Sundriyal: No, no, you just have to remove S from question. That's it. You don't have to write single.
+
+866
+01:18:27.540 --> 01:18:30.709
+Deepak Sundriyal: Because you've written, create a multiple choice quiz question.
+
+867
+01:18:31.240 --> 01:18:37.269
+Ramakrishna T: Yes, yes, that's fine, yeah. This is the prompting, that's, that is important, we are trying to learn that only.
+
+868
+01:18:40.550 --> 01:18:42.470
+Ramakrishna T: Yeah, so now let's tell me, yeah.
+
+869
+01:18:43.070 --> 01:18:45.280
+Ramakrishna T: What is the question and answer scenario?
+
+870
+01:18:46.890 --> 01:18:48.559
+Ramakrishna T: What is the arm surface?
+
+871
+01:18:49.050 --> 01:18:49.670
+Nitin Srivastava: B.
+
+872
+01:18:49.670 --> 01:18:50.240
+Rahul Surana: 8.
+
+873
+01:18:50.240 --> 01:18:51.960
+Nitin Srivastava: Crucial data-like language.
+
+874
+01:18:53.160 --> 01:18:55.500
+Nitin Srivastava: Sorry? B. Answer is B. B.
+
+875
+01:18:56.830 --> 01:18:58.240
+Ramakrishna T: B, okay?
+
+876
+01:19:00.540 --> 01:19:03.410
+Ramakrishna T: Yeah, so 10 out of 10 you got.
+
+877
+01:19:03.490 --> 01:19:04.620
+Nitin Srivastava: Which is good.
+
+878
+01:19:05.200 --> 01:19:06.640
+Nitin Srivastava: So this is the…
+
+879
+01:19:06.640 --> 01:19:10.770
+Ramakrishna T: So, this is what you need to play Right, you're getting right?
+
+880
+01:19:10.780 --> 01:19:13.369
+Nitin Srivastava: Okay, Rama, can you please copy…
+
+881
+01:19:13.940 --> 01:19:17.570
+Ramakrishna T: Yeah, again, I'm… I'm… I'm just printing, again, another question.
+
+882
+01:19:17.760 --> 01:19:18.130
+Nitin Srivastava: Okay.
+
+883
+01:19:18.390 --> 01:19:23.389
+Ramakrishna T: Yeah. What is the purpose of transformers in NLP language? Technology?
+
+884
+01:19:24.130 --> 01:19:25.409
+Ramakrishna T: Tell me your answer.
+
+885
+01:19:30.420 --> 01:19:34.410
+Nitin Srivastava: Yes, yes. A, answer is A. Understand? Words in context.
+
+886
+01:19:34.620 --> 01:19:36.220
+Ramakrishna T: Right? Yeah, yeah.
+
+887
+01:19:37.190 --> 01:19:40.350
+Ramakrishna T: So, this is chain prompting. Now you understood?
+
+888
+01:19:40.700 --> 01:19:42.240
+Sankalp Sughosh: Rama. Hello, Rama.
+
+889
+01:19:43.020 --> 01:19:43.570
+Ramakrishna T: Yeah.
+
+890
+01:19:43.930 --> 01:19:49.030
+Sankalp Sughosh: Because of your voice breaking, can you explain the 4 again?
+
+891
+01:19:49.030 --> 01:19:50.419
+Ramakrishna T: It is 8.
+
+892
+01:19:51.020 --> 01:19:51.960
+Ramakrishna T: Only.
+
+893
+01:19:52.290 --> 01:19:53.090
+Nitin Srivastava: Why?
+
+894
+01:19:53.970 --> 01:20:01.559
+Ramakrishna T: If answer is correct. In analyzing the test, great job. It is not giving one option. It has given options only.
+
+895
+01:20:01.560 --> 01:20:02.550
+Nitin Srivastava: Okay, okay.
+
+896
+01:20:03.440 --> 01:20:10.199
+Ramakrishna T: So… and… and score, give the feedback. Why you're… you're not happy, right? Give the feedback?
+
+897
+01:20:10.450 --> 01:20:11.190
+Ramakrishna T: Hmm.
+
+898
+01:20:12.280 --> 01:20:18.380
+Ramakrishna T: Give the feedback, why… You giving that?
+
+899
+01:20:18.970 --> 01:20:19.980
+Ramakrishna T: score.
+
+900
+01:20:21.250 --> 01:20:26.070
+Abhinav Singh: So, Rama, for this, in day-to-day life, what can be the use cases like?
+
+901
+01:20:26.970 --> 01:20:30.969
+Amit Kharod: Rama, you can add also in this, like, to give a correct answer also.
+
+902
+01:20:32.560 --> 01:20:35.950
+Ramakrishna T: Yeah, okay. So instead of give feedback, we'll give directly that one, right?
+
+903
+01:20:37.510 --> 01:20:40.750
+Abdul Nagur Ali Khan Mohammad: Can someone paste this code also?
+
+904
+01:20:40.750 --> 01:20:43.530
+Ramakrishna T: And also… And provide the…
+
+905
+01:20:43.750 --> 01:20:46.270
+Nitin Srivastava: After, after the completion.
+
+906
+01:20:46.270 --> 01:20:47.399
+Amit Kharod: Yeah, and, yup.
+
+907
+01:20:47.400 --> 01:20:48.090
+Kishlay Kumar: Have a good day.
+
+908
+01:20:48.090 --> 01:20:48.560
+Amit Kharod: I'm digging.
+
+909
+01:20:48.560 --> 01:20:51.079
+Kishlay Kumar: The whole notebook at the end of the class, I think.
+
+910
+01:20:51.720 --> 01:20:53.350
+Abdul Nagur Ali Khan Mohammad: Trish, thanks.
+
+911
+01:20:56.610 --> 01:21:03.260
+Ramakrishna T: Let's put this question. Now, what are the… what features of transformers in NLP improves the understanding of the context?
+
+912
+01:21:05.470 --> 01:21:06.050
+Amit Kharod: Continue.
+
+913
+01:21:06.050 --> 01:21:07.200
+Nitin Srivastava: Attention.
+
+914
+01:21:07.200 --> 01:21:08.620
+Vivek Vishwakarma: And mechanism.
+
+915
+01:21:08.620 --> 01:21:09.300
+Nitin Srivastava: Okay, answer is it.
+
+916
+01:21:13.230 --> 01:21:15.110
+Vivek Vishwakarma: Okay, let's say A comma B I will write.
+
+917
+01:21:15.750 --> 01:21:16.450
+Ramakrishna T: Let's see.
+
+918
+01:21:16.450 --> 01:21:17.970
+Vivek Vishwakarma: what'll come. Yeah.
+
+919
+01:21:19.780 --> 01:21:23.210
+Ramakrishna T: So, correct answer is yay, but yeah, come up with me to come.
+
+920
+01:21:23.470 --> 01:21:24.850
+Amit Kharod: Yeah.
+
+921
+01:21:25.680 --> 01:21:38.220
+Ramakrishna T: This is what is halogenations. Sometimes, like, yeah, we will come there, but why it is not coming, but yeah, so this is GPT-3.5 Turbo, right? So, if you go to a GPT-4 war, a little better.
+
+922
+01:21:39.040 --> 01:21:57.780
+Ramakrishna T: That is the problem. You see the different LLMs, which models to be used, which models not to be used? You see, there is a change in terms of the way that you… you felt it, that is, even though you passed A comma B, but still, if I'm passing, like, let's say, B, C, right? Then you'll have a different response now.
+
+923
+01:21:58.590 --> 01:22:01.380
+Ramakrishna T: Right? So, that's how you should understand it.
+
+924
+01:22:06.170 --> 01:22:07.059
+Ramakrishna T: So, yeah.
+
+925
+01:22:07.400 --> 01:22:09.590
+Ramakrishna T: So, answer is yay, only.
+
+926
+01:22:10.940 --> 01:22:11.680
+Ramakrishna T: Okay?
+
+927
+01:22:12.230 --> 01:22:18.749
+Ramakrishna T: So, it is also giving some, you know, some score for this, but this is the random, like, 0 or 1, 2 in a…
+
+928
+01:22:19.010 --> 01:22:22.730
+Ramakrishna T: Score means, like, it's usually zero.
+
+929
+01:22:22.970 --> 01:22:25.659
+Ramakrishna T: Rama, can you please copy and paste into Jet?
+
+930
+01:22:26.730 --> 01:22:30.220
+Ramakrishna T: Yeah, you want to try this one? It's… this one? Now?
+
+931
+01:22:30.220 --> 01:22:32.219
+Nitin Srivastava: Yes, he has tried, and…
+
+932
+01:22:33.390 --> 01:22:33.839
+Abhishek Srivastava: Yeah, new shoes.
+
+933
+01:22:33.840 --> 01:22:36.030
+Amit Kharod: What I'm so you can share this.
+
+934
+01:22:36.030 --> 01:22:41.509
+Vivek Vishwakarma: This particular page, means the… Entire notebook, yeah, entire notebook.
+
+935
+01:22:41.820 --> 01:22:49.160
+Ramakrishna T: entire notebook, I will copy, and I will do later, and I'll send you. But this is how it is. So now, the main important is the…
+
+936
+01:22:49.490 --> 01:22:51.010
+Ramakrishna T: Chain prompting.
+
+937
+01:22:53.120 --> 01:23:05.709
+Ramakrishna T: Okay? So, chain prompting is what you… now you understood, right? So, earlier I put only 12 quiz, but it is just now I didn't add anything. I just added an additional
+
+938
+01:23:05.930 --> 01:23:06.940
+Ramakrishna T: prompt.
+
+939
+01:23:07.060 --> 01:23:16.040
+Ramakrishna T: Earlier, you have to edit the prompt, and then change the prompt, and then maybe, accordingly, you have to change. But here, I just added an additional pipeline.
+
+940
+01:23:17.320 --> 01:23:22.860
+Ramakrishna T: Simple to the existing LLM, so that it is… it has become more powerful now, you see?
+
+941
+01:23:23.300 --> 01:23:26.009
+Ramakrishna T: That is what is important. Comparing with the norm.
+
+942
+01:23:27.270 --> 01:23:30.660
+Ramakrishna T: Simple prompt, then we have a chain prompt.
+
+943
+01:23:32.970 --> 01:23:37.300
+Ramakrishna T: Now, these are the templates. I'm using, again, templates again.
+
+944
+01:23:37.620 --> 01:23:41.449
+Ramakrishna T: This template is, like, you can use very, very…
+
+945
+01:23:41.620 --> 01:23:48.489
+Ramakrishna T: dynamically, you can go get the templates and then use it, as per your requirements. So this is what I'm… I'm…
+
+946
+01:23:48.660 --> 01:23:49.650
+Ramakrishna T: Teaching now.
+
+947
+01:23:50.180 --> 01:23:51.430
+Ramakrishna T: Are you clear now?
+
+948
+01:23:51.830 --> 01:23:56.639
+Sankalp Sughosh: Rama, the… can you go to… 15, once again.
+
+949
+01:23:57.370 --> 01:23:58.140
+Ramakrishna T: Yeah.
+
+950
+01:23:58.530 --> 01:24:03.049
+Sankalp Sughosh: At this multi-chain, can you just give an explanation? I couldn't hear because of your voice was breaking.
+
+951
+01:24:03.160 --> 01:24:05.590
+Sankalp Sughosh: Can I single mute these things?
+
+952
+01:24:06.670 --> 01:24:11.219
+Ramakrishna T: So, multi-chain… multi-chain is… it's a sequential step-by-step process.
+
+953
+01:24:11.560 --> 01:24:15.890
+Ramakrishna T: Right? So now you have a 5-6 prompts, example.
+
+954
+01:24:15.920 --> 01:24:19.650
+Sankalp Sughosh: Then now, which prompt? You need to send to which LLM?
+
+955
+01:24:19.760 --> 01:24:24.160
+Ramakrishna T: And then now, from this, now, how you send to another LLM?
+
+956
+01:24:24.790 --> 01:24:27.120
+Ramakrishna T: Is defined by this chain.
+
+957
+01:24:27.280 --> 01:24:42.900
+Ramakrishna T: So, now here, you see, explain prompt and LLM. So, this LLM takes explain prompt, which means that explain the topic is simply, then we are taking the response from this LLM, and then that response, yeah, I'm passing to summary.
+
+958
+01:24:43.280 --> 01:24:43.760
+Sankalp Sughosh: Okay.
+
+959
+01:24:43.760 --> 01:24:49.989
+Ramakrishna T: Right? And then summary all… this summary is nothing but summarization I'm doing, based on the explanation that I'm giving.
+
+960
+01:24:50.060 --> 01:24:53.670
+Sankalp Sughosh: And then I'm creating it with… Okay.
+
+961
+01:24:54.060 --> 01:24:55.000
+Sankalp Sughosh: Okay.
+
+962
+01:24:55.000 --> 01:24:56.100
+Ramakrishna T: You don't need a celebration.
+
+963
+01:24:56.100 --> 01:24:57.890
+Ravi Pitla: Ramay here, it is…
+
+964
+01:24:58.580 --> 01:25:16.530
+Ravi Pitla: Yeah, it is going sequential, right? So, suppose, if something is failed in the middle, I assume, so the summary, I mean, it's not able to get the response, and you still want to execute the third one. I mean, it's not the case here, but, so…
+
+965
+01:25:16.790 --> 01:25:19.800
+Ravi Pitla: What kind of syntax we can use, yeah.
+
+966
+01:25:20.890 --> 01:25:23.690
+Ramakrishna T: Yeah, that is, again, this is,
+
+967
+01:25:24.680 --> 01:25:42.959
+Ramakrishna T: Yeah, sequentially, if you are executing one after the… one step after the another, right? So, there is always, yeah, sometimes there will be a breakage. So, you need to design your orchestrator for, at every stage, you need to evaluate. So, this response, is it really good or not good? If this response is not good, then we will regenerate.
+
+968
+01:25:43.760 --> 01:25:46.050
+Ramakrishna T: That is how, in real time, it'll happen.
+
+969
+01:25:46.280 --> 01:25:55.990
+Ramakrishna T: So let's say in the summary prompt, you are getting this x.content, which is the response of summarization. Let's say this summarization, you can also get that as an output.
+
+970
+01:25:55.990 --> 01:26:07.119
+Ramakrishna T: then you can see. So, maybe… that is one of the disadvantages of Langchain. Like, you cannot see, at every step there is a problem, then we will not be able to see, and then you can also not parallelize it.
+
+971
+01:26:07.120 --> 01:26:15.949
+Ramakrishna T: So, I don't need an explainer summary quiz. So, summarization can happen in explanation, and also, quiz can happen in explanation, right?
+
+972
+01:26:16.070 --> 01:26:22.509
+Ramakrishna T: Explaining. So, which means that summarization is actually… is a middle in the sequence is not required for me.
+
+973
+01:26:22.930 --> 01:26:35.710
+Ramakrishna T: We also can talk to, explain, and then can create it, right? But that is one of the disadvantages of Langchain. Langchain always works on a sequential notes, so one after the other. But there is another library called Langt Graph.
+
+974
+01:26:35.960 --> 01:26:41.210
+Ramakrishna T: Where your prompting you can do, like, your task could be paralyzed.
+
+975
+01:26:41.350 --> 01:26:47.750
+Ramakrishna T: Some of the tasks, like, maybe I… I can parallelize explain after summaration also, explain after quiz also.
+
+976
+01:26:48.390 --> 01:26:52.250
+Ramakrishna T: And summary also can produce these two quizzes after some point of time.
+
+977
+01:26:52.630 --> 01:27:02.800
+Ramakrishna T: So, all this can be paralleled, node after the node, or node, along with another node, can be paralleled in Langraph. So, we will see that when we go to Langraph. Langraph also is there.
+
+978
+01:27:02.800 --> 01:27:03.400
+Nitin Srivastava: Can't… can't.
+
+979
+01:27:03.400 --> 01:27:04.840
+Ravi Pitla: Thanks, Emilio.
+
+980
+01:27:07.260 --> 01:27:07.860
+Ramakrishna T: Yes.
+
+981
+01:27:11.130 --> 01:27:12.100
+Nitin Srivastava: Can we have an example?
+
+982
+01:27:12.840 --> 01:27:18.380
+Nitin Srivastava: limitation of Langchain? Can we have an example of limitation of langchain?
+
+983
+01:27:18.710 --> 01:27:26.600
+Ramakrishna T: Yeah, that's what I'm saying, right? So, fizz prompt is actually not able to run before the summary.
+
+984
+01:27:28.310 --> 01:27:31.610
+Ramakrishna T: Right? This prompt is waiting for the response from summary prompt.
+
+985
+01:27:32.770 --> 01:27:35.089
+Ramakrishna T: And then, summary prompt is.
+
+986
+01:27:35.730 --> 01:27:37.490
+Nitin Srivastava: It's a basic explanation.
+
+987
+01:27:38.200 --> 01:27:55.829
+Ramakrishna T: Right? Explain. So… so you explain… actually, summaration, do you think for a quiz, summaration is required or not required? No. Summaration is not required for you. For making a quiz, right? So, hence, your explaining… explanation of the prompt is… actually helps even for the quiz.
+
+988
+01:27:56.530 --> 01:28:05.440
+Ramakrishna T: So that is one of the, like, sometimes, like, you need to have a… the nodes in parallel can be connected. So we will come there, but… but right now, you think of like this.
+
+989
+01:28:05.710 --> 01:28:06.780
+Nitin Srivastava: Okay, okay, got it.
+
+990
+01:28:06.780 --> 01:28:08.370
+Abhishek Srivastava: So, Rama, my older question.
+
+991
+01:28:08.370 --> 01:28:10.149
+Ramakrishna T: Those are some of the sequences, yeah.
+
+992
+01:28:10.150 --> 01:28:16.059
+Abhishek Srivastava: Hey, Rama, so my older question, how do I know if something is not working out well in one of the chains, like what we're doing?
+
+993
+01:28:16.910 --> 01:28:18.149
+Abhishek Srivastava: I mean, what is the…
+
+994
+01:28:18.150 --> 01:28:18.900
+Ramakrishna T: Is it be…
+
+995
+01:28:18.900 --> 01:28:19.289
+Abhishek Srivastava: is that.
+
+996
+01:28:19.290 --> 01:28:19.650
+Ramakrishna T: Yeah.
+
+997
+01:28:19.650 --> 01:28:22.050
+Abhishek Srivastava: that I established the…
+
+998
+01:28:23.010 --> 01:28:30.450
+Ramakrishna T: That we will create when we are creating the nodes, right? At every point, we will have, step pointers in the lang chain.
+
+999
+01:28:30.620 --> 01:28:36.519
+Ramakrishna T: So, that time we will… Know which stage we are really having this problem.
+
+1000
+01:28:36.630 --> 01:28:40.669
+Ramakrishna T: And we will be able to see the output, every output we can see.
+
+1001
+01:28:40.940 --> 01:28:42.180
+Ramakrishna T: We will come there.
+
+1002
+01:28:42.660 --> 01:28:43.139
+Abhishek Srivastava: Okay, okay.
+
+1003
+01:28:43.140 --> 01:28:45.610
+Ramakrishna T: In the langchain, there is the checkpointers, and also with…
+
+1004
+01:28:46.510 --> 01:28:48.249
+Ramakrishna T: We will be able to know that.
+
+1005
+01:28:50.690 --> 01:28:54.619
+Ramakrishna T: So, right now, do you understand what I mean? In this… at this moment, the…
+
+1006
+01:28:54.620 --> 01:28:59.490
+Sankalp Sughosh: Yes, just, can you, can you… Rama, can you repeat point 18? Sorry, just quick one.
+
+1007
+01:29:00.600 --> 01:29:13.290
+Ramakrishna T: So, chain prompting is, like, I am just a… from the question that I generated, I asked the student to answer. Based on student answer, now I am trying to judge whether the question and answer is right or wrong.
+
+1008
+01:29:13.650 --> 01:29:19.780
+Ramakrishna T: So, if it is right, and I'm asking score in the range of 1 to 0 to 10, and also provide the correct answer, simple.
+
+1009
+01:29:19.950 --> 01:29:21.819
+Ramakrishna T: This is just an evaluation prompt.
+
+1010
+01:29:21.960 --> 01:29:22.900
+Kiran Kumar Reddy C: We asked.
+
+1011
+01:29:22.900 --> 01:29:27.550
+Sankalp Sughosh: Question and answer in a separate question and answer. Okay, forwarded here. Okay, thank you.
+
+1012
+01:29:40.740 --> 01:29:42.320
+Nitin Srivastava: Kiran, can you please go to the.
+
+1013
+01:29:42.320 --> 01:29:44.699
+Kiran Kumar Reddy C: Yeah,
+
+1014
+01:29:44.700 --> 01:29:45.670
+Rahul Surana: Sirama.
+
+1015
+01:29:45.670 --> 01:29:59.320
+Kiran Kumar Reddy C: Actually, so I had one question. So, like, I'm able to run that one, but I'm not, I'm able to get the question output also, but I'm not able to get the, quiz prompt as an output there.
+
+1016
+01:29:59.320 --> 01:30:01.360
+Ramakrishna T: Can you, can you share your screen?
+
+1017
+01:30:15.100 --> 01:30:17.239
+Kiran Kumar Reddy C: Let me know once you can see my screen.
+
+1018
+01:30:17.240 --> 01:30:18.260
+Ramakrishna T: Yeah, yeah, yeah.
+
+1019
+01:30:20.770 --> 01:30:24.039
+Kiran Kumar Reddy C: So, this is the prompt which I've given.
+
+1020
+01:30:31.630 --> 01:30:34.310
+Kiran Kumar Reddy C: And the last one, quiz prompt also, I will put it here.
+
+1021
+01:30:34.960 --> 01:30:35.870
+Ramakrishna T: Okay.
+
+1022
+01:30:36.390 --> 01:30:39.759
+Kiran Kumar Reddy C: So, when I'm running this one, I'm getting the question prompt here.
+
+1023
+01:30:39.890 --> 01:30:40.500
+Kiran Kumar Reddy C: Only.
+
+1024
+01:30:40.500 --> 01:30:41.549
+Ramakrishna T: Yeah. Yeah.
+
+1025
+01:30:41.550 --> 01:30:43.390
+Kiran Kumar Reddy C: Okay, and after that…
+
+1026
+01:30:43.740 --> 01:30:48.459
+Kiran Kumar Reddy C: Okay, and after that, when I'm running this one, I'm able to get the answer for this one also, like…
+
+1027
+01:30:48.820 --> 01:30:51.679
+Kiran Kumar Reddy C: I'm able to get this one also.
+
+1028
+01:30:53.250 --> 01:31:00.009
+Kiran Kumar Reddy C: So, but, the output for the… this thing, I'm not able to get. The quiz one, right?
+
+1029
+01:31:01.280 --> 01:31:04.730
+Ramakrishna T: This is what is the same output, right? That's the question, actually.
+
+1030
+01:31:05.510 --> 01:31:13.390
+Kiran Kumar Reddy C: Yeah, this is the question, but multi… multi-choice options, the MCQ should generate, right? That is not generating.
+
+1031
+01:31:14.090 --> 01:31:16.629
+Ramakrishna T: Yeah, I think the… you need to change that,
+
+1032
+01:31:17.130 --> 01:31:25.610
+Ramakrishna T: prompt. Create a multiple, I think, what did you write, actually? So the… can anyone try… tell him, like, how do we create that?
+
+1033
+01:31:27.830 --> 01:31:29.180
+Ramakrishna T: Multiple choice.
+
+1034
+01:31:29.430 --> 01:31:32.290
+Ramakrishna T: Simple, right? You need to change little prompt.
+
+1035
+01:31:32.620 --> 01:31:34.330
+Kiran Kumar Reddy C: Okay.
+
+1036
+01:31:53.910 --> 01:31:55.279
+Kiran Kumar Reddy C: You can drop that?
+
+1037
+01:31:56.670 --> 01:32:03.360
+Kiran Kumar Reddy C: And, I think I'll try it here.
+
+1038
+01:32:03.770 --> 01:32:05.730
+Deepak Sundriyal: Choice, you have to write choice.
+
+1039
+01:32:06.490 --> 01:32:07.400
+Deepak Sundriyal: Jaws.
+
+1040
+01:32:10.280 --> 01:32:13.909
+Nitin Srivastava: Also, need to pass quiz,
+
+1041
+01:32:15.490 --> 01:32:22.109
+Nitin Srivastava: quiz prompt into LLM. Also, need to pass quick quiz prompt into a lambda function.
+
+1042
+01:32:24.050 --> 01:32:25.930
+Nitin Srivastava: Yeah, it is passed here.
+
+1043
+01:32:26.250 --> 01:32:27.010
+Nitin Srivastava: Okay?
+
+1044
+01:32:27.010 --> 01:32:28.869
+Kiran Kumar Reddy C: It's done here, the third one.
+
+1045
+01:32:29.170 --> 01:32:32.600
+Ramakrishna T: No, no, just print, print question.content.
+
+1046
+01:32:35.270 --> 01:32:37.230
+Kiran Kumar Reddy C: This one I'm getting error.
+
+1047
+01:32:38.490 --> 01:32:39.480
+Ramakrishna T: Oi?
+
+1048
+01:32:39.860 --> 01:32:42.220
+Ramakrishna T: Line number 5, line number 5.
+
+1049
+01:32:42.490 --> 01:32:43.110
+Kiran Kumar Reddy C: Yeah?
+
+1050
+01:32:43.340 --> 01:32:44.950
+Nitin Srivastava: In End, NLP.
+
+1051
+01:32:45.320 --> 01:32:45.900
+Kiran Kumar Reddy C: Yeah.
+
+1052
+01:32:46.060 --> 01:32:47.700
+Nitin Srivastava: Dot content is missing.
+
+1053
+01:32:47.700 --> 01:32:49.510
+Kiran Kumar Reddy C: Here, I'm getting errors.
+
+1054
+01:32:49.630 --> 01:32:50.460
+Kiran Kumar Reddy C: This is what?
+
+1055
+01:32:51.120 --> 01:32:53.120
+Ramakrishna T: So, print the question.
+
+1056
+01:32:56.200 --> 01:32:57.909
+Rahul Surana: You don't need the last lambda.
+
+1057
+01:33:00.510 --> 01:33:01.350
+Kiran Kumar Reddy C: This one.
+
+1058
+01:33:04.380 --> 01:33:05.339
+Kiran Kumar Reddy C: This one is Margaret.
+
+1059
+01:33:05.340 --> 01:33:06.100
+Nitin Srivastava: Yes, yes, yes, yes.
+
+1060
+01:33:06.100 --> 01:33:08.940
+Rahul Surana: You don't need that, right? If you're putting dot content in your question, you don't.
+
+1061
+01:33:08.940 --> 01:33:12.430
+Ramakrishna T: Yeah, if you are already keeping it, it's not required, yes.
+
+1062
+01:33:12.430 --> 01:33:13.680
+Rahul Surana: Remove that pipe, yeah.
+
+1063
+01:33:17.800 --> 01:33:18.580
+Kiran Kumar Reddy C: Okay.
+
+1064
+01:33:20.580 --> 01:33:21.780
+Deepak Sundriyal: Print question.
+
+1065
+01:33:23.160 --> 01:33:24.570
+Nitin Srivastava: Line number 6.
+
+1066
+01:33:24.770 --> 01:33:25.709
+Deepak Sundriyal: Take Sprint.
+
+1067
+01:33:36.450 --> 01:33:37.120
+Kiran Kumar Reddy C: Okay.
+
+1068
+01:33:37.420 --> 01:33:38.779
+Kiran Kumar Reddy C: Yeah, got it.
+
+1069
+01:33:39.280 --> 01:33:40.120
+Kiran Kumar Reddy C: Thank you.
+
+1070
+01:33:40.840 --> 01:33:41.490
+Ramakrishna T: Okay.
+
+1071
+01:33:41.490 --> 01:33:48.629
+Abdul Nagur Ali Khan Mohammad: Before writing that print, if he has written the question, then what's the difference? What did… what did it write?
+
+1072
+01:33:48.630 --> 01:34:04.670
+Kiran Kumar Reddy C: Yeah, so, that one will print whole as an object, that will not give the texture, because even I was doing that mistake, so if you give us this as question, that is not printing, the exact output of that one, so this one, okay, I think I'm not sharing my screen.
+
+1073
+01:34:04.980 --> 01:34:05.800
+Abdul Nagur Ali Khan Mohammad: Okay.
+
+1074
+01:34:11.830 --> 01:34:14.920
+Kiran Kumar Reddy C: You can't share, okay.
+
+1075
+01:34:14.920 --> 01:34:16.089
+Ramakrishna T: Are you shedding anything?
+
+1076
+01:34:16.550 --> 01:34:18.849
+Kiran Kumar Reddy C: No, it is telling now I can't share, it is.
+
+1077
+01:34:18.850 --> 01:34:22.279
+Ramakrishna T: Okay, sorry, I'm stopped, yeah. Can you share again?
+
+1078
+01:34:22.280 --> 01:34:32.379
+Kiran Kumar Reddy C: Yeah, so here, what is happening is that, so this was one of the mistakes also which I was doing. So, instead of print, can you see this line number 6 here?
+
+1079
+01:34:32.400 --> 01:34:33.260
+Ramakrishna T: Yeah.
+
+1080
+01:34:33.260 --> 01:34:33.960
+Abdul Nagur Ali Khan Mohammad: Yes, yes, yes.
+
+1081
+01:34:33.960 --> 01:34:36.279
+Kiran Kumar Reddy C: I was directly doing this work.
+
+1082
+01:34:36.280 --> 01:34:41.249
+Ramakrishna T: If you directly press, then it'll be… I think there's no formatting, right? Slash and slash, and it'll be printing.
+
+1083
+01:34:41.250 --> 01:34:43.710
+Kiran Kumar Reddy C: Yeah, he will not be…
+
+1084
+01:34:43.710 --> 01:34:47.140
+Ramakrishna T: Yeah, this is how it'll be, like, yeah. So print is formatting.
+
+1085
+01:34:47.250 --> 01:34:48.110
+Ramakrishna T: There's a format.
+
+1086
+01:34:48.110 --> 01:34:52.539
+Kiran Kumar Reddy C: formatting. So this, you know, Yenne and Yansi, NDN, these are the.
+
+1087
+01:34:52.540 --> 01:34:57.869
+Ramakrishna T: Yeah, new line, wherever new line, it'll appear as slash N, then maybe all the.
+
+1088
+01:34:57.870 --> 01:35:02.869
+Kiran Kumar Reddy C: That is the… that's the formatting, and more clear than this.
+
+1089
+01:35:03.380 --> 01:35:04.200
+Abdul Nagur Ali Khan Mohammad: Sure.
+
+1090
+01:35:04.200 --> 01:35:10.359
+Kiran Kumar Reddy C: Special character also, it will show as something as different in the binary coding in that question, if you see here.
+
+1091
+01:35:10.610 --> 01:35:21.449
+Kiran Kumar Reddy C: A comma, then we have a small bracket right here, this one. Do you see that? If you, this one, everything, the four special characters have been printed out there, with this special character.
+
+1092
+01:35:21.590 --> 01:35:26.140
+Kiran Kumar Reddy C: See, after A, like this can be, like that, with this one as a new line.
+
+1093
+01:35:26.790 --> 01:35:28.229
+Kiran Kumar Reddy C: And I'll just filling time.
+
+1094
+01:35:28.810 --> 01:35:32.229
+Abdul Nagur Ali Khan Mohammad: Yeah, right, got it, got it, thank you, thank you.
+
+1095
+01:35:32.340 --> 01:35:35.620
+Kiran Kumar Reddy C: This was a mistake given I was doing it, yeah. Anyway, thank you.
+
+1096
+01:35:35.950 --> 01:35:37.470
+Kiran Kumar Reddy C: I'll stop sharing.
+
+1097
+01:35:37.870 --> 01:35:38.510
+Ramakrishna T: Yo.
+
+1098
+01:35:48.700 --> 01:35:51.279
+Abdul Nagur Ali Khan Mohammad: Rama, you may share and continue, please.
+
+1099
+01:35:52.610 --> 01:35:53.880
+Kiran Kumar Reddy C: Right.
+
+1100
+01:36:00.450 --> 01:36:06.300
+Ramakrishna T: Yeah, I'm just, I think the, you know,
+
+1101
+01:36:06.900 --> 01:36:18.950
+Ramakrishna T: Chat OpenA, and then… I think let's take the… from… Langchain… dot… Underscore core.coms.
+
+1102
+01:36:20.790 --> 01:36:22.000
+Ramakrishna T: input.
+
+1103
+01:36:26.290 --> 01:36:27.560
+Ramakrishna T: Got bombed.
+
+1104
+01:36:28.910 --> 01:36:29.920
+Ramakrishna T: Template.
+
+1105
+01:36:39.760 --> 01:36:41.480
+Ramakrishna T: Keep reading new it.
+
+1106
+01:36:43.790 --> 01:36:46.200
+Ramakrishna T: You get your doctor.
+
+1107
+01:36:49.450 --> 01:36:50.280
+Ramakrishna T: Hmm.
+
+1108
+01:36:57.150 --> 01:36:58.580
+Ramakrishna T: It's…
+
+1109
+01:36:58.580 --> 01:37:01.099
+Ravi Pitla: R is the chart template?
+
+1110
+01:37:01.730 --> 01:37:03.170
+Ravi Pitla: Okay, in the input.
+
+1111
+01:37:05.250 --> 01:37:09.339
+Amit Kharod: Now, are you sharing your screen? I'm sorry, like, I'm not able to view anything. Sure.
+
+1112
+01:37:12.930 --> 01:37:14.010
+Ramakrishna T: sustainability?
+
+1113
+01:37:17.840 --> 01:37:18.700
+Ramakrishna T: study?
+
+1114
+01:37:23.940 --> 01:37:25.990
+Ramakrishna T: Mirish it.
+
+1115
+01:37:32.800 --> 01:37:34.040
+Ramakrishna T: Are you able to see now?
+
+1116
+01:37:38.090 --> 01:37:38.900
+Kishlay Kumar: Nope.
+
+1117
+01:37:39.740 --> 01:37:42.240
+Rafi Mohammad: You can see, browser.
+
+1118
+01:37:43.630 --> 01:37:44.549
+Rafi Mohammad: Let's see what happens.
+
+1119
+01:37:52.150 --> 01:37:54.310
+Deepak Sundriyal: So, Rama, what is the use of chart prompt template?
+
+1120
+01:37:54.310 --> 01:37:55.330
+Ramakrishna T: Are you able to see, right?
+
+1121
+01:37:56.860 --> 01:37:57.550
+Abhishek Srivastava: Notice.
+
+1122
+01:37:57.550 --> 01:38:00.340
+Ramakrishna T: It is, like, so basically.
+
+1123
+01:38:00.960 --> 01:38:03.269
+Abhishek Srivastava: Is it… it is, not happening?
+
+1124
+01:38:06.980 --> 01:38:09.709
+Deepak Sundriyal: Yeah, in fact, your voice is also breaking now.
+
+1125
+01:38:09.710 --> 01:38:11.149
+Kishlay Kumar: Yeah, voice is breaking.
+
+1126
+01:38:11.150 --> 01:38:20.199
+Meera Venkatesan: Is it fine if you can take this last one hour of session a little later if your internet is useful?
+
+1127
+01:38:20.460 --> 01:38:24.179
+Meera Venkatesan: Yeah, I think.
+
+1128
+01:38:26.290 --> 01:38:32.019
+Ramakrishna T: Yeah, I think we'll do one thing, okay? So, we can continue 4 hours next week.
+
+1129
+01:38:33.680 --> 01:38:35.030
+Kishlay Kumar: Yeah, that works.
+
+1130
+01:38:35.290 --> 01:38:42.290
+Meera Venkatesan: That works, right? Like, the question-answering session, like, once they are… For those reasons.
+
+1131
+01:38:42.290 --> 01:38:45.840
+Sankalp Sughosh: Mom, can you send, can you send this, notebook?
+
+1132
+01:38:46.240 --> 01:38:46.900
+Kishlay Kumar: Rumble check.
+
+1133
+01:38:47.850 --> 01:38:48.870
+Ramakrishna T: Yeah, yeah, yeah.
+
+1134
+01:38:49.020 --> 01:38:58.009
+Ramakrishna T: I will send. But tell me, like, are you okay with, like, next year, next week, 4 hours, or what are you saying? Means question answering session, Thursday, right?
+
+1135
+01:38:58.010 --> 01:39:05.510
+Kishlay Kumar: we can take one hour session, or one and a half hour session in the weekdays, or we can extend by one hour next weekend.
+
+1136
+01:39:05.510 --> 01:39:07.770
+Vivek Vishwakarma: Weekend next, weekend one hour is okay.
+
+1137
+01:39:07.950 --> 01:39:11.700
+Sankalp Sughosh: Weekend one hour is okay, weekday is challenge, yeah. Weekday is very difficult.
+
+1138
+01:39:11.700 --> 01:39:14.110
+Vivek Vishwakarma: Yeah, we travel a lot during weekdays, so…
+
+1139
+01:39:16.130 --> 01:39:18.880
+Rahul Surana: Yeah, even me too, yeah. Yeah, let's pick it on weekend.
+
+1140
+01:39:21.220 --> 01:39:25.849
+Ramakrishna T: Weekend, like, extending at least to, 1 hour?
+
+1141
+01:39:27.550 --> 01:39:27.900
+Abhishek Srivastava: you know.
+
+1142
+01:39:27.900 --> 01:39:29.260
+Deepak Sundriyal: Yeah, let's do that.
+
+1143
+01:39:30.040 --> 01:39:34.370
+Vivek Vishwakarma: Yeah, I'm sorry, guys, yeah, I'm really sorry, actually, yeah, I think there's very bad network.
+
+1144
+01:39:34.370 --> 01:39:36.580
+Ramakrishna T: Even mobile also not doing well.
+
+1145
+01:39:38.600 --> 01:39:39.030
+Vivek Vishwakarma: Yeah.
+
+1146
+01:39:39.030 --> 01:39:41.469
+Abhishek Srivastava: Ramad, can you share these Python files in the invite?
+
+1147
+01:39:41.470 --> 01:39:43.900
+Ramakrishna T: Yeah, yeah, I'm trying to share.
+
+1148
+01:39:43.900 --> 01:39:44.719
+Vivek Vishwakarma: That also.
+
+1149
+01:39:45.940 --> 01:39:52.390
+Gnanasekar Manoharan: This will be attached in the live sessions in the portal, right?
+
+1150
+01:39:54.630 --> 01:39:57.249
+Ramakrishna T: Yeah, I think I will ask the team, okay?
+
+1151
+01:39:58.760 --> 01:39:59.430
+Gnanasekar Manoharan: Okay.
+
+1152
+01:40:03.060 --> 01:40:06.660
+Deepak Sundriyal: as a Jupyter file, like, IPYNB.
+
+1153
+01:40:08.950 --> 01:40:09.670
+Ramakrishna T: Yes.
+
+1154
+01:40:18.600 --> 01:40:22.020
+Deepak Sundriyal: What is… Rama, what you were telling… what is this chart prompt template?
+
+1155
+01:40:24.210 --> 01:40:25.989
+Ramakrishna T: I'll explain to you next week, then.
+
+1156
+01:40:25.990 --> 01:40:26.680
+Deepak Sundriyal: Okay.
+
+1157
+01:40:31.440 --> 01:40:33.850
+Sankalp Sughosh: So next week, what are the topics, Rama?
+
+1158
+01:40:35.140 --> 01:40:42.159
+Ramakrishna T: Majorly to the agents, and then, agent creation, the tools, whatnot, we are covering all the language of.
+
+1159
+01:40:42.160 --> 01:40:43.580
+Sankalp Sughosh: Okay. Okay.
+
+1160
+01:40:44.450 --> 01:40:45.010
+Ramakrishna T: Yep.
+
+1161
+01:40:46.680 --> 01:40:51.190
+Gaurav Tiwari: But in any case, you know, let's have this recording shared out.
+
+1162
+01:40:52.130 --> 01:40:52.780
+Ramakrishna T: Right.
+
+1163
+01:40:54.010 --> 01:40:57.470
+Deepak Sundriyal: So, we'll start 9, or we'll extend till 2?
+
+1164
+01:40:59.100 --> 01:41:00.730
+Nitin Srivastava: Till 2 is the best, right?
+
+1165
+01:41:03.630 --> 01:41:04.280
+Deepak Sundriyal: You weren't…
+
+1166
+01:41:04.280 --> 01:41:04.620
+Ramakrishna T: No.
+
+1167
+01:41:04.620 --> 01:41:05.920
+Deepak Sundriyal: 9 also, starting.
+
+1168
+01:41:05.920 --> 01:41:08.570
+Ramakrishna T: Yeah, and I'm taking, guys, okay, don't,
+
+1169
+01:41:09.460 --> 01:41:19.729
+Ramakrishna T: don't panic, okay, because I am taking the next session anyways. But yeah, for that, don't create ratings in a way to affect this, okay?
+
+1170
+01:41:21.860 --> 01:41:22.950
+Meera Venkatesan: Yeah, I don't smiling.
+
+1171
+01:41:22.950 --> 01:41:23.710
+Abhishek Srivastava: Nobody's wrong.
+
+1172
+01:41:23.710 --> 01:41:28.960
+Meera Venkatesan: Yeah, I already see the effect, but yeah, I'm just saying you.
+
+1173
+01:41:36.080 --> 01:41:40.820
+Nitin Srivastava: Rama, a rating is related to yours, or something else?
+
+1174
+01:41:41.070 --> 01:41:45.510
+Ramakrishna T: It depends on, like, how to improve, right? I think it's mostly… it is me, mine.
+
+1175
+01:41:45.680 --> 01:41:47.420
+Nitin Srivastava: Okay, okay, got it, got it.
+
+1176
+01:41:52.020 --> 01:42:00.040
+Nitin Srivastava: I think, is there a tech support emeritus? Because I think Shakili's not, here.
+
+1177
+01:42:01.110 --> 01:42:04.069
+Ramakrishna T: Yeah, it is here, actually, it's okay, yeah.
+
+1178
+01:42:04.070 --> 01:42:05.230
+Nitin Srivastava: Check it is here.
+
+1179
+01:42:05.680 --> 01:42:08.369
+Ramakrishna T: Yeah, anyways, any queries, you ask me.
+
+1180
+01:42:09.250 --> 01:42:10.209
+Nitin Srivastava: No, no, no.
+
+1181
+01:42:10.210 --> 01:42:12.570
+Tech Certs Support: Yeah, I… I did join. Hello.
+
+1182
+01:42:14.000 --> 01:42:16.790
+Ramakrishna T: checkl, today my network is bad, man, it looks like…
+
+1183
+01:42:16.790 --> 01:42:20.659
+Tech Certs Support: So, yeah. Glad I was able to join on the time.
+
+1184
+01:42:22.930 --> 01:42:28.820
+Ramakrishna T: So, I'm finishing it. So, I said, like, I will continue the next week, probably the left-out time, okay?
+
+1185
+01:42:28.950 --> 01:42:30.560
+Tech Certs Support: The same topic?
+
+1186
+01:42:30.940 --> 01:42:37.229
+Ramakrishna T: Yes, the same topic, and plus the… I'll take the next week's topics as well. So, I am going to continue the additional hours.
+
+1187
+01:42:38.070 --> 01:42:43.590
+Tech Certs Support: Okay, fine. I can see your message to add a 1 hour extra, 4 hours.
+
+1188
+01:42:44.310 --> 01:42:46.190
+Tech Certs Support: Yeah. Okay, fine, we'll do that.
+
+1189
+01:42:46.510 --> 01:42:51.210
+Nitin Srivastava: Shaqil, you will be continued for the whole, Particular batch, right?
+
+1190
+01:42:52.350 --> 01:42:53.629
+Tech Certs Support: Unfortunately, no.
+
+1191
+01:42:54.540 --> 01:42:55.500
+Tech Certs Support: Not funny.
+
+1192
+01:42:55.940 --> 01:42:56.910
+Nitin Srivastava: Okay.
+
+1193
+01:42:57.220 --> 01:43:08.949
+Tech Certs Support: But still, I'll check, because Ramakrishna needs some support, so I'll take an approval for that. If that is the case, then I'll be there throughout this… at least for this entire bad journey, I'll be there.
+
+1194
+01:43:09.020 --> 01:43:10.210
+Nitin Srivastava: But thank you, thank you.
+
+1195
+01:43:10.210 --> 01:43:10.770
+Sankalp Sughosh: Mother…
+
+1196
+01:43:10.770 --> 01:43:14.710
+Nitin Srivastava: Because of where you… Yes, yes, I did. No, no, no.
+
+1197
+01:43:14.710 --> 01:43:17.639
+Sankalp Sughosh: Week 6. Week 6, graded assignment.
+
+1198
+01:43:17.640 --> 01:43:19.069
+Tech Certs Support: What is the end date?
+
+1199
+01:43:20.560 --> 01:43:26.070
+Tech Certs Support: What is the end date? Okay, give me… what end date can you see on the page? What is it due?
+
+1200
+01:43:26.070 --> 01:43:26.660
+Sankalp Sughosh: Mom's open.
+
+1201
+01:43:26.660 --> 01:43:27.190
+Tech Certs Support: See?
+
+1202
+01:43:27.580 --> 01:43:28.800
+Sankalp Sughosh: Due to different methods.
+
+1203
+01:43:28.800 --> 01:43:32.820
+Tech Certs Support: third merger, right? And what was the due date for week 2? Sorry, week 4?
+
+1204
+01:43:33.350 --> 01:43:37.580
+Tech Certs Support: So I think for… so I think for week 4, it is sorted, right? I mean, everyone has submitted…
+
+1205
+01:43:37.610 --> 01:43:40.760
+Kishlay Kumar: It was 2nd of March for Week 4, so accordingly.
+
+1206
+01:43:40.760 --> 01:43:41.679
+Abdul Nagur Ali Khan Mohammad: Take this assignment.
+
+1207
+01:43:41.680 --> 01:43:42.000
+Kishlay Kumar: votes.
+
+1208
+01:43:42.000 --> 01:43:47.239
+Abdul Nagur Ali Khan Mohammad: There are some laziest like me, I haven't submitted yet, but I will try to submit it.
+
+1209
+01:43:47.240 --> 01:43:53.299
+Tech Certs Support: It will… it will still give you an option to submit, so not an issue. For week 6, I think I've already.
+
+1210
+01:43:54.090 --> 01:43:56.070
+Tech Certs Support: Raise this request with this book.
+
+1211
+01:43:56.190 --> 01:44:00.909
+Tech Certs Support: Mostly, they will, add a few more weeks, maybe 2 weeks max, so we'll do that.
+
+1212
+01:44:01.150 --> 01:44:02.440
+Sankalp Sughosh: No, that's good news.
+
+1213
+01:44:02.440 --> 01:44:03.590
+Nitin Srivastava: Shaill, Shaquille.
+
+1214
+01:44:03.590 --> 01:44:04.150
+Meera Venkatesan: P.
+
+1215
+01:44:04.150 --> 01:44:15.549
+Nitin Srivastava: We really need you, please continue with this batch. If you need any help from our end, we can also send an email to your escalation manager, Hari, but please stay with us, the complete journey with the batch, right?
+
+1216
+01:44:15.550 --> 01:44:20.490
+Tech Certs Support: Sure, sure. I'll… let me… let me check how I can put this in front of my managers and everything.
+
+1217
+01:44:20.490 --> 01:44:23.660
+Nitin Srivastava: No, if you want any email, will provide.
+
+1218
+01:44:23.660 --> 01:44:24.170
+Abhishek Srivastava: Yeah, because…
+
+1219
+01:44:24.170 --> 01:44:27.479
+Tech Certs Support: No, no, that's okay, I can take care of it, no issues. Let me have a…
+
+1220
+01:44:27.480 --> 01:44:30.100
+Nitin Srivastava: Yes, but yesterday, we have discussed, right?
+
+1221
+01:44:33.970 --> 01:44:34.350
+Tech Certs Support: It is.
+
+1222
+01:44:34.350 --> 01:44:47.569
+Deep Mendiratta: small request, if I can make these assignments, these dates can be open, this window can be… submission window can be open, because there are people, let's say, in my case, I'm an absolute beginner, I need more time to come up to space.
+
+1223
+01:44:47.570 --> 01:44:49.440
+Tech Certs Support: That's okay, that's okay, you can still.
+
+1224
+01:44:49.440 --> 01:44:52.940
+Deep Mendiratta: Go and close the window. I would like to complete all the assignments. No, no, see, I tell you.
+
+1225
+01:44:52.940 --> 01:45:02.669
+Tech Certs Support: I'll tell you, the window will never be closed, don't worry. You can see the due date as per the structure, but you still have time to submit all these projects before the program end date, so don't worry.
+
+1226
+01:45:02.670 --> 01:45:07.800
+Deep Mendiratta: Sure, sure. Just, just, making that disclaimer, because I've always been a backpencher, always been…
+
+1227
+01:45:07.800 --> 01:45:21.640
+Tech Certs Support: Actually, even we understand that being a working professional is not an easy task, but still, again, this aging care program is a very short duration, so we have to pace up a little bit according to the structure and everything, so don't worry about the projects, it will be taken care of. The only need is that
+
+1228
+01:45:21.640 --> 01:45:33.830
+Tech Certs Support: you submit the project in a complete manner so that you don't do back and forth. Because what I've observed in the previous batches and what I've experienced, that learners, they just look at the due date, they submit it, then their grading gets a dip.
+
+1229
+01:45:33.930 --> 01:45:35.080
+Tech Certs Support: I don't want that.
+
+1230
+01:45:35.480 --> 01:45:42.460
+Tech Certs Support: So, better you take some time, that's okay if you… even if you take extra few weeks, that's okay, but make sure it is completed and then submitted.
+
+1231
+01:45:42.840 --> 01:45:59.759
+Sankalp Sughosh: So, Shaquille, we have submitted this first one. Can you just give us some advice whether that's fine? We tried to, like, I tried to align with whatever the requirement for submission, but please just have a quick analysis whether the submission is in the right order.
+
+1232
+01:46:00.350 --> 01:46:08.490
+Tech Certs Support: well, I wish I could have been a part of the grading team, but I'm not the part of that, unfortunately. But the grading team grading team will give you that analysis.
+
+1233
+01:46:08.490 --> 01:46:10.959
+Sankalp Sughosh: A little bit back, right? We can then improve.
+
+1234
+01:46:10.960 --> 01:46:14.570
+Tech Certs Support: They will be able to… because, see, once your projects are evaluated.
+
+1235
+01:46:14.670 --> 01:46:27.380
+Tech Certs Support: The grading team will share the detailed observation in the comment section, you can go through with that. And still, in case if you feel that the grading, whatever you have scored, is not up to the mark, you need some rectification, just send an email to us, we'll check.
+
+1236
+01:46:27.570 --> 01:46:36.180
+Sankalp Sughosh: Hope they are not failing everything. Today's Python file, right? We requested Rama to upload today's Python file.
+
+1237
+01:46:36.180 --> 01:46:43.389
+Tech Certs Support: I get it from you. I get it from him, don't worry. Mostly by today, end of the day, or by tomorrow you should be able to see those files on the canvas itself.
+
+1238
+01:46:43.390 --> 01:46:49.500
+Nitin Srivastava: One more question, can every… can anyone please tell me how many assignments are still…
+
+1239
+01:46:49.690 --> 01:46:56.149
+Nitin Srivastava: Pending from… in the… pending from… for anyone in the wedge.
+
+1240
+01:46:56.550 --> 01:46:59.370
+Vivek Vishwakarma: How many statements we will have to complete, right?
+
+1241
+01:47:00.360 --> 01:47:01.550
+Vivek Vishwakarma: As of now, too.
+
+1242
+01:47:05.110 --> 01:47:08.499
+Vivek Vishwakarma: Week 4 and week 6.
+
+1243
+01:47:09.080 --> 01:47:09.700
+Vivek Vishwakarma: Cheers.
+
+1244
+01:47:12.600 --> 01:47:15.529
+Ravi Pitla: Yeah, Shaquille. Yeah, even, just a concern.
+
+1245
+01:47:15.910 --> 01:47:30.489
+Ravi Pitla: if you have that submission, it's in just not a PDF. If it is… supports the files and the explanation differently, that's… it's helpful, actually. So, again, I need to find some tools, so…
+
+1246
+01:47:30.490 --> 01:47:36.070
+Ravi Pitla: to make it all into one PDF, and yeah, that is also, I need to spend some time, yeah, optimizing.
+
+1247
+01:47:36.070 --> 01:47:36.700
+Tech Certs Support: At least you can…
+
+1248
+01:47:36.700 --> 01:47:38.379
+Deepak Sundriyal: Okay, you can give two files.
+
+1249
+01:47:38.550 --> 01:47:45.340
+Tech Certs Support: That's okay, yeah. At least you can upload the two files. Keep the observation PDF files separate and the other coding files separate. That's okay.
+
+1250
+01:47:45.940 --> 01:47:57.219
+Ravi Pitla: That's fine, okay, okay, yeah, thank you, yeah. So, it means, we have Part A and Part B, so it is going to be, 3 files, right? That, that is going to be fine? So, for Part A…
+
+1251
+01:47:57.220 --> 01:47:59.929
+Tech Certs Support: You can consult it into one, I mean, if it is possible.
+
+1252
+01:48:00.980 --> 01:48:11.069
+Tech Certs Support: I mean, you can just try out. If it is possible, you can just have one file where you can include part A and part B together, and then you can attach the coding files separately if needed.
+
+1253
+01:48:12.210 --> 01:48:16.590
+Abhishek Srivastava: Can I just put everything into a zip and give it to you? Like, PDF for the…
+
+1254
+01:48:16.750 --> 01:48:20.069
+Abhishek Srivastava: Yes, you can do that, but just follow the naming convention.
+
+1255
+01:48:20.250 --> 01:48:24.990
+Tech Certs Support: The naming convention, which you can see on the grading page, just follow that, and you can create a zip also, that's okay.
+
+1256
+01:48:25.240 --> 01:48:25.810
+Abhishek Srivastava: Okay.
+
+1257
+01:48:25.810 --> 01:48:26.370
+Kannan Ramasubramanian: What's funny?
+
+1258
+01:48:26.610 --> 01:48:31.510
+Tech Certs Support: Okay, Wendy, but can you… can you check if Zip is allowed? I'm not sure about that.
+
+1259
+01:48:34.660 --> 01:48:37.159
+Tech Certs Support: Is it mentioned .zap? Okay, then it is okay.
+
+1260
+01:48:37.160 --> 01:48:37.540
+Rahul Surana: Yep.
+
+1261
+01:48:37.870 --> 01:48:47.549
+Abdul Nagur Ali Khan Mohammad: So, we can maintain separate files, like part A, one file, part B, one file, different coding files, and zip all the files, and then upload. Maybe it's… is it okay?
+
+1262
+01:48:49.070 --> 01:48:52.570
+Tech Certs Support: If you can share your screen, I can guide you. I'm not able to see your screen.
+
+1263
+01:48:53.630 --> 01:48:56.540
+Abdul Nagur Ali Khan Mohammad: Sorry, I'm using my office laptop, that's another mistake.
+
+1264
+01:48:56.540 --> 01:48:58.880
+Tech Certs Support: That's okay, that's okay. Can you repeat? I missed that?
+
+1265
+01:48:58.930 --> 01:49:01.880
+Abdul Nagur Ali Khan Mohammad: What I'm saying is, we have Part A and Part B, right?
+
+1266
+01:49:02.170 --> 01:49:06.910
+Abdul Nagur Ali Khan Mohammad: So, there are coded files, and also documentation created in PDF.
+
+1267
+01:49:06.910 --> 01:49:15.989
+Tech Certs Support: So that is what I said. You can collate all your observation for Part A, Part B into one single PDF file, okay? Then the coding file, you can attach it separately.
+
+1268
+01:49:17.080 --> 01:49:23.389
+Abdul Nagur Ali Khan Mohammad: Okay, and, zip all of them, and, create… Upload a zip file, hello, yeah.
+
+1269
+01:49:24.590 --> 01:49:28.390
+kaviya Natarajan: When can we see the grades for our assignments?
+
+1270
+01:49:29.260 --> 01:49:30.000
+kaviya Natarajan: I wish.
+
+1271
+01:49:30.560 --> 01:49:37.060
+Tech Certs Support: For week 4, it was 2nd March, so from 2nd March onwards, within 15 to 20 days, you should be able to see the grids.
+
+1272
+01:49:37.670 --> 01:49:40.119
+kaviya Natarajan: Okay, from 2nd March, within 15 to 20.
+
+1273
+01:49:40.120 --> 01:49:47.589
+Tech Certs Support: So tomorrow is the last date. From 3rd March onward, they will start evaluating, and within 15 days, it will be evaluated.
+
+1274
+01:49:48.160 --> 01:49:53.230
+kaviya Natarajan: So, I think, I saw two items in submitting, right? So…
+
+1275
+01:49:54.620 --> 01:49:59.069
+Tech Certs Support: So let's say if you submit a project right now, okay, or maybe after a week.
+
+1276
+01:49:59.170 --> 01:50:13.959
+Tech Certs Support: And then it has been graded, and for some reason, you're not happy with the grade. You think that my score should have been more than 90, the way we have worked on our projects. Then you can submit it again, and then raise a re-evaluation request.
+
+1277
+01:50:14.820 --> 01:50:16.789
+Abdul Nagur Ali Khan Mohammad: And next time, if we get 80.
+
+1278
+01:50:19.310 --> 01:50:22.899
+Tech Certs Support: Again, since we have been allotted two attempts, you can do the improvising.
+
+1279
+01:50:23.910 --> 01:50:27.140
+Abdul Nagur Ali Khan Mohammad: Okay, okay. Maybe to not take the best one, right?
+
+1280
+01:50:27.480 --> 01:50:28.520
+Balamurugan Kandan: Yep.
+
+1281
+01:50:28.520 --> 01:50:29.210
+Abdul Nagur Ali Khan Mohammad: -Oh.
+
+1282
+01:50:30.110 --> 01:50:40.739
+Balamurugan Kandan: Sir, one more question here. So I'm just targeting only on the mini projects week 4 and week 6. I didn't, couple of, practice assignments, I haven't, touched it. Is it fine?
+
+1283
+01:50:40.970 --> 01:50:44.120
+Tech Certs Support: That's okay. Practice is only meant for you to practice, nothing else.
+
+1284
+01:50:44.120 --> 01:50:44.830
+Balamurugan Kandan: Okay.
+
+1285
+01:50:44.830 --> 01:50:47.200
+Tech Certs Support: It has nothing to be submitted nowhere else.
+
+1286
+01:50:47.220 --> 01:50:49.690
+Balamurugan Kandan: Only projects which are graded, that is important.
+
+1287
+01:50:50.160 --> 01:50:51.450
+Balamurugan Kandan: Thank you, thank you so much.
+
+1288
+01:50:51.450 --> 01:50:52.390
+Tech Certs Support: Most welcome.
+
+1289
+01:50:57.050 --> 01:51:01.979
+Kishlay Kumar: So next week, 4, I mean, the extension of 1 hour is only for one day, or for both the days?
+
+1290
+01:51:02.670 --> 01:51:05.300
+Tech Certs Support: Both the days will do it. Why to keep only one?
+
+1291
+01:51:05.480 --> 01:51:08.559
+Tech Certs Support: Let's make it 4 hours for next Saturday and Sunday.
+
+1292
+01:51:09.240 --> 01:51:13.650
+Tech Certs Support: So that whatever queries you have, and whatever topics which have been pending, that can be completed.
+
+1293
+01:51:14.390 --> 01:51:17.030
+Balamurugan Kandan: Okay, thank you. And can we drop off now, today?
+
+1294
+01:51:17.030 --> 01:51:19.649
+Deepak Sundriyal: Let's start at 9. I suggest…
+
+1295
+01:51:20.400 --> 01:51:22.709
+Deepak Sundriyal: Because we'll end up by 2.30 otherwise.
+
+1296
+01:51:22.710 --> 01:51:25.479
+Kishlay Kumar: the, I think we can start by 9 in that case.
+
+1297
+01:51:25.480 --> 01:51:34.090
+Kiran Kumar Reddy C: Okay, we can start by 9.30, if not, that will… 9.30 is better, actually. No, no, 9.30 will be very early, I think, actually.
+
+1298
+01:51:35.100 --> 01:51:37.969
+Kiran Kumar Reddy C: We have an,
+
+1299
+01:51:37.970 --> 01:51:40.609
+Ravi Pitla: Same time, and we can extend for 1 hour.
+
+1300
+01:51:40.610 --> 01:51:46.779
+Tech Certs Support: Is there a change in time? Because I just heard we have to add one more hour to make this session 4 hours.
+
+1301
+01:51:48.090 --> 01:51:49.469
+Balamurugan Kandan: Can we drop off today?
+
+1302
+01:51:49.960 --> 01:51:52.010
+Tech Certs Support: Yes, let me just… if there isn't.
+
+1303
+01:51:52.010 --> 01:51:56.400
+Kiran Kumar Reddy C: On the timings, just please convey it a little bit.
+
+1304
+01:51:56.400 --> 01:51:57.269
+Tech Certs Support: 10 AM, right?
+
+1305
+01:51:57.270 --> 01:51:57.600
+Kiran Kumar Reddy C: Then.
+
+1306
+01:51:57.600 --> 01:51:59.440
+Kishlay Kumar: 10 to 2 or 9 to 1, that's the.
+
+1307
+01:51:59.440 --> 01:52:00.490
+Kiran Kumar Reddy C: I'll tell you what, yeah.
+
+1308
+01:52:00.490 --> 01:52:03.460
+Tech Certs Support: No, from 10… from 10 only. Y to… why 9?
+
+1309
+01:52:04.260 --> 01:52:07.719
+Ravi Pitla: He said it, he will, like, he will extend, but, he didn't say it.
+
+1310
+01:52:07.720 --> 01:52:16.169
+Tech Certs Support: Yeah, we will extend, but we not change the time, because, see, the timing should be feasible for everyone. I mean, 9am is very early, if I'm not wrong.
+
+1311
+01:52:16.170 --> 01:52:17.290
+Ravi Pitla: That is what I got.
+
+1312
+01:52:17.480 --> 01:52:21.980
+Tech Certs Support: Let's keep the time… let's keep the time… let's keep the time same, 10 AM.
+
+1313
+01:52:21.980 --> 01:52:22.420
+Kiran Kumar Reddy C: Interesting.
+
+1314
+01:52:22.420 --> 01:52:31.069
+Tech Certs Support: If we want, we can take more break, more break in the sense, instead of 10 minutes, we can take 15 minutes of break in between, then we can continue with that.
+
+1315
+01:52:31.500 --> 01:52:32.060
+Tarun Rochwani: Bye.
+
+1316
+01:52:33.160 --> 01:52:37.450
+Tech Certs Support: Yeah, then we'll start at 10 next week, okay? Okay, fine.
+
+1317
+01:52:39.980 --> 01:52:42.240
+Tech Certs Support: Any more questions before I close this?
+
+1318
+01:52:43.160 --> 01:52:46.759
+Tarun Rochwani: Yeah, hi, I'm sorry, I just got disconnected in between.
+
+1319
+01:52:46.760 --> 01:52:47.210
+Tech Certs Support: Okay.
+
+1320
+01:52:47.210 --> 01:52:59.260
+Tarun Rochwani: Can you just, again, let me know, in terms of the graded assignments for the week 6, etc, when is the final submission date? What's the extension allowed for?
+
+1321
+01:52:59.550 --> 01:53:06.139
+Tech Certs Support: 2 weeks. So, as of now, you can see March 3, March 3rd, right? So, we will, like, we will extend 2 more weeks for that.
+
+1322
+01:53:06.580 --> 01:53:08.830
+Tech Certs Support: So yeah, and see, even if you,
+
+1323
+01:53:09.190 --> 01:53:17.709
+Tech Certs Support: don't submit it… don't submit the project before that due deadline, you can still, submit it after that. That's not an issue. You can take some time.
+
+1324
+01:53:19.140 --> 01:53:21.960
+Tarun Rochwani: Sorry, can you repeat the last part? Don't submit them?
+
+1325
+01:53:21.960 --> 01:53:23.749
+Tech Certs Support: Don't submit, sorry. As in,
+
+1326
+01:53:23.970 --> 01:53:39.490
+Tech Certs Support: For tomorrow, we will extend the due date for that week 6 project for a couple of more weeks, okay? For more 2 weeks. Okay. If you think you still need more time, you can take some time for that, then you can submit it. That's okay. Don't just focus on the due date for now.
+
+1327
+01:53:40.410 --> 01:53:41.740
+Tarun Rochwani: Okay, fine. Thank you.
+
+1328
+01:53:42.170 --> 01:53:43.160
+Tech Certs Support: Most welcome.
+
+1329
+01:54:00.270 --> 01:54:03.689
+Tech Certs Support: Dipti, I think you have a question?
+
+1330
+01:54:05.910 --> 01:54:06.880
+Tech Certs Support: But that's okay.
+
+1331
+01:54:06.880 --> 01:54:10.370
+Deepti A: Take your time. That's okay, take your time, no issues.
+
+1332
+01:54:10.370 --> 01:54:16.369
+Tech Certs Support: Watch all the previous recordings, and then you can start attempting your project. That's okay, no issues.
+
+1333
+01:54:16.370 --> 01:54:17.890
+Deepti A: Okay, thank you.
+
+1334
+01:54:18.200 --> 01:54:19.469
+Nitin Srivastava: Thank you, Shaquille, thank you.
+
+1335
+01:54:19.800 --> 01:54:20.640
+Nitin Srivastava: almost okay.
+
+1336
+01:54:22.530 --> 01:54:23.790
+Tech Certs Support: Thank you, bye-bye, take care.
+
+1337
+01:54:23.790 --> 01:54:25.690
+Abhishek Srivastava: Thank you.
+
+1338
+01:54:25.890 --> 01:54:26.580
+Deepti A: Me.
+

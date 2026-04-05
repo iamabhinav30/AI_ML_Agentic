@@ -1,0 +1,4318 @@
+WEBVTT
+
+1
+00:00:46.270 --> 00:00:49.150
+Prof. Madhusudhanan: Devanshim, I hope my screen is visible.
+
+2
+00:00:49.510 --> 00:00:50.690
+Webinar Specialist: Yes, it is visible.
+
+3
+00:00:50.690 --> 00:00:52.000
+Prof. Madhusudhanan: you, I will start.
+
+4
+00:04:31.280 --> 00:04:32.650
+Webinar Specialist: Hello, Professor.
+
+5
+00:04:35.600 --> 00:04:37.609
+Prof. Madhusudhanan: Hi, Devanishi, can I start?
+
+6
+00:04:37.610 --> 00:04:39.060
+Webinar Specialist: Yes, yes, please.
+
+7
+00:04:39.410 --> 00:04:41.280
+Prof. Madhusudhanan: Yes, give me a boost. Okay.
+
+8
+00:04:42.080 --> 00:04:42.990
+Prof. Madhusudhanan: Thank you.
+
+9
+00:05:08.640 --> 00:05:16.869
+Prof. Madhusudhanan: Okay, so… Good evening, everyone. Somebody has connected outside of India, and good morning, good afternoon.
+
+10
+00:05:18.240 --> 00:05:20.589
+Prof. Madhusudhanan: Right, so I'm Madhusana.
+
+11
+00:05:21.710 --> 00:05:24.449
+Prof. Madhusudhanan: So today, today we'll talk about…
+
+12
+00:05:25.110 --> 00:05:35.519
+Prof. Madhusudhanan: Maybe, you know, I have about 18 years of experience in AI out of my 32 years of experience, 32, 33 years of work experience in the IT industry.
+
+13
+00:05:36.760 --> 00:05:39.450
+Prof. Madhusudhanan: So last 18 years, I've been…
+
+14
+00:05:39.790 --> 00:05:43.610
+Prof. Madhusudhanan: in AI, PhD in AI, postdoctoral in AI.
+
+15
+00:05:43.770 --> 00:05:48.190
+Prof. Madhusudhanan: And, I also… Build LLMs.
+
+16
+00:05:48.530 --> 00:05:54.780
+Prof. Madhusudhanan: So, maybe I can share some of your… some of my experiences, and I'd be happy to…
+
+17
+00:05:55.060 --> 00:05:56.850
+Prof. Madhusudhanan: Take forward questions.
+
+18
+00:05:57.450 --> 00:06:01.429
+Prof. Madhusudhanan: So… what I'll do is, maybe I'll… I'll…
+
+19
+00:06:01.590 --> 00:06:12.290
+Prof. Madhusudhanan: speak for about 10-12 minutes, then I'll pause to take questions from the chat window, and… and at the end of the course, whatever we see here, we'll convert into.
+
+20
+00:06:12.700 --> 00:06:17.740
+Prof. Madhusudhanan: a small lab, which my colleague Balaji will… Run.
+
+21
+00:06:18.260 --> 00:06:19.220
+Prof. Madhusudhanan: Okay.
+
+22
+00:06:19.550 --> 00:06:24.470
+Prof. Madhusudhanan: So… Using the word text embeddings demystify.
+
+23
+00:06:25.420 --> 00:06:27.440
+Prof. Madhusudhanan: So, what is text embodying?
+
+24
+00:06:27.930 --> 00:06:32.920
+Prof. Madhusudhanan: Right? So, Let us Try to understand
+
+25
+00:06:33.290 --> 00:06:42.760
+Prof. Madhusudhanan: today's scenario. We have started seeing systems which are really Intelligent. I'll not say intelligent.
+
+26
+00:06:42.930 --> 00:06:53.390
+Prof. Madhusudhanan: I'm talking of systems which are… Oh, is my volume… No, I need to…
+
+27
+00:06:53.840 --> 00:06:58.409
+Prof. Madhusudhanan: Is it… is my volume low? Is my… this thing low? It's good? Okay.
+
+28
+00:06:58.590 --> 00:06:59.680
+Prof. Madhusudhanan: Okay, fine.
+
+29
+00:07:00.790 --> 00:07:01.950
+Prof. Madhusudhanan: Okay, thanks.
+
+30
+00:07:02.730 --> 00:07:09.200
+Prof. Madhusudhanan: So, there must be so much of confusion, so much of confusion, you know, I'm doing this course, and…
+
+31
+00:07:10.150 --> 00:07:12.219
+Prof. Madhusudhanan: Suddenly, I have a doubt.
+
+32
+00:07:12.810 --> 00:07:13.920
+Prof. Madhusudhanan: weather…
+
+33
+00:07:15.070 --> 00:07:20.510
+Prof. Madhusudhanan: this course is going to help me, because we see that anything and everything can be done using ChatGPT.
+
+34
+00:07:20.810 --> 00:07:21.600
+Prof. Madhusudhanan: Right?
+
+35
+00:07:24.050 --> 00:07:27.669
+Prof. Madhusudhanan: So… Code generation is by ChatGPT.
+
+36
+00:07:28.570 --> 00:07:31.020
+Prof. Madhusudhanan: Code generation is by ChatGPT.
+
+37
+00:07:32.530 --> 00:07:40.229
+Prof. Madhusudhanan: Testing can be done using ChatGPT. So, when I say ChatGPT, I'm talking of a frontier model. It could be Crock, it could be Cloud, it could be…
+
+38
+00:07:40.440 --> 00:07:42.719
+Prof. Madhusudhanan: No? Perplexity, whatever.
+
+39
+00:07:43.060 --> 00:07:45.530
+Prof. Madhusudhanan: Frontier model that we are talking about.
+
+40
+00:07:48.400 --> 00:07:57.420
+Prof. Madhusudhanan: We will also try to understand how… Jobs are actually not lost.
+
+41
+00:07:59.180 --> 00:08:01.140
+Prof. Madhusudhanan: But jobs are going by.
+
+42
+00:08:01.890 --> 00:08:04.389
+Prof. Madhusudhanan: going to increase by at least 3X.
+
+43
+00:08:06.200 --> 00:08:10.990
+Prof. Madhusudhanan: So that is going to be… then, right now, we are in the hype space.
+
+44
+00:08:11.520 --> 00:08:14.870
+Prof. Madhusudhanan: When I say we are in the hype phase, what is happening?
+
+45
+00:08:14.970 --> 00:08:22.579
+Prof. Madhusudhanan: Right? Lot of hype is created. We had AI, something where I'm talking of 19… say, 95.
+
+46
+00:08:23.200 --> 00:08:24.910
+Prof. Madhusudhanan: When we all started.
+
+47
+00:08:26.010 --> 00:08:27.620
+Prof. Madhusudhanan: It was not known.
+
+48
+00:08:27.760 --> 00:08:30.589
+Prof. Madhusudhanan: Then slowly, it started increasing.
+
+49
+00:08:30.690 --> 00:08:31.940
+Prof. Madhusudhanan: Maybe by…
+
+50
+00:08:32.600 --> 00:08:43.110
+Prof. Madhusudhanan: 2010, people started talking about machine learning, data mining, and so on and so forth. Then, suddenly, something happened. In 2017, we had
+
+51
+00:08:43.740 --> 00:08:49.059
+Prof. Madhusudhanan: Attention is all you need, and… We saw it growing steeply.
+
+52
+00:08:51.750 --> 00:08:56.519
+Prof. Madhusudhanan: Right. Right now… Slowly, it'll start to plateau.
+
+53
+00:08:59.860 --> 00:09:04.620
+Prof. Madhusudhanan: Right? Then we expect a crash to happen.
+
+54
+00:09:05.410 --> 00:09:07.769
+Prof. Madhusudhanan: We'll expect a crash to happen.
+
+55
+00:09:09.600 --> 00:09:11.239
+Prof. Madhusudhanan: Then it stabilizes.
+
+56
+00:09:14.100 --> 00:09:19.939
+Prof. Madhusudhanan: This is how your AI ecosystem is going to be. Maybe we are here somewhere.
+
+57
+00:09:22.220 --> 00:09:26.799
+Prof. Madhusudhanan: So, what are the… what are the components driving AI?
+
+58
+00:09:28.160 --> 00:09:29.830
+Prof. Madhusudhanan: Right? Hype.
+
+59
+00:09:30.080 --> 00:09:43.150
+Prof. Madhusudhanan: We all think, yeah, yeah, I can do everything. Most of the time, no. Yes, it can help me, it can accelerate my task, but it can never replace humans at this point of time, or in the near future also.
+
+60
+00:09:43.350 --> 00:09:52.789
+Prof. Madhusudhanan: So, what is going to happen is, there is a lot of hype, a lot of startups, the word AI is literally used anywhere and everywhere. You talk of AI.
+
+61
+00:09:53.070 --> 00:09:57.629
+Prof. Madhusudhanan: product company, you have manufacturing company, everybody uses the word AI.
+
+62
+00:09:57.860 --> 00:10:00.129
+Prof. Madhusudhanan: Because that is what is selling now.
+
+63
+00:10:00.400 --> 00:10:05.550
+Prof. Madhusudhanan: Startups are using the word AI, and they're getting Investments.
+
+64
+00:10:06.350 --> 00:10:11.739
+Prof. Madhusudhanan: Right? And, people who do a course in AI, who understand some tools.
+
+65
+00:10:12.210 --> 00:10:18.909
+Prof. Madhusudhanan: are paid handsomely, maybe no? That is what you get advertised as, 2X, 2.5X, whatever it is.
+
+66
+00:10:21.740 --> 00:10:24.600
+Prof. Madhusudhanan: Now, my questions are very simple.
+
+67
+00:10:24.890 --> 00:10:29.859
+Prof. Madhusudhanan: If AI can gen… no, if a frontier model can generate code, why do I require it?
+
+68
+00:10:32.030 --> 00:10:32.850
+Prof. Madhusudhanan: Got it?
+
+69
+00:10:33.710 --> 00:10:41.059
+Prof. Madhusudhanan: So, this question is something which we'll address, and then try to more… understand more about the technology.
+
+70
+00:10:42.700 --> 00:10:45.069
+Prof. Madhusudhanan: Today, when you look at AI,
+
+71
+00:10:45.390 --> 00:10:47.059
+Prof. Madhusudhanan: Today, when we look at AI,
+
+72
+00:10:47.440 --> 00:10:52.670
+Prof. Madhusudhanan: The core is not the model. The core is the data.
+
+73
+00:10:53.750 --> 00:10:55.500
+Prof. Madhusudhanan: The core is the data.
+
+74
+00:10:56.120 --> 00:11:00.599
+Prof. Madhusudhanan: Right? And under this data, you have a model.
+
+75
+00:11:00.910 --> 00:11:03.810
+Prof. Madhusudhanan: Whatever model. Today, no, most of it
+
+76
+00:11:03.950 --> 00:11:06.459
+Prof. Madhusudhanan: We are trying to sell ChatGPT.
+
+77
+00:11:06.870 --> 00:11:09.809
+Prof. Madhusudhanan: through their API, Grok through its API,
+
+78
+00:11:10.100 --> 00:11:14.589
+Prof. Madhusudhanan: Right? So, this is where we come across various terms.
+
+79
+00:11:15.080 --> 00:11:18.990
+Prof. Madhusudhanan: We come across terms like, Yamelotz.
+
+80
+00:11:19.820 --> 00:11:20.680
+Prof. Madhusudhanan: Right?
+
+81
+00:11:21.170 --> 00:11:25.709
+Prof. Madhusudhanan: We come across terms like, you know, data engineering.
+
+82
+00:11:26.230 --> 00:11:34.960
+Prof. Madhusudhanan: data tuning, so on and so forth. A lot of terms, but no MLOps. But no, what I would say is we should look at model ops.
+
+83
+00:11:36.580 --> 00:11:37.670
+Prof. Madhusudhanan: model.
+
+84
+00:11:38.540 --> 00:11:39.340
+Prof. Madhusudhanan: Oops.
+
+85
+00:11:40.520 --> 00:11:44.659
+Prof. Madhusudhanan: That means, what is the best model for my task?
+
+86
+00:11:45.020 --> 00:11:55.730
+Prof. Madhusudhanan: That is going to be very important. Today, you know, you can go to ChatGPT, or, you know, one of these tools and ask, when should I use Grop, when should I use ChatGPT, when should I use Gemini, and so on and so forth.
+
+87
+00:11:55.830 --> 00:12:05.190
+Prof. Madhusudhanan: Right? You might get some biased answer. I'll use the word biased answer, because each has their… each person has their own preference, and the model is also biased.
+
+88
+00:12:06.010 --> 00:12:09.249
+Prof. Madhusudhanan: So we'll try to understand what is this Model Ops.
+
+89
+00:12:09.680 --> 00:12:16.830
+Prof. Madhusudhanan: Then, another important component that is going to become over the model is the cost.
+
+90
+00:12:19.100 --> 00:12:21.280
+Prof. Madhusudhanan: So, I'll call it as the cost ops.
+
+91
+00:12:22.070 --> 00:12:23.850
+Prof. Madhusudhanan: I'll call it our costumes.
+
+92
+00:12:24.150 --> 00:12:29.559
+Prof. Madhusudhanan: Today, we are not bothered about the cost of generation of tokens.
+
+93
+00:12:30.380 --> 00:12:38.540
+Prof. Madhusudhanan: The moment you get into enterprise solutioning, because proof of concept, I am not bothered about the cost. I buy some
+
+94
+00:12:38.640 --> 00:12:39.450
+Prof. Madhusudhanan: Nope.
+
+95
+00:12:39.600 --> 00:12:47.210
+Prof. Madhusudhanan: web services like Amazon, put my model, train the model, do some rack pipeline, get my own book.
+
+96
+00:12:48.650 --> 00:13:00.329
+Prof. Madhusudhanan: Right? But… Let us say I'm trying to replace 50 engineers, or 50 tech support people, With a model.
+
+97
+00:13:01.570 --> 00:13:10.799
+Prof. Madhusudhanan: The model by itself will not work. You require some sort of support to hold, you know, run the model. Maybe instead of 50, right now I have only 5 people.
+
+98
+00:13:10.970 --> 00:13:13.899
+Prof. Madhusudhanan: So, everybody is happy saying that we have reduced.
+
+99
+00:13:14.690 --> 00:13:25.069
+Prof. Madhusudhanan: the cost of 50 people, right? Or 45 people. So, 45 people might cost me 1 lakh, which is 45 lakhs per month.
+
+100
+00:13:25.600 --> 00:13:29.570
+Prof. Madhusudhanan: 45 lakhs per month. I have reduced from 50 Right?
+
+101
+00:13:30.020 --> 00:13:36.780
+Prof. Madhusudhanan: I have only 5 people now, so I'm… maybe now I'm paying double the salary for 5 people, so…
+
+102
+00:13:37.030 --> 00:13:38.209
+Prof. Madhusudhanan: Whatever it is.
+
+103
+00:13:38.320 --> 00:13:44.969
+Prof. Madhusudhanan: Maybe my… it may look good on paper that it is 45 lakhs, but to run the model.
+
+104
+00:13:45.640 --> 00:13:49.140
+Prof. Madhusudhanan: My cost should be less.
+
+105
+00:13:50.470 --> 00:13:57.470
+Prof. Madhusudhanan: To run the model, my cost has to be at least Less than 15 lakhs.
+
+106
+00:13:58.640 --> 00:14:01.299
+Prof. Madhusudhanan: Or else I don't see a value addition.
+
+107
+00:14:02.410 --> 00:14:07.360
+Prof. Madhusudhanan: So, how do I make this cost Come on.
+
+108
+00:14:09.060 --> 00:14:15.249
+Prof. Madhusudhanan: That is going to be the future. That means I have to select the right model, which I call as Model Ops.
+
+109
+00:14:15.690 --> 00:14:19.009
+Prof. Madhusudhanan: I have to optimize the cost, that is what I called a
+
+110
+00:14:19.140 --> 00:14:25.509
+Prof. Madhusudhanan: cost ops. So, today we talk of MLOps. I'm adding two more terms, model ops and cost props.
+
+111
+00:14:26.380 --> 00:14:31.180
+Prof. Madhusudhanan: And to do this, You need to understand the foundation.
+
+112
+00:14:33.730 --> 00:14:35.730
+Prof. Madhusudhanan: You need to understand the foundation.
+
+113
+00:14:35.830 --> 00:14:43.360
+Prof. Madhusudhanan: And that is exactly… What we'll try to… do today. We'll start with data.
+
+114
+00:14:43.820 --> 00:14:54.410
+Prof. Madhusudhanan: How this data is… Look by the transformer architecture, and what makes it Right? What makes the data?
+
+115
+00:14:54.990 --> 00:14:58.950
+Prof. Madhusudhanan: Relatable to the output that is generated.
+
+116
+00:14:59.270 --> 00:15:05.560
+Prof. Madhusudhanan: That is what we'll try to understand. So, it'll be a very simple component. That…
+
+117
+00:15:06.060 --> 00:15:07.810
+Prof. Madhusudhanan: Will tell us how to.
+
+118
+00:15:09.410 --> 00:15:29.360
+Prof. Madhusudhanan: how data actually is used. I'll talk about this, and maybe, you know, as we go forward, you'll understand what is going to be your role. It is not about code generation, it is about understanding model ops, cost ops, understanding what is the problem you're trying to solve, what is the data required to solve the problem, what is the metrics.
+
+119
+00:15:30.310 --> 00:15:33.509
+Prof. Madhusudhanan: Right? What is the long-term cost, short-term cost?
+
+120
+00:15:34.470 --> 00:15:38.180
+Prof. Madhusudhanan: Alright. So, let us start with the word embedding.
+
+121
+00:15:40.270 --> 00:15:43.300
+Prof. Madhusudhanan: So this is one of the… most…
+
+122
+00:15:43.830 --> 00:15:50.559
+Prof. Madhusudhanan: basic component when we talk of a large language model. You give an input.
+
+123
+00:15:50.740 --> 00:15:52.220
+Prof. Madhusudhanan: it gets embedded.
+
+124
+00:15:53.450 --> 00:16:02.570
+Prof. Madhusudhanan: Right? So, what does it mean? So, it converts my text into numerical values, Which my machine can understand.
+
+125
+00:16:04.080 --> 00:16:11.119
+Prof. Madhusudhanan: And I'm… no? And I'm trying to create some numerical value. I have a word called as king.
+
+126
+00:16:11.660 --> 00:16:13.570
+Prof. Madhusudhanan: It has some numerical values.
+
+127
+00:16:14.480 --> 00:16:19.569
+Prof. Madhusudhanan: Right? It is represented by a sequence of numerical values. Then I have queen.
+
+128
+00:16:20.310 --> 00:16:35.300
+Prof. Madhusudhanan: Right? If I use the Euclidean distance, I'll not use Euclidean distance, I would like to understand the angle also, so I'll use cosine similarity. If I use cosine similarity, the distance between them is going to be small.
+
+129
+00:16:37.070 --> 00:16:40.949
+Prof. Madhusudhanan: It is going to be small. So, I know they are close to each other.
+
+130
+00:16:42.520 --> 00:16:49.430
+Prof. Madhusudhanan: Right? So, if I'm talking of king, And I'm talking of… Say, potato.
+
+131
+00:16:51.510 --> 00:16:54.879
+Prof. Madhusudhanan: Maybe the distance between them is larger.
+
+132
+00:16:56.950 --> 00:17:01.700
+Prof. Madhusudhanan: Right? So, and this is exactly what helps me in…
+
+133
+00:17:01.910 --> 00:17:15.029
+Prof. Madhusudhanan: training my transformer model, or my large language model. How is it represented? Why is… why is it represented is something what we'll try to understand as we go forward.
+
+134
+00:17:17.849 --> 00:17:34.660
+Prof. Madhusudhanan: Right? So, what is vector space, right? You need to understand this vector space very clearly to understand the transformer model. So, since we are talking of vector space, let me take a simple example. Let me take a simple example.
+
+135
+00:17:35.630 --> 00:17:43.250
+Prof. Madhusudhanan: I have two axes. We are all accustomed to this X axis, Y axis, right? So, we would have used our
+
+136
+00:17:43.630 --> 00:17:46.850
+Prof. Madhusudhanan: You know, graph paper to do this.
+
+137
+00:17:49.080 --> 00:17:53.440
+Prof. Madhusudhanan: Maybe I'll number it 1, 2, 3, 4, 5.
+
+138
+00:17:54.840 --> 00:17:56.600
+Prof. Madhusudhanan: Right? I'll number it.
+
+139
+00:18:00.670 --> 00:18:06.320
+Prof. Madhusudhanan: Right? So I can take a simple example. I can take a simple example.
+
+140
+00:18:06.490 --> 00:18:10.179
+Prof. Madhusudhanan: This could be something… your food. It could be idly.
+
+141
+00:18:12.410 --> 00:18:14.110
+Prof. Madhusudhanan: This could be dosa.
+
+142
+00:18:14.860 --> 00:18:16.210
+Prof. Madhusudhanan: Torpool.
+
+143
+00:18:17.630 --> 00:18:31.589
+Prof. Madhusudhanan: So maybe my task is to classify whether the person is a North Indian or a South Indian. South Indians typically prefer eating idli, maybe, you know, the North Indian will prefer a paratha or a puri.
+
+144
+00:18:32.190 --> 00:18:34.659
+Prof. Madhusudhanan: Now I have person 1.
+
+145
+00:18:35.010 --> 00:18:39.210
+Prof. Madhusudhanan: Person 1 eats only two idlies.
+
+146
+00:18:40.620 --> 00:18:47.250
+Prof. Madhusudhanan: Right? So, X comma Y, 2, at least 2 comma 0. I might have person 2.
+
+147
+00:18:49.530 --> 00:18:53.089
+Prof. Madhusudhanan: So I have a person, too, who eats only 2 puris.
+
+148
+00:18:54.310 --> 00:18:56.029
+Prof. Madhusudhanan: 0, comma 2.
+
+149
+00:18:56.240 --> 00:19:02.769
+Prof. Madhusudhanan: Then I have a person who is very hungry. He eats for at least 1 puri.
+
+150
+00:19:03.170 --> 00:19:04.480
+Prof. Madhusudhanan: Person 3.
+
+151
+00:19:04.590 --> 00:19:06.139
+Prof. Madhusudhanan: 4, comma 1.
+
+152
+00:19:07.850 --> 00:19:20.950
+Prof. Madhusudhanan: Right? So, what do you see here? Maybe I can draw a line. In a two-dimensional space, I can draw a line separating one person, no, the idly eaters from the puri eaters.
+
+153
+00:19:21.700 --> 00:19:35.289
+Prof. Madhusudhanan: How do you draw the line? Yeah, I have enough techniques. I can look at support vector machine, whatever it is. Some regre… no, logistic regression model, and so on and so forth. But basically, I am able to split this.
+
+154
+00:19:36.350 --> 00:19:37.100
+Prof. Madhusudhanan: Right.
+
+155
+00:19:37.730 --> 00:19:38.870
+Prof. Madhusudhanan: No.
+
+156
+00:19:39.360 --> 00:19:42.769
+Prof. Madhusudhanan: Now, if I look at this distance.
+
+157
+00:19:42.980 --> 00:19:48.040
+Prof. Madhusudhanan: Using the Euclidean distance, I'll find that the distance is small.
+
+158
+00:19:49.490 --> 00:19:57.900
+Prof. Madhusudhanan: Whereas, if I try to look at the intercluster distance, or the distance between the puri eater and the idly eater, using the
+
+159
+00:19:58.540 --> 00:20:03.530
+Prof. Madhusudhanan: Euclidean distance, square root of X2 minus X1 whole square plus Y2 minus Y1 whole square.
+
+160
+00:20:03.730 --> 00:20:05.590
+Prof. Madhusudhanan: I see it is larger.
+
+161
+00:20:07.280 --> 00:20:09.639
+Prof. Madhusudhanan: Got it? Take this analogy.
+
+162
+00:20:09.770 --> 00:20:16.259
+Prof. Madhusudhanan: Take this analogy, right? What I can do now is, I can take up some of your needs.
+
+163
+00:20:16.830 --> 00:20:22.509
+Prof. Madhusudhanan: I can take up some of your names, right? So, I can… I have, you know, Abhisheikh.
+
+164
+00:20:23.120 --> 00:20:26.829
+Prof. Madhusudhanan: So, I have a Bichaykh. Let me… I have a Bich.
+
+165
+00:20:29.800 --> 00:20:31.790
+Prof. Madhusudhanan: I'll just call it as a B.
+
+166
+00:20:32.320 --> 00:20:34.719
+Prof. Madhusudhanan: I can give a unique number to him.
+
+167
+00:20:35.150 --> 00:20:38.239
+Prof. Madhusudhanan: Abhishek, I can give it as a roll number 3.
+
+168
+00:20:38.910 --> 00:20:39.680
+Prof. Madhusudhanan: Right?
+
+169
+00:20:39.900 --> 00:20:42.750
+Prof. Madhusudhanan: Then I have… Aditya.
+
+170
+00:20:45.180 --> 00:20:50.249
+Prof. Madhusudhanan: I can… he's quite below Abhishek, so I'll just put it as roll number 4.
+
+171
+00:20:52.500 --> 00:20:59.279
+Prof. Madhusudhanan: Right? I have… Then, I have, maybe, you know, I have a girl, Anu.
+
+172
+00:20:59.630 --> 00:21:03.829
+Prof. Madhusudhanan: who is below Aditya? Maybe I can give… give her a role number 5.
+
+173
+00:21:05.120 --> 00:21:12.469
+Prof. Madhusudhanan: Right? This is something which you have done. Classroom, you give proxy, and roll number is given, and you immediately turn.
+
+174
+00:21:14.000 --> 00:21:16.190
+Prof. Madhusudhanan: No. No.
+
+175
+00:21:17.350 --> 00:21:22.110
+Prof. Madhusudhanan: I can… I'll say, I'll put a comma, and put 0.
+
+176
+00:21:23.880 --> 00:21:28.690
+Prof. Madhusudhanan: Right? 0… 0, comma 1.
+
+177
+00:21:28.950 --> 00:21:30.939
+Prof. Madhusudhanan: So, can somebody tell me?
+
+178
+00:21:32.250 --> 00:21:34.020
+Prof. Madhusudhanan: Can somebody tell me?
+
+179
+00:21:34.780 --> 00:21:38.449
+Prof. Madhusudhanan: Why did I put 0, comma 0, comma 1?
+
+180
+00:21:40.220 --> 00:21:49.110
+Prof. Madhusudhanan: Very good. Gender. Right. Now, I'll put 24 27… 21.
+
+181
+00:21:49.630 --> 00:21:51.640
+Prof. Madhusudhanan: Age. Fantastic.
+
+182
+00:21:51.810 --> 00:21:52.790
+Prof. Madhusudhanan: Great.
+
+183
+00:21:53.020 --> 00:21:57.010
+Prof. Madhusudhanan: Now I'll put… I'll put 15.
+
+184
+00:21:57.450 --> 00:21:58.900
+Prof. Madhusudhanan: 17?
+
+185
+00:21:59.990 --> 00:22:01.560
+Prof. Madhusudhanan: Right? 27.
+
+186
+00:22:03.230 --> 00:22:04.840
+Prof. Madhusudhanan: Count… what count?
+
+187
+00:22:06.110 --> 00:22:10.909
+Prof. Madhusudhanan: Right? Maybe I'll say 15 is… Mechanical engineer.
+
+188
+00:22:11.490 --> 00:22:19.470
+Prof. Madhusudhanan: 17 is… No? Computer science engineer, 27 is a, no, PhD.
+
+189
+00:22:19.630 --> 00:22:21.340
+Prof. Madhusudhanan: in Computer Science.
+
+190
+00:22:24.170 --> 00:22:25.110
+Prof. Madhusudhanan: Correct.
+
+191
+00:22:25.510 --> 00:22:32.010
+Prof. Madhusudhanan: Then, then, maybe I'm putting some other components, I'll just continue a B, Aditya Anu here.
+
+192
+00:22:32.200 --> 00:22:39.280
+Prof. Madhusudhanan: Right? I say 5… Okay, 5.5,
+
+193
+00:22:40.400 --> 00:22:44.540
+Prof. Madhusudhanan: Right? 5.7, 5.2. What would this be?
+
+194
+00:22:44.900 --> 00:22:52.120
+Prof. Madhusudhanan: height. Okay. Right, I might have… 65, 68… 58.
+
+195
+00:22:52.900 --> 00:22:54.010
+Prof. Madhusudhanan: Wait.
+
+196
+00:22:55.500 --> 00:23:00.930
+Prof. Madhusudhanan: Super. Right? If I do this for 784…
+
+197
+00:23:01.080 --> 00:23:04.719
+Prof. Madhusudhanan: times, no, I extend this to 784.
+
+198
+00:23:05.590 --> 00:23:08.890
+Prof. Madhusudhanan: I extended this to 2024.
+
+199
+00:23:09.690 --> 00:23:14.360
+Prof. Madhusudhanan: I extend this to 1536 numerical values.
+
+200
+00:23:15.300 --> 00:23:25.689
+Prof. Madhusudhanan: Right? So, if it is two-dimensional, I represent XY, three-dimensional XYZ. If I represent this as 1024 dimensions.
+
+201
+00:23:27.840 --> 00:23:34.840
+Prof. Madhusudhanan: I'll know the entire life history of Abhishek. Abi. I'll know the entire life history of Aditya.
+
+202
+00:23:34.960 --> 00:23:38.560
+Prof. Madhusudhanan: I can write down her or her his character.
+
+203
+00:23:39.240 --> 00:23:47.250
+Prof. Madhusudhanan: I can write down his likes on food, dislikes on food, Vegetarian, non-vegetarian.
+
+204
+00:23:47.600 --> 00:23:52.830
+Prof. Madhusudhanan: Likes to read music. Ano likes to hear music. What type of music? Rock, pop.
+
+205
+00:23:54.410 --> 00:23:57.360
+Prof. Madhusudhanan: Can we do this in 1024 dimensions?
+
+206
+00:23:59.710 --> 00:24:00.620
+Prof. Madhusudhanan: Right?
+
+207
+00:24:02.320 --> 00:24:09.920
+Prof. Madhusudhanan: If I'm able to do this, can I find out whether the character of Abi is similar to Aditya.
+
+208
+00:24:10.320 --> 00:24:13.559
+Prof. Madhusudhanan: Or, the character of Adi is similar to Anu.
+
+209
+00:24:14.950 --> 00:24:15.890
+Prof. Madhusudhanan: Correct.
+
+210
+00:24:20.190 --> 00:24:29.380
+Prof. Madhusudhanan: So, what is it we are doing? I'm using the Euclidean distance to find out the match between Abi and Anu, Abi and Aditya.
+
+211
+00:24:31.670 --> 00:24:32.569
+Prof. Madhusudhanan: Got it.
+
+212
+00:24:35.550 --> 00:24:40.470
+Prof. Madhusudhanan: Yes. It can be anything. It can be anything. Generally, we look at
+
+213
+00:24:40.670 --> 00:24:42.039
+Prof. Madhusudhanan: 2 to the power of yanks.
+
+214
+00:24:44.200 --> 00:24:46.420
+Prof. Madhusudhanan: We look at 2 to the power of VX.
+
+215
+00:24:46.870 --> 00:24:49.449
+Prof. Madhusudhanan: Right? So, 2 to the power of 8,
+
+216
+00:24:49.560 --> 00:24:56.240
+Prof. Madhusudhanan: Is 256, 2 to the power of 10 is 1024, Right?
+
+217
+00:24:56.500 --> 00:25:01.309
+Prof. Madhusudhanan: Because I can represent this inside my computer.
+
+218
+00:25:01.620 --> 00:25:05.280
+Prof. Madhusudhanan: I'll be optimizing the component in my
+
+219
+00:25:07.070 --> 00:25:11.000
+Prof. Madhusudhanan: Got it. So, that becomes your storage, and so on and so forth.
+
+220
+00:25:11.370 --> 00:25:14.060
+Prof. Madhusudhanan: Now, do you understand why?
+
+221
+00:25:15.220 --> 00:25:16.480
+Prof. Madhusudhanan: This works.
+
+222
+00:25:18.440 --> 00:25:23.710
+Prof. Madhusudhanan: So, I have happy here. This is two dimensions.
+
+223
+00:25:24.170 --> 00:25:26.180
+Prof. Madhusudhanan: I can have sad.
+
+224
+00:25:27.180 --> 00:25:28.700
+Prof. Madhusudhanan: I can have sad.
+
+225
+00:25:34.650 --> 00:25:39.920
+Prof. Madhusudhanan: This, again, I'll come to that, Ravi, I'll come to that. Happy, sad.
+
+226
+00:25:41.850 --> 00:25:42.690
+Prof. Madhusudhanan: Right?
+
+227
+00:25:43.090 --> 00:25:46.969
+Prof. Madhusudhanan: I can say happy, maybe somewhere that is jolly.
+
+228
+00:25:50.690 --> 00:25:51.460
+Prof. Madhusudhanan: Right?
+
+229
+00:25:52.750 --> 00:25:56.779
+Prof. Madhusudhanan: I can have sad, I can have somewhere unhappy.
+
+230
+00:26:01.690 --> 00:26:08.279
+Prof. Madhusudhanan: Not the prediction, more the representation, more the contextualization.
+
+231
+00:26:08.990 --> 00:26:12.899
+Prof. Madhusudhanan: More the representation, more the contextualization.
+
+232
+00:26:13.560 --> 00:26:21.310
+Prof. Madhusudhanan: Right? So, if you take… many of these are… No, idioms.
+
+233
+00:26:22.150 --> 00:26:24.759
+Prof. Madhusudhanan: I feel under the weather.
+
+234
+00:26:26.340 --> 00:26:27.230
+Prof. Madhusudhanan: The right?
+
+235
+00:26:28.170 --> 00:26:30.130
+Prof. Madhusudhanan: I feel under the weather.
+
+236
+00:26:31.040 --> 00:26:33.810
+Prof. Madhusudhanan: So that means I'm running a flu, I have a cold.
+
+237
+00:26:35.030 --> 00:26:37.539
+Prof. Madhusudhanan: Somewhere I need to talk about idioms.
+
+238
+00:26:39.720 --> 00:26:49.560
+Prof. Madhusudhanan: Somewhere I need to talk about idioms. And this is exactly where The contextualization become… became important.
+
+239
+00:26:50.140 --> 00:26:52.970
+Prof. Madhusudhanan: Right? And why is this important to you?
+
+240
+00:26:53.120 --> 00:27:03.430
+Prof. Madhusudhanan: You, yourself, why 1024? Somebody asked me. Why can't it be 384? We had the initial older systems were all having 384, vector size of 384.
+
+241
+00:27:03.730 --> 00:27:07.370
+Prof. Madhusudhanan: Why you may call in it as a vector? Because it has a direction.
+
+242
+00:27:07.830 --> 00:27:09.390
+Prof. Madhusudhanan: Get as a direction.
+
+243
+00:27:10.770 --> 00:27:12.899
+Prof. Madhusudhanan: So the context is understood.
+
+244
+00:27:13.150 --> 00:27:15.519
+Prof. Madhusudhanan: I can train the system.
+
+245
+00:27:16.430 --> 00:27:23.669
+Prof. Madhusudhanan: To understand, happy, I can train the system to say that happy and sad are close to each other.
+
+246
+00:27:23.800 --> 00:27:25.579
+Prof. Madhusudhanan: I can have a feedback mechanism.
+
+247
+00:27:25.800 --> 00:27:27.920
+Prof. Madhusudhanan: Right, as in your neural networks.
+
+248
+00:27:29.730 --> 00:27:30.549
+Prof. Madhusudhanan: Got it?
+
+249
+00:27:31.610 --> 00:27:41.140
+Prof. Madhusudhanan: Happy, sad, happy, unhappy. I can draw the relationship. I can draw the relationship between apple Orange.
+
+250
+00:27:42.190 --> 00:27:44.150
+Prof. Madhusudhanan: Right? Sweet line.
+
+251
+00:27:46.110 --> 00:27:52.209
+Prof. Madhusudhanan: Right? Then, you know, somewhere I have, no, I have Tanji.
+
+252
+00:27:54.170 --> 00:27:59.809
+Prof. Madhusudhanan: I have my orange, which is tangy, my sweet lime is tangy. Sometimes apple is also tangy.
+
+253
+00:28:02.100 --> 00:28:02.900
+Prof. Madhusudhanan: Right?
+
+254
+00:28:04.380 --> 00:28:07.349
+Prof. Madhusudhanan: But I might also talk about supporter.
+
+255
+00:28:10.300 --> 00:28:14.100
+Prof. Madhusudhanan: Maybe the distance between supporta and tangy is less.
+
+256
+00:28:14.930 --> 00:28:18.280
+Prof. Madhusudhanan: But the distance between all these four…
+
+257
+00:28:18.860 --> 00:28:22.050
+Prof. Madhusudhanan: Fruits can be closer to each other.
+
+258
+00:28:23.230 --> 00:28:25.490
+Prof. Madhusudhanan: Sleep will be somewhere here.
+
+259
+00:28:28.480 --> 00:28:34.590
+Prof. Madhusudhanan: See, when I say suite is somewhere here, look at it in the XYZZ1Z2Z3.
+
+260
+00:28:34.700 --> 00:28:39.940
+Prof. Madhusudhanan: We cannot think beyond 3 dimensions. This can get into n dimensions.
+
+261
+00:28:41.450 --> 00:28:42.350
+Prof. Madhusudhanan: Right?
+
+262
+00:28:42.990 --> 00:28:50.490
+Prof. Madhusudhanan: So… So… We talk about orange, we talk of tangy.
+
+263
+00:28:50.620 --> 00:28:58.350
+Prof. Madhusudhanan: The number of times people talk of orange, sweet lime, lemon being tangy, And…
+
+264
+00:28:58.940 --> 00:29:04.789
+Prof. Madhusudhanan: the number of times Apple… people talking of Apple being tangy.
+
+265
+00:29:06.670 --> 00:29:07.900
+Prof. Madhusudhanan: probability.
+
+266
+00:29:08.250 --> 00:29:10.410
+Prof. Madhusudhanan: It's like tossing a coin, right?
+
+267
+00:29:10.640 --> 00:29:12.800
+Prof. Madhusudhanan: I'm talking of probability.
+
+268
+00:29:14.840 --> 00:29:15.630
+Prof. Madhusudhanan: Got it.
+
+269
+00:29:16.810 --> 00:29:19.999
+Prof. Madhusudhanan: And this probability can be modeled as a network.
+
+270
+00:29:22.080 --> 00:29:26.790
+Prof. Madhusudhanan: Right? So I can say, To reach the airport.
+
+271
+00:29:27.200 --> 00:29:32.060
+Prof. Madhusudhanan: It takes me… On an average, it takes me one and a half hours.
+
+272
+00:29:33.840 --> 00:29:35.909
+Prof. Madhusudhanan: Then I have the caveat.
+
+273
+00:29:36.290 --> 00:29:39.669
+Prof. Madhusudhanan: If I leave at 6 AM, it takes 1 hour.
+
+274
+00:29:39.880 --> 00:29:46.280
+Prof. Madhusudhanan: If I leave at… 5 AM, it is only 50 minutes.
+
+275
+00:29:47.250 --> 00:29:56.059
+Prof. Madhusudhanan: If I'm take… leaving on 9 AM, it is 1 hour of hours. If it… if I'm leaving at 9am, and it is a Sunday, it is 1 hour 15 minutes.
+
+276
+00:29:56.570 --> 00:29:59.330
+Prof. Madhusudhanan: If there is a procession in the road.
+
+277
+00:29:59.520 --> 00:30:09.240
+Prof. Madhusudhanan: the time now becomes 1 hour, 45 minutes. If there is an accident in the road, the time increases by 20 minutes, whatever it is. If there is… if it is raining.
+
+278
+00:30:09.750 --> 00:30:12.089
+Prof. Madhusudhanan: The moment I talk about reigning.
+
+279
+00:30:12.360 --> 00:30:14.780
+Prof. Madhusudhanan: What is the probability it'll rain?
+
+280
+00:30:15.480 --> 00:30:18.269
+Prof. Madhusudhanan: Is it summer? Is it winter?
+
+281
+00:30:19.940 --> 00:30:24.390
+Prof. Madhusudhanan: When will it rain? Is it cloudy? Is the sky dark?
+
+282
+00:30:25.590 --> 00:30:29.390
+Prof. Madhusudhanan: Look at the relationships that I'm building.
+
+283
+00:30:31.820 --> 00:30:40.340
+Prof. Madhusudhanan: Right? This can be modeled as a Bayesian network, so that is where probability… we always talk about the next token probability.
+
+284
+00:30:40.790 --> 00:30:49.119
+Prof. Madhusudhanan: Right? So the moment I talk of orange, I look at the color, I look at the tanginess, I look at the sweetness, I look at the bitterness.
+
+285
+00:30:50.860 --> 00:30:59.619
+Prof. Madhusudhanan: And if I'm able to capture this, your mechanism works. Why am I talking about this? Larger embedding takes more space?
+
+286
+00:30:59.870 --> 00:31:05.350
+Prof. Madhusudhanan: If I reduce the size of the embedding, mine… savings comes strong.
+
+287
+00:31:05.800 --> 00:31:14.879
+Prof. Madhusudhanan: Why is this important? Because I have to train the model for my specific domain, for my problem statement.
+
+288
+00:31:16.030 --> 00:31:19.679
+Prof. Madhusudhanan: When I use, let me table the report.
+
+289
+00:31:21.870 --> 00:31:22.810
+Prof. Madhusudhanan: Alright.
+
+290
+00:31:23.090 --> 00:31:31.040
+Prof. Madhusudhanan: What did I say? I said, let me table the report. Think of this… In verbatim translation.
+
+291
+00:31:31.150 --> 00:31:33.070
+Prof. Madhusudhanan: to Hindi, to Kannada.
+
+292
+00:31:34.400 --> 00:31:35.610
+Prof. Madhusudhanan: to Tamil.
+
+293
+00:31:38.570 --> 00:31:40.710
+Prof. Madhusudhanan: Entire context is lost.
+
+294
+00:31:41.550 --> 00:31:43.660
+Prof. Madhusudhanan: Let me table the report.
+
+295
+00:31:44.200 --> 00:31:51.379
+Prof. Madhusudhanan: Now you are having mapping the word report and table, now you know that you want to present the report.
+
+296
+00:31:52.460 --> 00:31:55.549
+Prof. Madhusudhanan: Let me present the report, let me table the report.
+
+297
+00:31:56.220 --> 00:31:57.050
+Prof. Madhusudhanan: Right?
+
+298
+00:31:58.710 --> 00:32:01.020
+Prof. Madhusudhanan: Look at it in another way.
+
+299
+00:32:04.700 --> 00:32:09.090
+Prof. Madhusudhanan: I sat in a small boat in the Orange River and had a…
+
+300
+00:32:09.730 --> 00:32:15.270
+Prof. Madhusudhanan: Sweet orange, which was orange in color, similar to the
+
+301
+00:32:15.920 --> 00:32:18.820
+Prof. Madhusudhanan: sunset orange that I was enjoying.
+
+302
+00:32:21.820 --> 00:32:23.619
+Prof. Madhusudhanan: How many oranges have come?
+
+303
+00:32:24.570 --> 00:32:32.799
+Prof. Madhusudhanan: Which orange is sweet? Which orange is river? Which orange is color? Which orange is… Describing the fruit.
+
+304
+00:32:33.100 --> 00:32:46.500
+Prof. Madhusudhanan: which orange is the color describing the sun? That means I had orange describing the fruit, I had orange describing the sun, I had orange describing the river, I had the orange
+
+305
+00:32:47.420 --> 00:32:53.220
+Prof. Madhusudhanan: describing the… what else, right? 4 or 5 times I used orange.
+
+306
+00:32:54.460 --> 00:33:01.179
+Prof. Madhusudhanan: That was the challenge. That was the challenge that had to be solved, and, you know, over a period of time, it got.
+
+307
+00:33:01.450 --> 00:33:02.170
+Prof. Madhusudhanan: It's hard.
+
+308
+00:33:02.480 --> 00:33:11.559
+Prof. Madhusudhanan: Right? So, vector space, now you have understood. Distance and direction only gives me the semantic relationship.
+
+309
+00:33:11.930 --> 00:33:17.380
+Prof. Madhusudhanan: No… Now, I have a problem. I can represent an orange.
+
+310
+00:33:19.560 --> 00:33:30.940
+Prof. Madhusudhanan: Right? I can represent, you know, a cat. I can say the cat sat on the Matt.
+
+311
+00:33:31.770 --> 00:33:37.929
+Prof. Madhusudhanan: So, this has numerical value, I'll call it as 1. The same thing is represented here, 1.
+
+312
+00:33:38.180 --> 00:33:46.519
+Prof. Madhusudhanan: Right? Cat, I have a value. Sat, I have a value. On, I have the value, and the mat also. Mat also, I have a value.
+
+313
+00:33:48.020 --> 00:33:54.610
+Prof. Madhusudhanan: Right? Now, how do I relate this cat, the, with this THE?
+
+314
+00:33:56.190 --> 00:33:58.609
+Prof. Madhusudhanan: This was a major problem.
+
+315
+00:33:58.970 --> 00:34:05.980
+Prof. Madhusudhanan: And this is where… position encoding hand. That is one of the foundation tasks of
+
+316
+00:34:06.170 --> 00:34:14.069
+Prof. Madhusudhanan: requirement of transformer models. That is what will solve the orange across multiple
+
+317
+00:34:16.830 --> 00:34:19.770
+Prof. Madhusudhanan: Words that occurred in the single sentence.
+
+318
+00:34:20.380 --> 00:34:26.310
+Prof. Madhusudhanan: Alright? So, birds with similar meaning, vetas are close, birds with different meaning, but vectors are far apart.
+
+319
+00:34:28.150 --> 00:34:33.140
+Prof. Madhusudhanan: So I'm showing it in a three-dimensional space. Walking, walk, swimming, swam.
+
+320
+00:34:34.100 --> 00:34:38.640
+Prof. Madhusudhanan: Right? I can have swimming, I can have running somewhere here.
+
+321
+00:34:41.790 --> 00:34:42.719
+Prof. Madhusudhanan: Alright?
+
+322
+00:34:42.929 --> 00:34:44.929
+Prof. Madhusudhanan: Now, what happens?
+
+323
+00:34:45.600 --> 00:34:56.540
+Prof. Madhusudhanan: What happens… I want to… distinguish Abhishek Srivatsa, Sri Vastava, and…
+
+324
+00:34:56.900 --> 00:35:00.380
+Prof. Madhusudhanan: Abhisheikh Srivastawa. I have two Abhisheikhs here.
+
+325
+00:35:00.640 --> 00:35:02.350
+Prof. Madhusudhanan: SHRI?
+
+326
+00:35:03.890 --> 00:35:05.980
+Prof. Madhusudhanan: V-A-S-T-W-A.
+
+327
+00:35:06.860 --> 00:35:08.909
+Prof. Madhusudhanan: Yes, sir, I, BA.
+
+328
+00:35:09.490 --> 00:35:11.570
+Prof. Madhusudhanan: V-A-S-T-V-A.
+
+329
+00:35:13.150 --> 00:35:14.770
+Prof. Madhusudhanan: Two different people.
+
+330
+00:35:15.270 --> 00:35:16.780
+Prof. Madhusudhanan: Your good old days?
+
+331
+00:35:17.860 --> 00:35:22.029
+Prof. Madhusudhanan: Right? I can look at Srivat Sava and Srivatsawa.
+
+332
+00:35:22.390 --> 00:35:25.900
+Prof. Madhusudhanan: How do I solve it? These were the questions that
+
+333
+00:35:26.750 --> 00:35:32.740
+Prof. Madhusudhanan: were solved, right? You can get into the details, but, you know, When we talk about
+
+334
+00:35:33.330 --> 00:35:36.930
+Prof. Madhusudhanan: This golden numerical values.
+
+335
+00:35:37.350 --> 00:35:47.059
+Prof. Madhusudhanan: I was telling you, let me table the report. Look at it with the problem that you're sol… trying to solve in your domain. Each domain has its own
+
+336
+00:35:48.030 --> 00:35:49.710
+Prof. Madhusudhanan: No intricacies.
+
+337
+00:35:49.850 --> 00:35:58.100
+Prof. Madhusudhanan: You take care of… you think of healthcare domain, right? It is like Srivat Sava, Srivatsawa. It could be two different medications.
+
+338
+00:35:58.700 --> 00:36:00.089
+Prof. Madhusudhanan: One could be 4.
+
+339
+00:36:00.390 --> 00:36:01.230
+Prof. Madhusudhanan: Nope.
+
+340
+00:36:02.460 --> 00:36:07.630
+Prof. Madhusudhanan: Hyperglycemia, the other could be for hypoglycemia, you interchange the drug, both the patients die.
+
+341
+00:36:08.860 --> 00:36:24.899
+Prof. Madhusudhanan: Got it. So, how do I solve this? This is something which… where we solved with positional encoding and other components, but let us try to understand this sequentially. I have a text. The moment I talk of a text, I'm talking of a word, sentence, or a document.
+
+342
+00:36:25.640 --> 00:36:29.429
+Prof. Madhusudhanan: The entire document can be looked as a single token.
+
+343
+00:36:29.750 --> 00:36:40.810
+Prof. Madhusudhanan: Now, somebody is asking me, why do I want a large number of tokens? More the tokens I have, more the data I can represent with respect to contextualization.
+
+344
+00:36:42.230 --> 00:36:43.060
+Prof. Madhusudhanan: Right?
+
+345
+00:36:43.320 --> 00:36:45.700
+Prof. Madhusudhanan: What do you mean by that? I can say.
+
+346
+00:36:46.820 --> 00:36:51.340
+Prof. Madhusudhanan: Right? Maybe you're standing in a railway, you know, in a bus stop.
+
+347
+00:36:51.500 --> 00:36:54.160
+Prof. Madhusudhanan: You see a young mother having a baby.
+
+348
+00:36:55.320 --> 00:36:56.140
+Prof. Madhusudhanan: Right?
+
+349
+00:36:57.970 --> 00:37:03.519
+Prof. Madhusudhanan: The baby is eating a chocolate, its face is all covered with chocolate. The mother says, water.
+
+350
+00:37:03.650 --> 00:37:09.749
+Prof. Madhusudhanan: Maybe she is not carrying water, she is carrying a bottle of water, You immediately understand the context.
+
+351
+00:37:10.740 --> 00:37:18.539
+Prof. Madhusudhanan: Right? It could be one of it. Maybe, you know, she says water, you think it is for wiping the baby's face, you give the water, but…
+
+352
+00:37:18.810 --> 00:37:24.640
+Prof. Madhusudhanan: mother opens and drinks it, maybe she's 30, thirsty. So she can say, I want water.
+
+353
+00:37:25.520 --> 00:37:29.559
+Prof. Madhusudhanan: Right? Or she might say water, give it to some other person.
+
+354
+00:37:30.230 --> 00:37:31.449
+Prof. Madhusudhanan: Who had asked her?
+
+355
+00:37:32.390 --> 00:37:37.360
+Prof. Madhusudhanan: the context is not there. The context is not full. I… the lady asks water.
+
+356
+00:37:37.590 --> 00:37:50.379
+Prof. Madhusudhanan: You're not sure. It could be for her to drink, it could be for the baby to drink, it could be for the baby to wipe its face, it could be somebody who had asked the lady, I want water to drink, I want water too.
+
+357
+00:37:50.600 --> 00:37:52.419
+Prof. Madhusudhanan: Wipe my baby's face.
+
+358
+00:37:52.950 --> 00:37:58.590
+Prof. Madhusudhanan: I want… right? I can get into the context. I want water to drink as I'm thirsty.
+
+359
+00:38:00.410 --> 00:38:04.870
+Prof. Madhusudhanan: So… Can I capture that? That is what is capture.
+
+360
+00:38:05.890 --> 00:38:08.200
+Prof. Madhusudhanan: I convert that into numerical.
+
+361
+00:38:08.310 --> 00:38:11.190
+Prof. Madhusudhanan: values. Then I represent it as a…
+
+362
+00:38:12.670 --> 00:38:16.469
+Prof. Madhusudhanan: And this is what is used. So traditionally, if you look at it.
+
+363
+00:38:17.340 --> 00:38:26.880
+Prof. Madhusudhanan: Right? So somebody… we're all discussing about it, right? More dimensions, more subtle differences between objects.
+
+364
+00:38:28.430 --> 00:38:29.300
+Prof. Madhusudhanan: Right?
+
+365
+00:38:29.790 --> 00:38:34.560
+Prof. Madhusudhanan: So, if you take this, right, you can map this to emotions.
+
+366
+00:38:34.670 --> 00:38:39.319
+Prof. Madhusudhanan: Maybe. We have still not done it, but we might be able to do it.
+
+367
+00:38:39.490 --> 00:38:40.310
+Prof. Madhusudhanan: Right?
+
+368
+00:38:42.160 --> 00:38:46.460
+Prof. Madhusudhanan: I can define love with A high-dimensional space.
+
+369
+00:38:46.670 --> 00:38:53.820
+Prof. Madhusudhanan: Right? So, each dimension encodes different features or attributes. That is what I said. The first could be
+
+370
+00:38:54.030 --> 00:38:57.549
+Prof. Madhusudhanan: Age, second could be height, weight, so on, so on.
+
+371
+00:38:57.910 --> 00:39:02.830
+Prof. Madhusudhanan: Fourth. But no, higher the dimensional space, Harder to visualize.
+
+372
+00:39:04.530 --> 00:39:22.890
+Prof. Madhusudhanan: will not call that a parameter, so I'll come to that. This is the size of the diamond, no, it is the… we can also call it as a parameter. 1024768 is called as the diamond, no, is called as the parameter, which talks about the dimensions. Each of these values is called as a vector.
+
+373
+00:39:23.570 --> 00:39:24.410
+Prof. Madhusudhanan: What?
+
+374
+00:39:27.140 --> 00:39:40.660
+Prof. Madhusudhanan: Okay, so good old days, what were there? We had something called as a count vectorizer. I've used this word, count vectorizer, because this is something what you see in your machine learning models, SKLearn, or any of these tools.
+
+375
+00:39:41.300 --> 00:39:48.860
+Prof. Madhusudhanan: Right? What does it do? It counts the number of occurrence of the word. I like the movie. I love the movie.
+
+376
+00:39:49.630 --> 00:40:03.010
+Prof. Madhusudhanan: Right? The movie was very good. I can map these keywords to say whether the sentiment is positive or negative. And that is where it initially started. In natural language processing, we started off with
+
+377
+00:40:04.170 --> 00:40:13.540
+Prof. Madhusudhanan: count. And now, here, look at it, I am representing it in mathematically, because mathematics is not easy. I mean, it's not difficult. It's very easy.
+
+378
+00:40:13.700 --> 00:40:26.679
+Prof. Madhusudhanan: I have a document. I'm representing it as D1, D2, D3, DN. So what do I do? How many documents are there? 100 documents. Capital D is the collection of all the documents, D1 is the individual document.
+
+379
+00:40:26.680 --> 00:40:36.400
+Prof. Madhusudhanan: I have yen documents. If yen equals 50, I can know that I have 50 documents. Extract all uniform words to form a vocabulary.
+
+380
+00:40:36.500 --> 00:40:45.169
+Prof. Madhusudhanan: So, the cat sat on the mat. So, I'll have the cat sat on the mat.
+
+381
+00:40:45.860 --> 00:40:51.930
+Prof. Madhusudhanan: Then the next was, the dog sat on the mat. Then I'll add only dog.
+
+382
+00:40:53.480 --> 00:40:54.360
+Prof. Madhusudhanan: Right?
+
+383
+00:40:55.720 --> 00:41:05.109
+Prof. Madhusudhanan: Then… the cat and the dog sat on the mat together. Together becomes a vocabulary.
+
+384
+00:41:05.930 --> 00:41:14.460
+Prof. Madhusudhanan: This is also called as vocab in your transformer model. This is one thing that we look at. Typically, when we look at models.
+
+385
+00:41:14.710 --> 00:41:23.459
+Prof. Madhusudhanan: we try to understand the vocabulary. Let us say I want to do a translation module. I try to see the goodness of my vocabulary.
+
+386
+00:41:23.890 --> 00:41:28.719
+Prof. Madhusudhanan: How well is Hindi represented if I want to do English to Hindi?
+
+387
+00:41:29.340 --> 00:41:36.169
+Prof. Madhusudhanan: Right? So, it creates the unique birds, which is called as the vocabulary. Now, you're learning one bird if you go to
+
+388
+00:41:37.300 --> 00:41:45.599
+Prof. Madhusudhanan: No? We should… if you get into a hugging phase, now you always look into vocab, and you'll see the various words that are used. Words, special characters.
+
+389
+00:41:46.730 --> 00:41:49.330
+Prof. Madhusudhanan: Right? And all in the vocabulary.
+
+390
+00:41:49.960 --> 00:41:52.110
+Prof. Madhusudhanan: Should we not have only one?
+
+391
+00:41:52.290 --> 00:41:54.899
+Prof. Madhusudhanan: the in vocabulary.
+
+392
+00:41:55.900 --> 00:42:01.500
+Prof. Madhusudhanan: Yeah, every unique word, but no, there are challenges there also. How do I represent Amit Gupta?
+
+393
+00:42:01.830 --> 00:42:03.229
+Prof. Madhusudhanan: Right? Amit.
+
+394
+00:42:03.340 --> 00:42:04.300
+Prof. Madhusudhanan: Gupta.
+
+395
+00:42:06.610 --> 00:42:12.970
+Prof. Madhusudhanan: I can rep… should I represent this as two vectors, vocabularies? Should I represent it as one?
+
+396
+00:42:13.610 --> 00:42:20.939
+Prof. Madhusudhanan: Or, YAM is already there, because I am a human. IT is already there.
+
+397
+00:42:21.100 --> 00:42:22.520
+Prof. Madhusudhanan: It is a dog.
+
+398
+00:42:23.570 --> 00:42:27.250
+Prof. Madhusudhanan: Now, if should I put EAM hash IT?
+
+399
+00:42:28.100 --> 00:42:29.680
+Prof. Madhusudhanan: to represent a myth.
+
+400
+00:42:32.630 --> 00:42:33.310
+Prof. Madhusudhanan: Nope.
+
+401
+00:42:33.420 --> 00:42:37.829
+Prof. Madhusudhanan: That means Amit may not be there in the vocabulary of Americans.
+
+402
+00:42:38.150 --> 00:42:43.179
+Prof. Madhusudhanan: But if the word Amit occurs, how should the machine understand it? This is something which we do.
+
+403
+00:42:46.140 --> 00:42:46.930
+Prof. Madhusudhanan: Got it.
+
+404
+00:42:47.920 --> 00:42:54.350
+Prof. Madhusudhanan: Yes, exclamations can be used to train. Exclamations can be used to train.
+
+405
+00:42:54.570 --> 00:43:08.039
+Prof. Madhusudhanan: Stop words can be used in embeddings. The modern sentence… no, modern systems use the entire sentences instead of single words, right? The older system use single words, that is where we use top words.
+
+406
+00:43:08.880 --> 00:43:17.410
+Prof. Madhusudhanan: Right? So, I have yum vocabulary. If yum equals 500, there are 500 unique words in my 50 documents.
+
+407
+00:43:18.280 --> 00:43:22.379
+Prof. Madhusudhanan: So, I'm representing it as a yen by M matrix.
+
+408
+00:43:23.020 --> 00:43:28.220
+Prof. Madhusudhanan: I'm representing as a yen by M matrix, which is a real number.
+
+409
+00:43:31.500 --> 00:43:32.320
+Prof. Madhusudhanan: Hank.
+
+410
+00:43:32.930 --> 00:43:45.460
+Prof. Madhusudhanan: So, I can represent Xij, count of term TJ in document DI. What is count of term TJ? J, if J equals 5, I'm looking at the fifth vocabulary.
+
+411
+00:43:45.590 --> 00:43:49.979
+Prof. Madhusudhanan: and I equals 10, I'm looking at document number 10.
+
+412
+00:43:50.760 --> 00:43:51.630
+Prof. Madhusudhanan: Got it.
+
+413
+00:43:52.440 --> 00:43:53.130
+Prof. Madhusudhanan: Right.
+
+414
+00:43:53.520 --> 00:44:00.890
+Prof. Madhusudhanan: So, I'll talk about the older system, then come to the newer system. We're talking about the tokenization process.
+
+415
+00:44:02.040 --> 00:44:04.560
+Prof. Madhusudhanan: Maybe I convert that to lowercase.
+
+416
+00:44:05.350 --> 00:44:08.219
+Prof. Madhusudhanan: Because capital A is different from small a.
+
+417
+00:44:08.940 --> 00:44:15.470
+Prof. Madhusudhanan: That is where you see some of the older models, which… where we explicitly say that we have trained the model with
+
+418
+00:44:16.150 --> 00:44:18.080
+Prof. Madhusudhanan: Case and without case.
+
+419
+00:44:18.830 --> 00:44:23.680
+Prof. Madhusudhanan: If I train it with case, then Amit, It's different from?
+
+420
+00:44:27.430 --> 00:44:28.330
+Prof. Madhusudhanan: Got it?
+
+421
+00:44:30.790 --> 00:44:35.650
+Prof. Madhusudhanan: So, should I use it? In that case, my vocabulary size can improve, can increase.
+
+422
+00:44:36.120 --> 00:44:38.739
+Prof. Madhusudhanan: My training will also increase.
+
+423
+00:44:41.860 --> 00:44:43.409
+Prof. Madhusudhanan: And so on and so forth.
+
+424
+00:44:44.310 --> 00:44:49.300
+Prof. Madhusudhanan: Right? I can split the text into words. This is how the tokens look.
+
+425
+00:44:51.640 --> 00:44:59.979
+Prof. Madhusudhanan: So, somebody asked me, ask, yes, Silva. Is stop words used? Yes, in the older system, stop words like the.
+
+426
+00:45:00.090 --> 00:45:03.970
+Prof. Madhusudhanan: is… are all removed.
+
+427
+00:45:05.820 --> 00:45:10.710
+Prof. Madhusudhanan: Right? It is removed. We can… we can typically say all the two character words.
+
+428
+00:45:11.350 --> 00:45:13.769
+Prof. Madhusudhanan: Some of the three character words, which are
+
+429
+00:45:14.690 --> 00:45:17.529
+Prof. Madhusudhanan: No? Very generic in nature, or in…
+
+430
+00:45:18.060 --> 00:45:20.430
+Prof. Madhusudhanan: Then we call them as top words.
+
+431
+00:45:21.810 --> 00:45:25.660
+Prof. Madhusudhanan: Right? And sometimes… We also…
+
+432
+00:45:26.700 --> 00:45:34.260
+Prof. Madhusudhanan: use some sort of data dictionary to convert into a uniform format. I say stomach, somebody says abdomen, somebody says belly.
+
+433
+00:45:35.050 --> 00:45:40.539
+Prof. Madhusudhanan: And you're building a… Small medical decision support system.
+
+434
+00:45:40.670 --> 00:45:50.810
+Prof. Madhusudhanan: then, you know, I can combine. I can say abdomen is the root word, right? I can say abdomen is the root word, I can have all the subwords under it. Stomach, belly, whatever it is.
+
+435
+00:45:52.790 --> 00:45:53.580
+Prof. Madhusudhanan: Right?
+
+436
+00:45:59.280 --> 00:46:04.380
+Prof. Madhusudhanan: You have standard stop-word dictionaries.
+
+437
+00:46:05.290 --> 00:46:13.970
+Prof. Madhusudhanan: Shubandra, you have standard stopboard dictionaries. You can construct your own dictionary. How do I construct my dictionary? It's basically an elbow.
+
+438
+00:46:16.110 --> 00:46:23.780
+Prof. Madhusudhanan: This is how the data will be. I look at this point. All the word frequencies which are here can become my stop words.
+
+439
+00:46:27.530 --> 00:46:36.480
+Prof. Madhusudhanan: Right? All the words here can become my stop words. So, it'll be… it will contain the number of the… right? It is a… it is a…
+
+440
+00:46:36.840 --> 00:46:46.989
+Prof. Madhusudhanan: I can do a histogram, the count of each words, right? And somewhere it becomes a yel. We call this an elbow. And this is the place where I can say anything
+
+441
+00:46:47.630 --> 00:46:54.920
+Prof. Madhusudhanan: No? Which is inside the elbow, we say, is really not important for my classification task.
+
+442
+00:46:56.330 --> 00:47:09.290
+Prof. Madhusudhanan: Why? Because it is common in both. Let us say I'm doing true or false, male or female classification. Those words will be common. Like men, which is very common. We do not want them.
+
+443
+00:47:09.490 --> 00:47:14.109
+Prof. Madhusudhanan: So, if I'm doing sentiment analysis, that… those particular words will be very common.
+
+444
+00:47:15.410 --> 00:47:18.059
+Prof. Madhusudhanan: Right? So, I have my vocabulary.
+
+445
+00:47:18.180 --> 00:47:29.579
+Prof. Madhusudhanan: You're having the vocabulary size that today's vocabularies are all, you know, pretty large, 128,000, and so on and so forth. Older systems had a vocabulary of 32,000, or whatever it is.
+
+446
+00:47:29.720 --> 00:47:32.130
+Prof. Madhusudhanan: So, one or two in the vocabulary.
+
+447
+00:47:33.090 --> 00:47:40.989
+Prof. Madhusudhanan: Can be represented Right? One or two, the in the vocabulary, we consider it as one.
+
+448
+00:47:41.360 --> 00:47:45.589
+Prof. Madhusudhanan: that the sun rises in the east. It is occurring twice.
+
+449
+00:47:46.440 --> 00:47:50.340
+Prof. Madhusudhanan: Vendra, it is occurring twice, so I can do a count of twice.
+
+450
+00:47:50.840 --> 00:48:01.320
+Prof. Madhusudhanan: When I create my matrix, because we saw it is a D by N matrix, when I create the matrix, I can give it, or I can represent it as one. It depends on you. Both of them are right.
+
+451
+00:48:02.360 --> 00:48:05.050
+Prof. Madhusudhanan: Look at it. I've created my dataset.
+
+452
+00:48:06.100 --> 00:48:08.500
+Prof. Madhusudhanan: I've created my simplest data set.
+
+453
+00:48:09.850 --> 00:48:14.529
+Prof. Madhusudhanan: The sun rises in the east, and… Sets in the West.
+
+454
+00:48:19.740 --> 00:48:20.600
+Prof. Madhusudhanan: Right?
+
+455
+00:48:21.410 --> 00:48:25.289
+Prof. Madhusudhanan: The sun rises in the east, the sun sets in the west.
+
+456
+00:48:26.510 --> 00:48:28.110
+Prof. Madhusudhanan: The sun?
+
+457
+00:48:29.330 --> 00:48:30.870
+Prof. Madhusudhanan: sets in.
+
+458
+00:48:31.520 --> 00:48:32.990
+Prof. Madhusudhanan: The West.
+
+459
+00:48:33.110 --> 00:48:35.040
+Prof. Madhusudhanan: So, what did you learn from this?
+
+460
+00:48:35.320 --> 00:48:39.070
+Prof. Madhusudhanan: We have lost the location of the word.
+
+461
+00:48:39.500 --> 00:48:41.979
+Prof. Madhusudhanan: We have lost location of the word.
+
+462
+00:48:43.600 --> 00:48:46.289
+Prof. Madhusudhanan: So the older systems use this.
+
+463
+00:48:49.870 --> 00:48:55.349
+Prof. Madhusudhanan: the older system uses, the older NLP systems, then… Things started improving.
+
+464
+00:48:56.190 --> 00:49:01.130
+Prof. Madhusudhanan: Right? So… They jawed dog chased the cat.
+
+465
+00:49:01.650 --> 00:49:03.830
+Prof. Madhusudhanan: I'm representing as a vector.
+
+466
+00:49:04.280 --> 00:49:10.430
+Prof. Madhusudhanan: 2-1-1. So, 2 is the dog chased cat.
+
+467
+00:49:12.660 --> 00:49:13.460
+Prof. Madhusudhanan: Great.
+
+468
+00:49:15.140 --> 00:49:20.950
+Prof. Madhusudhanan: So, the biggest challenge here Right?
+
+469
+00:49:21.520 --> 00:49:28.070
+Prof. Madhusudhanan: The biggest challenge here is the size of the vectors keep increasing.
+
+470
+00:49:29.160 --> 00:49:37.840
+Prof. Madhusudhanan: So, yes, no, each row represents one document. Document 1, Document 2, Document 3, and so on and so forth.
+
+471
+00:49:38.530 --> 00:49:40.600
+Prof. Madhusudhanan: This keeps on increasing.
+
+472
+00:49:42.180 --> 00:49:43.040
+Prof. Madhusudhanan: So…
+
+473
+00:49:43.630 --> 00:49:49.700
+Prof. Madhusudhanan: We call them as a sparse matrix. Why do I call it as a sparse matrix? Because too many zeros.
+
+474
+00:49:50.940 --> 00:49:52.269
+Prof. Madhusudhanan: Too many zeros.
+
+475
+00:49:52.690 --> 00:49:56.719
+Prof. Madhusudhanan: And this can be measured. It is called as a sparsity.
+
+476
+00:49:56.890 --> 00:50:00.850
+Prof. Madhusudhanan: One minus of number of non-zero elements.
+
+477
+00:50:01.190 --> 00:50:12.160
+Prof. Madhusudhanan: Right? Number of non-zero elements. Here I can look at it. 1, 2, 3, 4, 5, 6, 7. How many elements are non-zero? 5 are non-zero.
+
+478
+00:50:12.340 --> 00:50:14.149
+Prof. Madhusudhanan: Right? 5 are non-zero.
+
+479
+00:50:15.050 --> 00:50:16.880
+Prof. Madhusudhanan: And yen by yum.
+
+480
+00:50:17.210 --> 00:50:24.400
+Prof. Madhusudhanan: the total number of rows multiplied by the total number of columns. So here, if you look, it is 2 rows.
+
+481
+00:50:24.540 --> 00:50:26.029
+Prof. Madhusudhanan: 7 columns.
+
+482
+00:50:27.110 --> 00:50:29.569
+Prof. Madhusudhanan: So I can measure the sparsity.
+
+483
+00:50:33.120 --> 00:50:33.950
+Prof. Madhusudhanan: Got it?
+
+484
+00:50:34.420 --> 00:50:42.269
+Prof. Madhusudhanan: When we see this, the matrix is sparse, the computation to, you know, the compute required is very high.
+
+485
+00:50:43.020 --> 00:50:46.330
+Prof. Madhusudhanan: The system may not give me correct outcomes.
+
+486
+00:50:50.060 --> 00:50:50.930
+Prof. Madhusudhanan: Right?
+
+487
+00:50:52.410 --> 00:51:01.439
+Prof. Madhusudhanan: So, mathematically, I've represented the count vectorizer. So, no, the entire reason for showing you this max is not to get overwhelmed with mathematics.
+
+488
+00:51:02.620 --> 00:51:06.070
+Prof. Madhusudhanan: It's hard to get overwhelmed with mathematics.
+
+489
+00:51:09.540 --> 00:51:14.329
+Prof. Madhusudhanan: I'm just giving a condition. 1 if the condition is true, 0 otherwise.
+
+490
+00:51:16.170 --> 00:51:19.640
+Prof. Madhusudhanan: So, this is called as the summation function.
+
+491
+00:51:19.870 --> 00:51:21.850
+Prof. Madhusudhanan: This is the product function.
+
+492
+00:51:22.250 --> 00:51:28.570
+Prof. Madhusudhanan: summation. I'm doing a count from k equals 1 to DI.
+
+493
+00:51:32.730 --> 00:51:33.450
+Prof. Madhusudhanan: Got it.
+
+494
+00:51:34.920 --> 00:51:49.099
+Prof. Madhusudhanan: K is the representation of a word, it could be cat, it could be mat. D is… DI is the representation of the document, it could be the fifth document, then D phi. D7 is the seventh document.
+
+495
+00:51:50.780 --> 00:51:53.580
+Prof. Madhusudhanan: And I'm just pulling it out. Mathematics is not…
+
+496
+00:51:54.010 --> 00:52:00.900
+Prof. Madhusudhanan: Difficult as you go forward, and then you'll see… start seeing that it is very important to solve your problems.
+
+497
+00:52:02.310 --> 00:52:07.220
+Prof. Madhusudhanan: Each row of the matrix represents a document, each column represents a vocabulary term.
+
+498
+00:52:08.740 --> 00:52:23.380
+Prof. Madhusudhanan: And each entry tells you how many times a specific term appears in the document. Some… I can also say num… whether a word… whether a word has occurred in the document or not occurred. I can do that on, so I'll not worry how many times it has occurred.
+
+499
+00:52:24.620 --> 00:52:28.940
+Prof. Madhusudhanan: So that is how you're… I can use this to classify.
+
+500
+00:52:29.910 --> 00:52:32.860
+Prof. Madhusudhanan: The product is good, the product is poor.
+
+501
+00:52:33.390 --> 00:52:37.279
+Prof. Madhusudhanan: the product is atrocious. I can train a model.
+
+502
+00:52:38.340 --> 00:52:42.990
+Prof. Madhusudhanan: Or I can use some sort of… Bayesian algorithm.
+
+503
+00:52:47.220 --> 00:52:52.809
+Prof. Madhusudhanan: To classify the sentence as positive or negative sentiment.
+
+504
+00:52:54.130 --> 00:52:59.160
+Prof. Madhusudhanan: Right? What are the disadvantages? What is the advantage? Very fast to compute.
+
+505
+00:52:59.800 --> 00:53:02.550
+Prof. Madhusudhanan: Interpretable. Explainable.
+
+506
+00:53:03.950 --> 00:53:05.050
+Prof. Madhusudhanan: Scalable.
+
+507
+00:53:05.190 --> 00:53:09.509
+Prof. Madhusudhanan: But the biggest challenge is there is no semantic meaning.
+
+508
+00:53:10.590 --> 00:53:12.860
+Prof. Madhusudhanan: So, when I use the word bank.
+
+509
+00:53:13.760 --> 00:53:20.070
+Prof. Madhusudhanan: The system does not know whether it is a riverbank, Or a… or your bank?
+
+510
+00:53:21.150 --> 00:53:23.009
+Prof. Madhusudhanan: Where you're going to draw money.
+
+511
+00:53:23.340 --> 00:53:25.520
+Prof. Madhusudhanan: When I… when the word orange is…
+
+512
+00:53:25.630 --> 00:53:33.360
+Prof. Madhusudhanan: stated. It does not have the context whether orange is a fruit color, river, Right.
+
+513
+00:53:34.530 --> 00:53:36.370
+Prof. Madhusudhanan: That was the biggest challenge.
+
+514
+00:53:37.710 --> 00:53:45.390
+Prof. Madhusudhanan: To a certain extent, it was solved by the inverse document frequency. Term frequency, inverse document frequency.
+
+515
+00:53:47.110 --> 00:53:51.989
+Prof. Madhusudhanan: Right? Term frequency is nothing but your count vectorizer. I can do a count of it.
+
+516
+00:53:53.040 --> 00:53:53.860
+Prof. Madhusudhanan: Right?
+
+517
+00:53:54.060 --> 00:53:56.260
+Prof. Madhusudhanan: Inverse document frequencies.
+
+518
+00:53:56.510 --> 00:54:04.859
+Prof. Madhusudhanan: to understand To understand the importance of a word in a group of documents.
+
+519
+00:54:08.430 --> 00:54:23.079
+Prof. Madhusudhanan: Right. Good question, Nandan. So, that is where color is looked as different from color. C-O-L-O-R is different from C-O-L-O-U-R. Capital C-O-L-O, no, O-R is different from small C-O-L-O-R.
+
+520
+00:54:25.730 --> 00:54:27.549
+Prof. Madhusudhanan: Yeah, I'll come to that, Mahati.
+
+521
+00:54:29.570 --> 00:54:32.709
+Prof. Madhusudhanan: Right? So I have my document, I have my vocabulary.
+
+522
+00:54:34.280 --> 00:54:39.480
+Prof. Madhusudhanan: How do I represent TF ideas, right? Each rows, I'm just…
+
+523
+00:54:40.440 --> 00:54:46.300
+Prof. Madhusudhanan: TI, right? The term frequency is count of term TJ in document DI.
+
+524
+00:54:46.750 --> 00:54:53.939
+Prof. Madhusudhanan: count of term TJ in document EI, DI, that means the number of orange in the document.
+
+525
+00:54:54.340 --> 00:55:00.039
+Prof. Madhusudhanan: In Document 1, number of… If T1 equals orange.
+
+526
+00:55:01.900 --> 00:55:06.280
+Prof. Madhusudhanan: T2 equals apple, then I'm saying number of
+
+527
+00:55:06.860 --> 00:55:10.549
+Prof. Madhusudhanan: Terms… number of times the word orange occurred.
+
+528
+00:55:11.170 --> 00:55:13.180
+Prof. Madhusudhanan: In the Document 1,
+
+529
+00:55:13.830 --> 00:55:24.140
+Prof. Madhusudhanan: I equals 1. If it is 2, then I equals 2. Number of times the term apple has occurred. I have that. Total words in the document.
+
+530
+00:55:26.390 --> 00:55:28.680
+Prof. Madhusudhanan: That is called as term frequency.
+
+531
+00:55:29.770 --> 00:55:31.690
+Prof. Madhusudhanan: The cat sat on the mat.
+
+532
+00:55:31.830 --> 00:55:32.730
+Prof. Madhusudhanan: Scat.
+
+533
+00:55:32.840 --> 00:55:38.960
+Prof. Madhusudhanan: CAT has a term frequency of 0.161, because there are 6 words, 1 divided by 6 is 0.161.
+
+534
+00:55:40.680 --> 00:55:49.119
+Prof. Madhusudhanan: IDF… is a slightly different component. It tries to understand how many documents
+
+535
+00:55:49.890 --> 00:55:56.839
+Prof. Madhusudhanan: Are there available? No, totally available. And the number of documents that contain the term TJ.
+
+536
+00:55:57.650 --> 00:56:06.470
+Prof. Madhusudhanan: Right? Maybe, you know, I'm having 100 textbooks, 100 documents, One document talks about cancer.
+
+537
+00:56:07.120 --> 00:56:09.960
+Prof. Madhusudhanan: All other documents do not talk about cancer.
+
+538
+00:56:13.200 --> 00:56:15.010
+Prof. Madhusudhanan: What do you understand from this?
+
+539
+00:56:16.030 --> 00:56:23.429
+Prof. Madhusudhanan: Maybe I'm talking of sports, I'm seeing cricket, football, basketball, whatever it is. Then I see a document which says cancer.
+
+540
+00:56:25.260 --> 00:56:31.229
+Prof. Madhusudhanan: Immediately, can I pull this as two different clusters, two different data?
+
+541
+00:56:31.420 --> 00:56:33.649
+Prof. Madhusudhanan: And that is exactly what your system does.
+
+542
+00:56:36.580 --> 00:56:46.220
+Prof. Madhusudhanan: Got it. So, yen is the total number of documents, number of documents that contain the word orange. Number of documents that contain the word cancer.
+
+543
+00:56:48.090 --> 00:56:49.940
+Prof. Madhusudhanan: If the number of…
+
+544
+00:56:50.470 --> 00:56:58.089
+Prof. Madhusudhanan: documents which contain the word cancer is less. Do you think that feature is important or not important?
+
+545
+00:57:03.760 --> 00:57:08.340
+Prof. Madhusudhanan: Important. Very good. That is what helps you in classification.
+
+546
+00:57:08.580 --> 00:57:13.130
+Prof. Madhusudhanan: But if the word THE occurs, There are 500 documents.
+
+547
+00:57:14.360 --> 00:57:16.159
+Prof. Madhusudhanan: There are finder documents.
+
+548
+00:57:16.720 --> 00:57:24.570
+Prof. Madhusudhanan: If the word THE occurs in almost all the documents, Log of 1.
+
+549
+00:57:25.100 --> 00:57:26.650
+Prof. Madhusudhanan: Which is zero.
+
+550
+00:57:27.560 --> 00:57:34.170
+Prof. Madhusudhanan: Right? Then I know that it is not important Right? Look at it.
+
+551
+00:57:35.550 --> 00:57:36.370
+Prof. Madhusudhanan: poo.
+
+552
+00:57:36.490 --> 00:57:41.899
+Prof. Madhusudhanan: term there appears in 5 out of 10 documents, I have a value .301.
+
+553
+00:57:42.390 --> 00:57:47.830
+Prof. Madhusudhanan: I multiply term frequency with inverse Dockman frequency, I get the combination.
+
+554
+00:57:49.530 --> 00:57:54.389
+Prof. Madhusudhanan: Which tells me about the corpus, which tells me about the data.
+
+555
+00:57:55.700 --> 00:58:00.100
+Prof. Madhusudhanan: Right? So, term TF component, how often a term appears?
+
+556
+00:58:00.620 --> 00:58:05.880
+Prof. Madhusudhanan: Idea of how rare a term is across the entire corpus.
+
+557
+00:58:06.520 --> 00:58:10.629
+Prof. Madhusudhanan: If 500 documents talk about sports, and one document talks about
+
+558
+00:58:11.790 --> 00:58:15.619
+Prof. Madhusudhanan: cancer, then maybe I might say that document is important.
+
+559
+00:58:16.400 --> 00:58:20.350
+Prof. Madhusudhanan: And at the same time, I can also say the document is an anomaly.
+
+560
+00:58:21.590 --> 00:58:23.989
+Prof. Madhusudhanan: I can say… at the same time, say that
+
+561
+00:58:24.270 --> 00:58:27.389
+Prof. Madhusudhanan: This document is different from the other documents.
+
+562
+00:58:27.910 --> 00:58:28.680
+Prof. Madhusudhanan: Right?
+
+563
+00:58:31.250 --> 00:58:38.590
+Prof. Madhusudhanan: So, this combination Gives me a very powerful way to use it as a classifier.
+
+564
+00:58:38.710 --> 00:58:40.410
+Prof. Madhusudhanan: for classification.
+
+565
+00:58:41.870 --> 00:58:49.839
+Prof. Madhusudhanan: Right? TFI, DF assigns higher weights to terms that are frequent within a document, within a document.
+
+566
+00:58:50.270 --> 00:58:53.279
+Prof. Madhusudhanan: Right? Rare across the entire document.
+
+567
+00:58:53.700 --> 00:58:56.480
+Prof. Madhusudhanan: Corpus. Corpus is 10,000 documents.
+
+568
+00:58:58.290 --> 00:59:02.380
+Prof. Madhusudhanan: Right? TF-IDF. That is how you interpret it.
+
+569
+00:59:03.060 --> 00:59:08.660
+Prof. Madhusudhanan: If a term occurs in all the documents, n by n, which is 0, because log of 1 is 0.
+
+570
+00:59:11.950 --> 00:59:20.489
+Prof. Madhusudhanan: Right? If the word cricket occurs in all the documents, then the word cricket is not important to me for solving a problem.
+
+571
+00:59:23.300 --> 00:59:24.110
+Prof. Madhusudhanan: Correct?
+
+572
+00:59:27.850 --> 00:59:38.719
+Prof. Madhusudhanan: So, vocabulary size grows with data set. Data asset becomes extremely large. Computational of a matrix. Typically, if you do it, it is order of n squared.
+
+573
+00:59:40.410 --> 00:59:45.729
+Prof. Madhusudhanan: Right? As the size increases, matric size increases, the compute complexity increases.
+
+574
+00:59:49.170 --> 00:59:50.200
+Prof. Madhusudhanan: Alright?
+
+575
+00:59:50.690 --> 00:59:57.679
+Prof. Madhusudhanan: Of course, they are still used in systems like support vector machines, logistic regression, and so on and so forth.
+
+576
+01:00:00.910 --> 01:00:02.140
+Prof. Madhusudhanan: No.
+
+577
+01:00:03.620 --> 01:00:05.389
+Prof. Madhusudhanan: I have a new challenge.
+
+578
+01:00:06.090 --> 01:00:08.910
+Prof. Madhusudhanan: I have a document, which is only 5 pages.
+
+579
+01:00:09.580 --> 01:00:12.350
+Prof. Madhusudhanan: I have a document, or no, I have a data which is
+
+580
+01:00:12.520 --> 01:00:15.920
+Prof. Madhusudhanan: 10 words, I have another data, which is 30 words.
+
+581
+01:00:18.480 --> 01:00:24.479
+Prof. Madhusudhanan: Then the longer… Document will get a higher term frequency value.
+
+582
+01:00:26.670 --> 01:00:29.879
+Prof. Madhusudhanan: How do I overcome that? I use AL2 now.
+
+583
+01:00:30.600 --> 01:00:31.370
+Prof. Madhusudhanan: Neat.
+
+584
+01:00:31.780 --> 01:00:37.369
+Prof. Madhusudhanan: Vector V divided by summation of all the vectors, square of the vectors.
+
+585
+01:00:38.450 --> 01:00:41.830
+Prof. Madhusudhanan: Square root of summation of all the… Vectas.
+
+586
+01:00:43.880 --> 01:00:48.360
+Prof. Madhusudhanan: Right? Now, when I do this, when I normalize the data.
+
+587
+01:00:49.150 --> 01:00:52.900
+Prof. Madhusudhanan: My system performs… my system is very stable.
+
+588
+01:00:53.040 --> 01:00:57.389
+Prof. Madhusudhanan: So, normalization is compulsory when you talk of neural network.
+
+589
+01:00:58.150 --> 01:01:05.920
+Prof. Madhusudhanan: any, you know, normalization becomes compulsory. When you're giving inputs to the neural network, it has to be normalized.
+
+590
+01:01:07.010 --> 01:01:08.910
+Prof. Madhusudhanan: It has to be normalized.
+
+591
+01:01:12.710 --> 01:01:17.090
+Prof. Madhusudhanan: Alright. Advantages, reduces weight of common birds, highlights…
+
+592
+01:01:17.410 --> 01:01:20.569
+Prof. Madhusudhanan: Important and unique terms, we have discussed that.
+
+593
+01:01:20.920 --> 01:01:23.670
+Prof. Madhusudhanan: Great for text classification.
+
+594
+01:01:24.970 --> 01:01:35.330
+Prof. Madhusudhanan: But it will not capture the word order. It will not understand the context. Context is not understood. It'll require some sort of pre-processing, which is not…
+
+595
+01:01:35.730 --> 01:01:36.630
+Prof. Madhusudhanan: critical.
+
+596
+01:01:37.850 --> 01:01:41.769
+Prof. Madhusudhanan: The second component that became pretty popular is HER2 embedding.
+
+597
+01:01:44.010 --> 01:01:48.740
+Prof. Madhusudhanan: This is where… A little bit of context was understood.
+
+598
+01:01:51.750 --> 01:02:03.260
+Prof. Madhusudhanan: Right? Each word is mapped to a continuous vector, 100 to 300 dimensions. That is what I said, right? Role number, age, height.
+
+599
+01:02:03.610 --> 01:02:06.330
+Prof. Madhusudhanan: So on and so forth, 100 to 300.
+
+600
+01:02:08.300 --> 01:02:10.530
+Prof. Madhusudhanan: Glove was a very popular tool.
+
+601
+01:02:10.680 --> 01:02:11.910
+Prof. Madhusudhanan: geologic.
+
+602
+01:02:12.710 --> 01:02:18.729
+Prof. Madhusudhanan: But here, it used a shallow neural network, to train.
+
+603
+01:02:18.870 --> 01:02:20.419
+Prof. Madhusudhanan: To train the model.
+
+604
+01:02:22.070 --> 01:02:29.810
+Prof. Madhusudhanan: What did it do? I have two methods of doing it, training the model. I can say the… cat…
+
+605
+01:02:30.210 --> 01:02:37.779
+Prof. Madhusudhanan: Right? Dash on the mat. This is my input to my neural network.
+
+606
+01:02:38.790 --> 01:02:39.590
+Prof. Madhusudhanan: Right?
+
+607
+01:02:40.280 --> 01:02:43.889
+Prof. Madhusudhanan: Then I add an output, which is nothing but sad.
+
+608
+01:02:45.210 --> 01:02:49.670
+Prof. Madhusudhanan: Right? So, for every word, For every word.
+
+609
+01:02:49.890 --> 01:02:51.320
+Prof. Madhusudhanan: I'd take it up.
+
+610
+01:02:51.490 --> 01:02:55.340
+Prof. Madhusudhanan: I take up the sentence, Then I start.
+
+611
+01:02:57.170 --> 01:03:16.479
+Prof. Madhusudhanan: using… train the model using continuous bag of words, so that the moment the cat comes, the probability of SAT be selected becomes higher, because it is trained. Very similar to your neural network. Now, skipgram was the reverse of it, so that is why we say, you know, skipgram, what happens?
+
+612
+01:03:16.720 --> 01:03:18.829
+Prof. Madhusudhanan: If I have the bird cat.
+
+613
+01:03:19.570 --> 01:03:27.810
+Prof. Madhusudhanan: And based on that, I try to derive the… Dash sat on the mat.
+
+614
+01:03:28.560 --> 01:03:30.880
+Prof. Madhusudhanan: So, both of it. I'm covering both of it.
+
+615
+01:03:31.370 --> 01:03:39.850
+Prof. Madhusudhanan: And here, some sort of… Symptatic relationship was established.
+
+616
+01:03:41.120 --> 01:03:42.730
+Prof. Madhusudhanan: What is syntax?
+
+617
+01:03:42.970 --> 01:03:46.700
+Prof. Madhusudhanan: Syntax is the sequence in which the bird occurs.
+
+618
+01:03:47.010 --> 01:03:53.080
+Prof. Madhusudhanan: The cat sat on the mat. The mat sat on the cat. I cannot tell that.
+
+619
+01:03:53.590 --> 01:03:58.860
+Prof. Madhusudhanan: Right? So, the semantic and the syntactic meaning were character.
+
+620
+01:03:59.410 --> 01:04:05.640
+Prof. Madhusudhanan: Semantics is more about the meaning, and that is where where…
+
+621
+01:04:06.130 --> 01:04:12.430
+Prof. Madhusudhanan: King minus man plus woman equals queen. These are all something that can really work. I can train the model.
+
+622
+01:04:12.830 --> 01:04:13.680
+Prof. Madhusudhanan: Right?
+
+623
+01:04:15.800 --> 01:04:20.060
+Prof. Madhusudhanan: I can say prints minus… Boy.
+
+624
+01:04:20.920 --> 01:04:25.280
+Prof. Madhusudhanan: Plus… Girl equals princess.
+
+625
+01:04:27.090 --> 01:04:35.329
+Prof. Madhusudhanan: Right? I can either use continuous bag of notes or the skipgram to train it, and this became extremely popular.
+
+626
+01:04:36.110 --> 01:04:39.199
+Prof. Madhusudhanan: This became extremely popular. But still.
+
+627
+01:04:40.660 --> 01:04:47.300
+Prof. Madhusudhanan: The system was still not capable of understanding the context, when I say…
+
+628
+01:04:47.620 --> 01:04:51.430
+Prof. Madhusudhanan: No? The orange river, or the orange fruit?
+
+629
+01:04:51.980 --> 01:04:57.649
+Prof. Madhusudhanan: Orange and river occur close to each other, orange and fruit occur close to each other.
+
+630
+01:04:58.140 --> 01:05:01.670
+Prof. Madhusudhanan: Right? The relationship was still not captured.
+
+631
+01:05:04.070 --> 01:05:10.009
+Prof. Madhusudhanan: Or, no, the position was still not captured. That was the biggest… Challenge in birth to vectors.
+
+632
+01:05:10.710 --> 01:05:15.210
+Prof. Madhusudhanan: Right? Continuous backup words. Probability of word cat.
+
+633
+01:05:16.260 --> 01:05:17.180
+Prof. Madhusudhanan: Right?
+
+634
+01:05:17.520 --> 01:05:21.010
+Prof. Madhusudhanan: Or no? The probability of the word sacked.
+
+635
+01:05:21.460 --> 01:05:28.790
+Prof. Madhusudhanan: is… given… Right? The pipe symbol is called as given the, Cat.
+
+636
+01:05:29.450 --> 01:05:35.320
+Prof. Madhusudhanan: sat on… the WT plus 3 will be matte.
+
+637
+01:05:36.370 --> 01:05:43.869
+Prof. Madhusudhanan: So, I am just… I am just removing this SAT, training my neural network.
+
+638
+01:05:44.020 --> 01:05:49.000
+Prof. Madhusudhanan: The model gets learned. I do this for the entire vocabulary that I have.
+
+639
+01:05:49.330 --> 01:06:00.939
+Prof. Madhusudhanan: And now the system starts understanding. There are not rules, there is how they are trained, right? When I use this… it is only to understand how it understands the semantics.
+
+640
+01:06:01.650 --> 01:06:07.920
+Prof. Madhusudhanan: Right? So, word-to-vector, to a certain extent, understands semantics.
+
+641
+01:06:09.130 --> 01:06:17.490
+Prof. Madhusudhanan: Where else, no, given the word W of T plus K, generate probability of W of T plus K given WT.
+
+642
+01:06:17.860 --> 01:06:24.669
+Prof. Madhusudhanan: Given a single word, Given a single word, I'm going to generate a sequence of words.
+
+643
+01:06:26.810 --> 01:06:29.620
+Prof. Madhusudhanan: Right? And that was called a skip grams.
+
+644
+01:06:30.030 --> 01:06:35.919
+Prof. Madhusudhanan: Various research papers came in. Works well for frequent data, rare words, and so on and so forth.
+
+645
+01:06:38.810 --> 01:06:42.080
+Prof. Madhusudhanan: So it just worked on a softmax probability, that's all.
+
+646
+01:06:45.010 --> 01:06:49.459
+Prof. Madhusudhanan: I have my input vector. Given the input vector, I generate the output vector.
+
+647
+01:06:51.370 --> 01:06:52.700
+Prof. Madhusudhanan: Syntactic?
+
+648
+01:06:53.090 --> 01:07:04.129
+Prof. Madhusudhanan: is the grammar. That has to go through your, no, syntactic tree, part of speech. For syntactic, you can use something called as part of speech.
+
+649
+01:07:06.390 --> 01:07:09.160
+Prof. Madhusudhanan: Where I try to understand the grammar.
+
+650
+01:07:09.890 --> 01:07:12.799
+Prof. Madhusudhanan: Where I try to understand the grammar and take it far.
+
+651
+01:07:15.440 --> 01:07:18.780
+Prof. Madhusudhanan: Right? Though they are not used, Today.
+
+652
+01:07:18.970 --> 01:07:26.430
+Prof. Madhusudhanan: What I'm trying to tell you is, if you're trying to build a very small model, maybe training a word-to-vector is way easier.
+
+653
+01:07:26.760 --> 01:07:37.859
+Prof. Madhusudhanan: Selecting the vocabulary, no, selecting the tool which will do the embedding is extremely important when you're building a large language, when you're building solutions over a large language model.
+
+654
+01:07:38.930 --> 01:07:44.749
+Prof. Madhusudhanan: Or if you are going to tune the large language model, if you don't understand this, then you cannot train the model.
+
+655
+01:07:48.640 --> 01:07:52.459
+Prof. Madhusudhanan: So, skipgram works by the principle of softmax.
+
+656
+01:07:53.180 --> 01:07:58.419
+Prof. Madhusudhanan: Right? E to the power of X divided by summation of It is a perfectx.
+
+657
+01:08:00.170 --> 01:08:08.510
+Prof. Madhusudhanan: Simple, the output of a fully corrected layer is softmax. The same principle is used here.
+
+658
+01:08:10.580 --> 01:08:11.340
+Prof. Madhusudhanan: Great.
+
+659
+01:08:13.520 --> 01:08:19.479
+Prof. Madhusudhanan: So, the skipgram model learns word embeddings by maximizing the probability of predicting context words.
+
+660
+01:08:19.859 --> 01:08:30.649
+Prof. Madhusudhanan: Right? Whenever the cat comes, no, whenever we talk of the pizza, we also talk of the sauce. Whenever we talk of pizza, we talk of bread. Whenever we talk of pizza, we talk of
+
+661
+01:08:30.979 --> 01:08:32.010
+Prof. Madhusudhanan: Oven.
+
+662
+01:08:32.140 --> 01:08:38.610
+Prof. Madhusudhanan: Right? So, that is what it is trained on. That is how I use a simple neural network to train.
+
+663
+01:08:43.370 --> 01:08:44.140
+Prof. Madhusudhanan: Right?
+
+664
+01:08:44.290 --> 01:08:45.370
+Prof. Madhusudhanan: Input.
+
+665
+01:08:45.649 --> 01:08:47.530
+Prof. Madhusudhanan: Constraint output.
+
+666
+01:08:52.020 --> 01:08:56.099
+Prof. Madhusudhanan: Right? Input or center word, context or output word.
+
+667
+01:08:59.770 --> 01:09:02.549
+Prof. Madhusudhanan: So this is just a probability of generation.
+
+668
+01:09:06.890 --> 01:09:09.589
+Prof. Madhusudhanan: Yes, the presentation will be provided.
+
+669
+01:09:09.850 --> 01:09:22.230
+Prof. Madhusudhanan: What does the optimization learn? It tries to learn the linear encoding. It tries to understand the linear encoding. It starts understanding similarity between vectors.
+
+670
+01:09:22.710 --> 01:09:24.539
+Prof. Madhusudhanan: It starts understanding.
+
+671
+01:09:25.020 --> 01:09:32.429
+Prof. Madhusudhanan: Doctor, physician, car, vehicle. It starts understanding the non-similarity between a car and a cat.
+
+672
+01:09:33.950 --> 01:09:38.000
+Prof. Madhusudhanan: Right? Then it also starts understanding the relationship.
+
+673
+01:09:38.580 --> 01:09:43.919
+Prof. Madhusudhanan: Right? So I may talk of India, New Delhi, Tokyo, right? Japan, Tokyo.
+
+674
+01:09:45.090 --> 01:09:47.660
+Prof. Madhusudhanan: This is something which are captured.
+
+675
+01:09:47.910 --> 01:09:54.279
+Prof. Madhusudhanan: So, we saw our count vectorizer, the term frequency inverse document frequency, now we are seeing…
+
+676
+01:09:54.930 --> 01:09:59.060
+Prof. Madhusudhanan: Word to VEC, word to VEC vector.
+
+677
+01:10:00.690 --> 01:10:12.779
+Prof. Madhusudhanan: Where I'm able to see separate relationships. Whenever I see Paris, capital, France, no, and France, I might also see Tokyo, capital, Japan.
+
+678
+01:10:12.950 --> 01:10:14.720
+Prof. Madhusudhanan: I'm not saying in the same order.
+
+679
+01:10:14.830 --> 01:10:17.749
+Prof. Madhusudhanan: Right? Japan, capital, Tokyo.
+
+680
+01:10:18.560 --> 01:10:20.320
+Prof. Madhusudhanan: France, capital.
+
+681
+01:10:20.540 --> 01:10:29.339
+Prof. Madhusudhanan: Paris. Now you see how it is slowly captured. Look at it from the perspective of 300 vectors, 786 vectors, 784 vectors.
+
+682
+01:10:30.100 --> 01:10:30.910
+Prof. Madhusudhanan: Right?
+
+683
+01:10:32.850 --> 01:10:40.059
+Prof. Madhusudhanan: So, it arranges the data in the vector space. I showed you the idli and the Puriator.
+
+684
+01:10:40.600 --> 01:10:47.470
+Prof. Madhusudhanan: 3rd dimension, 4th dimension, 5th dimension, so on and so forth. Now I start linking them closely.
+
+685
+01:10:48.360 --> 01:10:52.400
+Prof. Madhusudhanan: I start linking them. King, queen, doctor, nurse, walk, walking.
+
+686
+01:10:53.900 --> 01:10:57.219
+Prof. Madhusudhanan: We also see that dog is very far away from economy.
+
+687
+01:10:59.520 --> 01:11:00.330
+Prof. Madhusudhanan: Got it?
+
+688
+01:11:02.260 --> 01:11:05.840
+Prof. Madhusudhanan: How do I find it? How do I find the relationship?
+
+689
+01:11:06.110 --> 01:11:07.850
+Prof. Madhusudhanan: Cosine similarity.
+
+690
+01:11:08.400 --> 01:11:14.349
+Prof. Madhusudhanan: I use the cosine similarity. I can also use analogy reasoning.
+
+691
+01:11:14.800 --> 01:11:17.030
+Prof. Madhusudhanan: I can also use clustering.
+
+692
+01:11:19.010 --> 01:11:23.280
+Prof. Madhusudhanan: I can also use… Clustering.
+
+693
+01:11:23.680 --> 01:11:26.559
+Prof. Madhusudhanan: Word to vec is a model.
+
+694
+01:11:27.330 --> 01:11:34.660
+Prof. Madhusudhanan: Similarity analogy reasoning, and… Clustering our methods or techniques.
+
+695
+01:11:38.390 --> 01:11:45.349
+Prof. Madhusudhanan: So, advantage, fast food train, right? So, sometimes we spend lots of rupees in training.
+
+696
+01:11:45.470 --> 01:11:48.530
+Prof. Madhusudhanan: If you're having a domain-specific problem.
+
+697
+01:11:49.510 --> 01:11:52.839
+Prof. Madhusudhanan: Yes, for every word, there is a vector created.
+
+698
+01:11:54.620 --> 01:11:59.009
+Prof. Madhusudhanan: Right? Which is what I call as a vocabulary. That is called as a word-level
+
+699
+01:11:59.270 --> 01:12:15.800
+Prof. Madhusudhanan: Yeah, no, tokenization. I can also use it as a sentence-level tokenization. Instead of using a word, the cat sat on the mat, the cat sat on the dog, the cat… I can have all these sentences, and I can give it a token. That is how your transformer model works.
+
+700
+01:12:17.660 --> 01:12:18.550
+Prof. Madhusudhanan: Right?
+
+701
+01:12:19.700 --> 01:12:29.759
+Prof. Madhusudhanan: What are the challenges? The look… position is not well understood. If I use the word bank, it really does not matter whether it is a riverbank or a
+
+702
+01:12:31.050 --> 01:12:32.410
+Prof. Madhusudhanan: Financial bank.
+
+703
+01:12:35.690 --> 01:12:38.109
+Prof. Madhusudhanan: There is what is called as a polysemi.
+
+704
+01:12:38.880 --> 01:12:43.890
+Prof. Madhusudhanan: And it requires a large amount of data.
+
+705
+01:12:44.160 --> 01:12:47.930
+Prof. Madhusudhanan: So you saw the training mechanism, SIBO or skipgram?
+
+706
+01:12:48.370 --> 01:12:55.619
+Prof. Madhusudhanan: Where else it does not take the sentence level. That is what BERT does. BERT is a transformer.
+
+707
+01:12:55.930 --> 01:13:03.209
+Prof. Madhusudhanan: architecture. It is an encoder-only transformer architecture. Just give me a minute, I'll be back.
+
+708
+01:14:25.190 --> 01:14:27.759
+Prof. Madhusudhanan: Right? Then came the…
+
+709
+01:14:28.470 --> 01:14:42.439
+Prof. Madhusudhanan: Bird embedding. Now, this is extremely important for you all, and this… until now, whatever you saw is what we see in the literature, but now we have started seeing something which is…
+
+710
+01:14:42.940 --> 01:14:45.330
+Prof. Madhusudhanan: Very much relevant to you.
+
+711
+01:14:45.600 --> 01:14:53.830
+Prof. Madhusudhanan: BERT is a transformer architecture. It is an encoder-only architecture. It can be used to understand the
+
+712
+01:14:54.700 --> 01:14:58.830
+Prof. Madhusudhanan: for semantics. It can be used to understand the semantics.
+
+713
+01:14:59.560 --> 01:15:10.949
+Prof. Madhusudhanan: Word-to-vector can be designed for sentence embedding also, but generally we do not do. We look at the word level, because the architecture of CBO and
+
+714
+01:15:11.180 --> 01:15:13.299
+Prof. Madhusudhanan: Skip Grammys for births.
+
+715
+01:15:13.510 --> 01:15:20.030
+Prof. Madhusudhanan: But it is possible, it is possible to tweak it and do it, but no, if you want a direct answer, no.
+
+716
+01:15:23.120 --> 01:15:32.589
+Prof. Madhusudhanan: So… So, in bird embedding, I can try to represent the word, a sentence, or an entire document.
+
+717
+01:15:33.840 --> 01:15:38.539
+Prof. Madhusudhanan: Then it also tries to get their semantic relationship
+
+718
+01:15:39.200 --> 01:15:43.189
+Prof. Madhusudhanan: By reading the text left to right and right to left.
+
+719
+01:15:44.490 --> 01:15:46.319
+Prof. Madhusudhanan: So, River Bank.
+
+720
+01:15:47.160 --> 01:16:02.079
+Prof. Madhusudhanan: Right? So, now, what is the advantage? The moment it sees river bank and financial bank, it'll always understand that bank in river is different from river bank, river space bank is different from financial space bank.
+
+721
+01:16:03.170 --> 01:16:04.719
+Prof. Madhusudhanan: I can train it.
+
+722
+01:16:04.980 --> 01:16:14.849
+Prof. Madhusudhanan: Right? And we call them as dense vectors, not sparse vectors. In my TF idea, we call them as sparse vectors, because I had so many zeros.
+
+723
+01:16:15.290 --> 01:16:23.079
+Prof. Madhusudhanan: Here, I'm representing it as 768 dimensions. The analogy is what I started in the beginning of this class.
+
+724
+01:16:24.720 --> 01:16:34.650
+Prof. Madhusudhanan: It can… the best part is it has rich semantic meaning. This is the most important component. If you're building a solution for
+
+725
+01:16:35.740 --> 01:16:47.549
+Prof. Madhusudhanan: for, say, medical domain, financial domain, agriculture domain. If your BERT model is trained, tuned to understand agriculture domain.
+
+726
+01:16:47.650 --> 01:16:57.870
+Prof. Madhusudhanan: Financial domain. Health domain. The understanding of the context of each sentence will be way higher.
+
+727
+01:17:00.450 --> 01:17:09.199
+Prof. Madhusudhanan: Right? So if you start understanding, I have stomach pain versus I have bellyache, versus I have abdomen pain.
+
+728
+01:17:11.020 --> 01:17:13.240
+Prof. Madhusudhanan: It'll know that all three are similar.
+
+729
+01:17:13.930 --> 01:17:16.419
+Prof. Madhusudhanan: Provided it is tuned.
+
+730
+01:17:16.650 --> 01:17:29.850
+Prof. Madhusudhanan: This is where your real work will come post, no, mid of 2026 or end of 2026, where people will try to optimize the solution.
+
+731
+01:17:30.160 --> 01:17:32.100
+Prof. Madhusudhanan: They'll start finding that, you know?
+
+732
+01:17:35.070 --> 01:17:44.819
+Prof. Madhusudhanan: Model transfer, frontier models are expensive, that is, APIs are expensive, or you do not want your data to go outside your system.
+
+733
+01:17:47.190 --> 01:17:49.450
+Prof. Madhusudhanan: Right? Because what is happening?
+
+734
+01:17:49.800 --> 01:17:57.420
+Prof. Madhusudhanan: I'm working in TCS, I'm getting a salary of 24 lakhs, I am blah blah blah, and I'm so much of years of experience.
+
+735
+01:17:59.150 --> 01:18:07.839
+Prof. Madhusudhanan: Tomorrow, somebody, you know, you use a chat GPT and ask some questions. Is this a great salary for me? Like this, 100 people might have asked.
+
+736
+01:18:09.980 --> 01:18:16.970
+Prof. Madhusudhanan: Then I ask a very simple question. I want to join ChatGPT, then these are my skill sets, what is the…
+
+737
+01:18:17.250 --> 01:18:19.610
+Prof. Madhusudhanan: Expected salary.
+
+738
+01:18:21.880 --> 01:18:22.940
+Prof. Madhusudhanan: Got it?
+
+739
+01:18:23.700 --> 01:18:33.200
+Prof. Madhusudhanan: Now you understand how the answer is coming. Of course, here I'm talking from a question-answer perspective, but if I look at all the data from Glassdoor.
+
+740
+01:18:34.040 --> 01:18:36.430
+Prof. Madhusudhanan: Now, immediately I start understanding.
+
+741
+01:18:38.540 --> 01:18:45.200
+Prof. Madhusudhanan: If I use a VPN and connect it from a… from US, And ask about the salary.
+
+742
+01:18:45.490 --> 01:18:50.150
+Prof. Madhusudhanan: with respect to IBM or Accenture, will I get it in dollars?
+
+743
+01:18:52.460 --> 01:19:02.000
+Prof. Madhusudhanan: Right? So, there is an engineering component, that means when I'm connecting via VPN, from the US, staying in India, the system assumes that I am a
+
+744
+01:19:03.440 --> 01:19:09.850
+Prof. Madhusudhanan: guy from UPS, you know, from USA, so he tries to help me by giving a salary in dollars.
+
+745
+01:19:12.560 --> 01:19:14.509
+Prof. Madhusudhanan: Right? I'm beating the system more.
+
+746
+01:19:14.630 --> 01:19:17.130
+Prof. Madhusudhanan: I'm making the system give me wrong answers.
+
+747
+01:19:19.430 --> 01:19:24.950
+Prof. Madhusudhanan: So, your engineering will talk about this. We are talking of a global HR policy.
+
+748
+01:19:25.630 --> 01:19:33.080
+Prof. Madhusudhanan: How do you have the metadata which tells that if I'm asking about dress code, I'm talking about the dress code in India?
+
+749
+01:19:33.920 --> 01:19:36.790
+Prof. Madhusudhanan: Maybe in India, you don't know, shots are not allowed.
+
+750
+01:19:38.730 --> 01:19:39.930
+Prof. Madhusudhanan: Where else in that?
+
+751
+01:19:41.090 --> 01:19:43.090
+Prof. Madhusudhanan: US shots are allowed.
+
+752
+01:19:44.810 --> 01:19:52.150
+Prof. Madhusudhanan: Right? So, that… those are the nuances where your… Work will become important.
+
+753
+01:19:56.130 --> 01:20:08.249
+Prof. Madhusudhanan: Right? I can represent a token, which is the smallest unit, which can be a sub-word. It need not be a word. It can be a sub-word. Walking can be walk, and ING.
+
+754
+01:20:08.690 --> 01:20:13.100
+Prof. Madhusudhanan: I told you, Amit, AM, and IT.
+
+755
+01:20:14.540 --> 01:20:20.249
+Prof. Madhusudhanan: But the beauty here was, it was able to map the position.
+
+756
+01:20:20.390 --> 01:20:27.539
+Prof. Madhusudhanan: How did I map this position? I take a sinusoidal bird, I take a cosine wave.
+
+757
+01:20:28.080 --> 01:20:31.280
+Prof. Madhusudhanan: And then, I take up each of these points.
+
+758
+01:20:31.420 --> 01:20:35.969
+Prof. Madhusudhanan: Apply a simple formula, and add this to app, you know, orange.
+
+759
+01:20:36.210 --> 01:20:38.489
+Prof. Madhusudhanan: So, what happens? What did I tell you?
+
+760
+01:20:39.650 --> 01:20:40.560
+Prof. Madhusudhanan: Right?
+
+761
+01:20:42.000 --> 01:20:48.530
+Prof. Madhusudhanan: I enjoyed… my… boat ride.
+
+762
+01:20:49.200 --> 01:20:56.860
+Prof. Madhusudhanan: In Orange River, first-time Orange, it understands the location of Orange through the positional embody.
+
+763
+01:20:57.420 --> 01:21:03.539
+Prof. Madhusudhanan: And I had a but… and I had a sweet… Orange colored orange.
+
+764
+01:21:03.670 --> 01:21:16.999
+Prof. Madhusudhanan: Orange-colored orange. The word orange everywhere I get the position. That positional embedding was done. Positional embedding was already there. Token embedding from Word2VEC was already there.
+
+765
+01:21:18.870 --> 01:21:22.199
+Prof. Madhusudhanan: pretty… Keys were already there.
+
+766
+01:21:22.350 --> 01:21:25.360
+Prof. Madhusudhanan: query key value was added by Vasmani.
+
+767
+01:21:26.500 --> 01:21:29.029
+Prof. Madhusudhanan: And it became transformer.
+
+768
+01:21:29.980 --> 01:21:35.139
+Prof. Madhusudhanan: Right? It was… QK was already there. Positional encoding was already there, token embedding was already there.
+
+769
+01:21:35.900 --> 01:21:44.400
+Prof. Madhusudhanan: he was able to collate it and add a component which made transformers great. I can do a segment embedding.
+
+770
+01:21:45.910 --> 01:21:54.189
+Prof. Madhusudhanan: Right? Why is this important? I can understand where this word is occurring. My name is Madhu, full stop. I am from Chennai.
+
+771
+01:21:54.650 --> 01:22:00.350
+Prof. Madhusudhanan: Right? I'll nurse, right? What is the probability that I'll say, I am from Chennai, my name is Madhu?
+
+772
+01:22:01.440 --> 01:22:06.319
+Prof. Madhusudhanan: So, the next sentence prediction also becomes part of the training.
+
+773
+01:22:09.010 --> 01:22:09.860
+Prof. Madhusudhanan: Right?
+
+774
+01:22:10.430 --> 01:22:16.200
+Prof. Madhusudhanan: So… KSON, that is what it'll talk about. The next sentence.
+
+775
+01:22:16.460 --> 01:22:22.119
+Prof. Madhusudhanan: We will not only talk of next word prediction, we talk of next sentence prediction.
+
+776
+01:22:23.610 --> 01:22:26.480
+Prof. Madhusudhanan: Right? That is what is important to create
+
+777
+01:22:27.040 --> 01:22:30.319
+Prof. Madhusudhanan: Sentences or, no, paragraphs of data for you.
+
+778
+01:22:31.470 --> 01:22:40.700
+Prof. Madhusudhanan: So, your input, your token is defined by the… by a token ID, a positional ID, and a segment ID.
+
+779
+01:22:41.980 --> 01:22:49.859
+Prof. Madhusudhanan: This is what gets into the transformer architecture, the encoder architecture, the decoder architecture.
+
+780
+01:22:53.690 --> 01:22:54.450
+Prof. Madhusudhanan: Right?
+
+781
+01:23:00.580 --> 01:23:07.820
+Prof. Madhusudhanan: Barun, I may not have the time to, really discuss about very key value.
+
+782
+01:23:08.130 --> 01:23:20.639
+Prof. Madhusudhanan: Because, no, it takes quite a good amount of time. But what it does is, the basic idea is, it tries to find out the importance of the word with respect to the other words.
+
+783
+01:23:21.390 --> 01:23:22.790
+Prof. Madhusudhanan: Hit, right?
+
+784
+01:23:23.250 --> 01:23:25.260
+Prof. Madhusudhanan: I was very hungry.
+
+785
+01:23:27.150 --> 01:23:34.859
+Prof. Madhusudhanan: I heated the pizza in the oven, and ate it. What did I eat? Did I eat the pizza, or did I eat the oven?
+
+786
+01:23:36.000 --> 01:23:47.849
+Prof. Madhusudhanan: Right? So, that position, what I say is, I eat the importance of yeet with respect to pizza, the importance of yeet with respect to Avan.
+
+787
+01:23:48.390 --> 01:23:52.610
+Prof. Madhusudhanan: The importance of the word yeet with pizza.
+
+788
+01:23:54.340 --> 01:24:02.159
+Prof. Madhusudhanan: Right? So, I know that from this, I can find out the importance. This is achieved using query key value.
+
+789
+01:24:05.180 --> 01:24:06.000
+Prof. Madhusudhanan: Great.
+
+790
+01:24:06.250 --> 01:24:12.000
+Prof. Madhusudhanan: Given a query, yet, my key is… Pizza?
+
+791
+01:24:13.050 --> 01:24:14.150
+Prof. Madhusudhanan: Avan?
+
+792
+01:24:15.070 --> 01:24:18.669
+Prof. Madhusudhanan: That is where we call it a self-attention, and we try to take it forward.
+
+793
+01:24:21.410 --> 01:24:25.250
+Prof. Madhusudhanan: Got it? Position predominantly talks about the
+
+794
+01:24:25.380 --> 01:24:36.819
+Prof. Madhusudhanan: Location of the word in a sentence. Segment talks about… The f- The location of multiple sentences.
+
+795
+01:24:37.610 --> 01:24:45.870
+Prof. Madhusudhanan: Right? If I have sentence A and B, then segment will talk of which sent… no, which… where is EA and where is B.
+
+796
+01:24:48.570 --> 01:24:53.759
+Prof. Madhusudhanan: Right? So, from… this is the way where we start understanding the…
+
+797
+01:24:53.920 --> 01:24:57.229
+Prof. Madhusudhanan: Meaning, because of the positional encoding.
+
+798
+01:25:02.000 --> 01:25:07.429
+Prof. Madhusudhanan: Right? So, bird gives completely different embeddings for the same bird.
+
+799
+01:25:07.720 --> 01:25:15.239
+Prof. Madhusudhanan: That means I started talking about the word orange having different numerical values based on the location.
+
+800
+01:25:19.360 --> 01:25:28.480
+Prof. Madhusudhanan: So, I can take a token embedding, represent it using 768 birds. Now, what happens if I have a sentence embedding? Let us say the sentence has 5 birds.
+
+801
+01:25:29.930 --> 01:25:31.419
+Prof. Madhusudhanan: I'll average it out.
+
+802
+01:25:31.530 --> 01:25:34.310
+Prof. Madhusudhanan: To still get 768 tokens.
+
+803
+01:25:34.880 --> 01:25:40.270
+Prof. Madhusudhanan: So I'm not going to have all these birds represented separately, I'll average it out.
+
+804
+01:25:41.960 --> 01:25:43.810
+Prof. Madhusudhanan: Noted? That is how it works.
+
+805
+01:25:44.230 --> 01:25:45.980
+Prof. Madhusudhanan: Right? And…
+
+806
+01:25:46.810 --> 01:25:59.259
+Prof. Madhusudhanan: No? I have my embedding dimension, but base has 768, but large has 1024, number of layers 12 and 24, right? So the size of the model changes.
+
+807
+01:26:02.710 --> 01:26:05.629
+Prof. Madhusudhanan: Right? Then, the number of attention heads.
+
+808
+01:26:06.420 --> 01:26:12.479
+Prof. Madhusudhanan: Right? So, when you have 768 words, no, maybe what happens is I try to…
+
+809
+01:26:12.980 --> 01:26:16.020
+Prof. Madhusudhanan: I tried to have split this
+
+810
+01:26:16.170 --> 01:26:26.690
+Prof. Madhusudhanan: 768 in different dimensions, smaller dimensions. I'm not splitting it. I'm representing it using smaller dimensions.
+
+811
+01:26:26.820 --> 01:26:30.949
+Prof. Madhusudhanan: It is like using a sentence, for one word.
+
+812
+01:26:33.030 --> 01:26:35.610
+Prof. Madhusudhanan: Right? Thirsty is one-dimensional.
+
+813
+01:26:37.350 --> 01:26:38.220
+Prof. Madhusudhanan: Right?
+
+814
+01:26:38.990 --> 01:26:42.929
+Prof. Madhusudhanan: Thirsty is the process where the Throat is parched.
+
+815
+01:26:43.240 --> 01:26:45.689
+Prof. Madhusudhanan: Is the definition of thirsty.
+
+816
+01:26:46.120 --> 01:26:46.960
+Prof. Madhusudhanan: Right?
+
+817
+01:26:47.270 --> 01:26:55.260
+Prof. Madhusudhanan: So… I can understand, given a document, I can represent it in smaller format.
+
+818
+01:26:56.500 --> 01:26:57.830
+Prof. Madhusudhanan: And this…
+
+819
+01:26:58.350 --> 01:27:15.009
+Prof. Madhusudhanan: I do a number of times, so that one multi-attention head will understand grammar, one attention head will understand synonym, one attention head will look at the antonyms, so on and so forth. And each attention head contributes something to my own.
+
+820
+01:27:16.680 --> 01:27:19.819
+Prof. Madhusudhanan: Right? So, a very good embedding technique.
+
+821
+01:27:20.340 --> 01:27:24.240
+Prof. Madhusudhanan: Helps you to… Basically, split the data.
+
+822
+01:27:25.690 --> 01:27:27.159
+Prof. Madhusudhanan: So, BERT embeddings?
+
+823
+01:27:27.910 --> 01:27:32.199
+Prof. Madhusudhanan: I can use it for text classification, semantic search.
+
+824
+01:27:32.380 --> 01:27:41.829
+Prof. Madhusudhanan: That means similar, no relevant document, document clustering, question answering. In question answering, please understand it is extractive summary.
+
+825
+01:27:42.070 --> 01:27:50.799
+Prof. Madhusudhanan: So, when we talk about question answering systems, or no, summarizing systems, there are two types of summaries. Extractive summarization.
+
+826
+01:27:51.200 --> 01:27:53.350
+Prof. Madhusudhanan: abstractive summarization.
+
+827
+01:27:54.970 --> 01:28:07.709
+Prof. Madhusudhanan: In extractive summarization, verbatim, I'll pull out the content and give. If I take my CV, I'm giving my CV, you go to my LinkedIn, you go to my LinkedIn and you see my profile.
+
+828
+01:28:07.970 --> 01:28:13.039
+Prof. Madhusudhanan: Right? You copy-paste some of the features, then no, you introduce me in a forum.
+
+829
+01:28:13.340 --> 01:28:20.930
+Prof. Madhusudhanan: You're doing extractive summarization, because you're taking it verbatim. But somebody tells it in a beautiful way.
+
+830
+01:28:21.390 --> 01:28:29.069
+Prof. Madhusudhanan: They rephrase the sentence. It is called as abstractive supperization. That is based on the next word token.
+
+831
+01:28:29.380 --> 01:28:42.169
+Prof. Madhusudhanan: And that is the characteristic of a decoder, rotten encoder. In encoder, BERT being an encoder model, does only extractive summarization. I can do similarity analysis.
+
+832
+01:28:43.590 --> 01:28:48.539
+Prof. Madhusudhanan: Advantage, disadvantage. Disadvantage, again, is always compute.
+
+833
+01:28:52.980 --> 01:29:04.609
+Prof. Madhusudhanan: Right? It may not have any explicit knowledge about… beyond training data. That is why I need to understand how to train it versus, you know, Vastava…
+
+834
+01:29:04.770 --> 01:29:05.940
+Prof. Madhusudhanan: Versus…
+
+835
+01:29:08.250 --> 01:29:14.590
+Prof. Madhusudhanan: how do I make it train, right? That is what… where we see how to break that words into smaller
+
+836
+01:29:14.920 --> 01:29:20.980
+Prof. Madhusudhanan: words, and then take it forward. And these are very important, because these are part of your vocabulary.
+
+837
+01:29:21.100 --> 01:29:25.460
+Prof. Madhusudhanan: From your vocabulary, you should be capable of building each and every word.
+
+838
+01:29:25.980 --> 01:29:30.840
+Prof. Madhusudhanan: every word, right? So we use some unicord… Unicode Methods.
+
+839
+01:29:31.590 --> 01:29:33.679
+Prof. Madhusudhanan: Right? The second type of…
+
+840
+01:29:35.000 --> 01:29:47.989
+Prof. Madhusudhanan: search method is the BM25. Here we saw we are using a dense matrix, using cosine similarity, but sometimes we have scenarios. In fact, in all your RAT systems, you use a hybrid of these two.
+
+841
+01:29:49.340 --> 01:29:50.180
+Prof. Madhusudhanan: Right?
+
+842
+01:29:50.800 --> 01:29:52.910
+Prof. Madhusudhanan: We try to understand
+
+843
+01:29:54.920 --> 01:30:00.740
+Prof. Madhusudhanan: the keyword by itself, we are not worried about the semantics. I'm not worried about abdomen, belly, stomach.
+
+844
+01:30:00.870 --> 01:30:04.119
+Prof. Madhusudhanan: If I give Billy, I'll pull out all the documents using Wendy.
+
+845
+01:30:04.380 --> 01:30:08.919
+Prof. Madhusudhanan: There are enough methods to do it, and Elasticsearch is extremely popular.
+
+846
+01:30:09.160 --> 01:30:16.509
+Prof. Madhusudhanan: You have billions of documents, millions of documents, I can use an elastic bird for searching the exact query.
+
+847
+01:30:16.620 --> 01:30:20.259
+Prof. Madhusudhanan: You may ask, what is this, what is there? Searching…
+
+848
+01:30:20.620 --> 01:30:23.120
+Prof. Madhusudhanan: Algorithms have to be very efficient.
+
+849
+01:30:24.810 --> 01:30:34.609
+Prof. Madhusudhanan: Right? So, it'll look more from the occurrences of the query words. It'll look at the question, the input query, and the output word.
+
+850
+01:30:37.760 --> 01:30:38.680
+Prof. Madhusudhanan: Got it?
+
+851
+01:30:40.090 --> 01:30:45.380
+Prof. Madhusudhanan: But, again, it has challenges. What happens if you have a large number of documents?
+
+852
+01:30:49.340 --> 01:30:57.810
+Prof. Madhusudhanan: Right? IDF plays a critical role. IDF plays a critical role. Rare documents are very well understood.
+
+853
+01:31:00.370 --> 01:31:02.799
+Prof. Madhusudhanan: And I have a rewarding mechanism.
+
+854
+01:31:08.040 --> 01:31:08.800
+Prof. Madhusudhanan: Got it.
+
+855
+01:31:16.880 --> 01:31:25.740
+Prof. Madhusudhanan: So, are the embedding guidelines common across whether a word is represented by 10 dimensions or 200 dimensions? No. It depends on the embedding model.
+
+856
+01:31:26.080 --> 01:31:32.959
+Prof. Madhusudhanan: That is the reason why I'm giving importance to you. But again, this is one of the most important components that you'll be
+
+857
+01:31:33.310 --> 01:31:34.140
+Prof. Madhusudhanan: Excuse me.
+
+858
+01:31:37.200 --> 01:31:38.370
+Prof. Madhusudhanan: I can use…
+
+859
+01:31:38.980 --> 01:31:47.820
+Prof. Madhusudhanan: Embodying the formula is not difficult at all. TFT comma D is term frequency of a word T in the document D.
+
+860
+01:31:48.150 --> 01:31:51.720
+Prof. Madhusudhanan: K1 is a frequency saturation algorithm, because
+
+861
+01:31:52.940 --> 01:31:59.269
+Prof. Madhusudhanan: BM25 tries to saturate if the word keeps occurring a large amount of time.
+
+862
+01:32:00.800 --> 01:32:02.840
+Prof. Madhusudhanan: A normalization factor.
+
+863
+01:32:04.210 --> 01:32:08.359
+Prof. Madhusudhanan: Which typically is 0.75. 0.6 to 0.85.
+
+864
+01:32:12.060 --> 01:32:20.340
+Prof. Madhusudhanan: I can also use IDF in BM25, but what is it we have learned? We are talking of two components, one which is based on semantics.
+
+865
+01:32:20.860 --> 01:32:28.759
+Prof. Madhusudhanan: One is to… which is based on exact words. So, BM25 uses the principle of TFIDF, where else
+
+866
+01:32:28.880 --> 01:32:34.199
+Prof. Madhusudhanan: Cosine similarity uses the principles of… Word to vector.
+
+867
+01:32:35.950 --> 01:32:40.849
+Prof. Madhusudhanan: Because when you build rack systems, you'll see a hybrid of this. Now you'll understand that.
+
+868
+01:32:41.500 --> 01:32:44.490
+Prof. Madhusudhanan: And of course, from there, I can get into clustering.
+
+869
+01:32:45.500 --> 01:32:58.690
+Prof. Madhusudhanan: So I'm converting that into vectors. Once I convert into vectors, I showed you idly and PUI can be separated, and that is nothing but clustering. And this clustering can also be used
+
+870
+01:32:58.850 --> 01:33:00.460
+Prof. Madhusudhanan: intelligently.
+
+871
+01:33:01.700 --> 01:33:07.260
+Prof. Madhusudhanan: Right? So, count vectorizer, TFI, DF, Birds are all popular.
+
+872
+01:33:08.250 --> 01:33:15.170
+Prof. Madhusudhanan: But if I use word-to-vector or BERT along with sentence transformers.
+
+873
+01:33:17.070 --> 01:33:20.600
+Prof. Madhusudhanan: And if you look at the vector space differences.
+
+874
+01:33:21.490 --> 01:33:28.649
+Prof. Madhusudhanan: I can form clusters to say that we saw that fruits, right? We saw apple, orange, mango.
+
+875
+01:33:29.140 --> 01:33:33.579
+Prof. Madhusudhanan: Then we see vegetables, tomato, bittergard.
+
+876
+01:33:33.740 --> 01:33:39.440
+Prof. Madhusudhanan: Onions. They all form clusters. And if you look at the larger picture, it is a food.
+
+877
+01:33:41.810 --> 01:33:46.170
+Prof. Madhusudhanan: Alright, so clustering is also equally important.
+
+878
+01:33:47.290 --> 01:33:48.100
+Prof. Madhusudhanan: Great.
+
+879
+01:33:48.550 --> 01:33:53.199
+Prof. Madhusudhanan: just trying to see the difference between Euclidean distance and cosine similarity.
+
+880
+01:33:56.120 --> 01:34:01.980
+Prof. Madhusudhanan: High cosine similarity sentences are semantically similar. Meaning-wise, they are similar.
+
+881
+01:34:04.300 --> 01:34:05.170
+Prof. Madhusudhanan: Got it?
+
+882
+01:34:06.680 --> 01:34:11.959
+Prof. Madhusudhanan: And one of the most popular methods is the k-means method. I use XI model, mu I1.
+
+883
+01:34:12.760 --> 01:34:13.890
+Prof. Madhusudhanan: Whole squared.
+
+884
+01:34:15.150 --> 01:34:18.180
+Prof. Madhusudhanan: I can use the Euclidean distance.
+
+885
+01:34:19.380 --> 01:34:21.280
+Prof. Madhusudhanan: With respect to them.
+
+886
+01:34:21.500 --> 01:34:26.209
+Prof. Madhusudhanan: mean value, Which is also the centroid.
+
+887
+01:34:28.540 --> 01:34:32.800
+Prof. Madhusudhanan: Right? Which is also the centroid, to form clusters.
+
+888
+01:34:33.700 --> 01:34:37.460
+Prof. Madhusudhanan: to form clusters. Generally, we say that clusters cannot overlap.
+
+889
+01:34:38.260 --> 01:34:40.310
+Prof. Madhusudhanan: They can be of different sizes.
+
+890
+01:34:41.770 --> 01:34:42.810
+Prof. Madhusudhanan: Excellent.
+
+891
+01:34:44.340 --> 01:34:49.229
+Prof. Madhusudhanan: Got it? So, so, Balaji will take over now?
+
+892
+01:34:49.650 --> 01:35:01.080
+Prof. Madhusudhanan: he will quickly run through some of the small demonstrations, which will also be shared with you. These are the outputs, right? You look at it, Delhi is the capital of India. It is sentence 1.
+
+893
+01:35:02.020 --> 01:35:03.779
+Prof. Madhusudhanan: Sentence 1 is here.
+
+894
+01:35:05.900 --> 01:35:07.510
+Prof. Madhusudhanan: Sentence 1 is here.
+
+895
+01:35:08.520 --> 01:35:12.669
+Prof. Madhusudhanan: Look at sentence 3. Tokyo is a major city in Japan.
+
+896
+01:35:15.770 --> 01:35:21.380
+Prof. Madhusudhanan: Look at sentence 18. Face recognition system detect and identify faces.
+
+897
+01:35:25.130 --> 01:35:26.010
+Prof. Madhusudhanan: Nope.
+
+898
+01:35:26.720 --> 01:35:28.790
+Prof. Madhusudhanan: Yes, good question, Abhishek.
+
+899
+01:35:29.420 --> 01:35:40.060
+Prof. Madhusudhanan: Yes, it can be used for query retrieval only. It is used… BM25 is used for query retrieval. Abhishek, yes, you should understand.
+
+900
+01:35:42.210 --> 01:35:50.090
+Prof. Madhusudhanan: Right? If guidelines are not common, your re-embedding technique for the data…
+
+901
+01:35:50.310 --> 01:35:53.130
+Prof. Madhusudhanan: And for the query should be the same.
+
+902
+01:35:53.420 --> 01:35:55.860
+Prof. Madhusudhanan: That is why we come to that level.
+
+903
+01:35:58.110 --> 01:36:06.400
+Prof. Madhusudhanan: Got it? It should be the same. Today, you use so many tools that… that… that is lost
+
+904
+01:36:07.160 --> 01:36:08.380
+Prof. Madhusudhanan: It is lost.
+
+905
+01:36:08.510 --> 01:36:13.959
+Prof. Madhusudhanan: You just assume they are the same. No, there are hundreds of embedding techniques.
+
+906
+01:36:14.210 --> 01:36:15.520
+Prof. Madhusudhanan: Open source.
+
+907
+01:36:15.810 --> 01:36:19.699
+Prof. Madhusudhanan: private… Right? OpenAI is its own modeling.
+
+908
+01:36:21.060 --> 01:36:25.419
+Prof. Madhusudhanan: Initially, the weights are random, and they are trained as Satric.
+
+909
+01:36:32.670 --> 01:36:40.740
+Prof. Madhusudhanan: I hope you understood. In the next session, you'll understand why are we talking of this? Now, you might be slightly lost. Okay, great.
+
+910
+01:36:40.940 --> 01:36:42.200
+Prof. Madhusudhanan: This is there.
+
+911
+01:36:42.510 --> 01:36:50.570
+Prof. Madhusudhanan: But, you know, why we'll start understanding varies in the next… this thing.
+
+912
+01:36:50.710 --> 01:36:58.910
+Prof. Madhusudhanan: Not in the next, workshop or your webinar, we'll start understanding the why component.
+
+913
+01:37:00.500 --> 01:37:10.090
+Prof. Madhusudhanan: Let's look at it, how beautifully it is showing. S18 is different from S13. I'm just looking here, and I can tell how my output is different.
+
+914
+01:37:10.670 --> 01:37:18.589
+Prof. Madhusudhanan: Right? So… Thank you. Are there any questions? I'll wait for a minute, and then hand over to…
+
+915
+01:37:18.830 --> 01:37:19.690
+Prof. Madhusudhanan: Balaji?
+
+916
+01:37:23.230 --> 01:37:32.989
+Prof. Madhusudhanan: Yeah, you can see the clusters in any way you want. But, you know, I'm just trying to show that yellow ones, green ones, and the brown ones are well separated.
+
+917
+01:37:40.500 --> 01:37:55.779
+Prof. Madhusudhanan: Dimension is the size of the vector. The number of vectors becomes the dimension. It could be, you know, 300, 7608,000, 24,536, whatever it is. Parameters are the weights in the
+
+918
+01:37:56.160 --> 01:37:57.150
+Prof. Madhusudhanan: model.
+
+919
+01:37:58.030 --> 01:38:04.949
+Prof. Madhusudhanan: parameters are the weights in the model. Hyperparameters are the values that can be changed to
+
+920
+01:38:05.830 --> 01:38:13.630
+Prof. Madhusudhanan: To, you know, hyperparameters are the parameters that can be changed to change the way the model behaves.
+
+921
+01:38:15.540 --> 01:38:16.350
+Prof. Madhusudhanan: Got it.
+
+922
+01:38:18.760 --> 01:38:20.830
+Prof. Madhusudhanan: Weights are necessary because…
+
+923
+01:38:20.990 --> 01:38:27.670
+Prof. Madhusudhanan: Because without weights, how are you going to adjust? How are you going to find the relationship between king and queen?
+
+924
+01:38:28.580 --> 01:38:39.600
+Prof. Madhusudhanan: I have to adjust the weight so that king and queen becomes close to each other. Initially, king has the random value, queen as a random value. I keep training the system so that the weight… they become closer to each other.
+
+925
+01:38:39.760 --> 01:38:42.560
+Prof. Madhusudhanan: I'll just say… I'll have to say, right?
+
+926
+01:38:42.900 --> 01:38:44.430
+Prof. Madhusudhanan: Yeah, potato.
+
+927
+01:38:44.570 --> 01:38:46.250
+Prof. Madhusudhanan: is closer to where?
+
+928
+01:38:46.720 --> 01:38:47.700
+Prof. Madhusudhanan: Cabbage.
+
+929
+01:38:48.390 --> 01:38:51.440
+Prof. Madhusudhanan: I have to say, and Apple is closer to where?
+
+930
+01:38:51.690 --> 01:38:56.429
+Prof. Madhusudhanan: Orange. But potato and apples are also closer to each other because they are food.
+
+931
+01:38:58.880 --> 01:39:02.940
+Prof. Madhusudhanan: Then only the context can be understood, cinemas are.
+
+932
+01:39:03.110 --> 01:39:05.959
+Prof. Madhusudhanan: Right? 70B is a overkill.
+
+933
+01:39:06.100 --> 01:39:10.400
+Prof. Madhusudhanan: If you're doing some sort of smaller data, less amount of…
+
+934
+01:39:10.640 --> 01:39:16.579
+Prof. Madhusudhanan: data, the reasoning is not very large, then 70B is not required. 7B is sufficient.
+
+935
+01:39:17.030 --> 01:39:20.650
+Prof. Madhusudhanan: The cost of running a 70B is way higher than a 7B model.
+
+936
+01:39:22.430 --> 01:39:32.179
+Prof. Madhusudhanan: Yes, Priya, right? The embedding plays a critical role. It depends on the model. That is why it's highlighted on BERT.
+
+937
+01:39:32.990 --> 01:39:46.039
+Prof. Madhusudhanan: BERT will ensure… BERT will ensure that you can do a tuning of the model for your domain. Domain adoption, adaptation with BERT is extremely easy.
+
+938
+01:39:46.270 --> 01:39:53.160
+Prof. Madhusudhanan: I can build my own embedding model. When you start working in RAG in a very large day, this becomes important.
+
+939
+01:39:55.530 --> 01:40:02.260
+Prof. Madhusudhanan: Yes, so you'll have, Ajit, you'll have 4, I think, three or four webinars. It'll be a continuity.
+
+940
+01:40:02.430 --> 01:40:08.840
+Prof. Madhusudhanan: Thank you, thank you all. I'll hand over to Balaji for some meaningful demonstrations. Thank you.
+
+941
+01:40:09.960 --> 01:40:15.780
+Bala ji: Yeah, Professor, thank you. So… I hope, everyone can be able to hear me, right?
+
+942
+01:40:19.410 --> 01:40:20.689
+Bala ji: Okay, okay.
+
+943
+01:40:30.930 --> 01:40:31.720
+Bala ji: Okay.
+
+944
+01:40:32.770 --> 01:40:37.540
+Bala ji: So, you are unable to see my, google co-op screen, right?
+
+945
+01:40:39.460 --> 01:40:40.670
+Bala ji: Okay, okay.
+
+946
+01:40:40.960 --> 01:40:44.680
+Bala ji: So, what I'll do is, I'll also share this notebook with you, okay?
+
+947
+01:40:44.810 --> 01:40:48.510
+Bala ji: You can also, like, run. It won't take, much time.
+
+948
+01:40:49.280 --> 01:40:51.069
+Bala ji: I will put it in the chat.
+
+949
+01:40:57.330 --> 01:41:07.380
+Bala ji: I already executed it, okay? You also can execute it along with me, like, I'll be just explaining. You can start executing it, okay? So…
+
+950
+01:41:08.200 --> 01:41:27.590
+Bala ji: We all know, right, like, what Professor Madhu is, like, mentioning about, what is this, text embedding is, okay? So, it is a, like, way to convert, text into a number, so that, like, computer can understand the language, okay? So, this is what the, text embedding is about. So, initially, like, we'll be starting with,
+
+951
+01:41:27.720 --> 01:41:34.379
+Bala ji: installing, whatever libraries that is required. So, in this case, like, we are starting with, installing Gensim.
+
+952
+01:41:34.620 --> 01:41:48.769
+Bala ji: It is, like, a very popular library, which is, like, used in natural language processing, especially, like, while we are working with, text embedding, like, Word2Web, okay? So that's why, like, we are, installing this GenSim, okay?
+
+953
+01:41:49.900 --> 01:41:51.100
+Bala ji: I'll just…
+
+954
+01:41:51.830 --> 01:42:00.030
+Bala ji: I'll just execute it, okay? So, everyone can able to open this notebook, right? You can start running along with me, okay?
+
+955
+01:42:02.460 --> 01:42:04.390
+Bala ji: Okay, thank you. Yeah.
+
+956
+01:42:08.690 --> 01:42:19.450
+Bala ji: So, it will take some, few seconds, okay, for installing this gensim. And, like, we'll be importing a few of, like, required libraries for doing this text embedding, okay?
+
+957
+01:42:19.610 --> 01:42:32.020
+Bala ji: So, we are importing, like, different libraries, let's say, like, text embedding, vector processing, clustering, and, like, for doing this, process, like, we are importing some of our required libraries.
+
+958
+01:42:32.170 --> 01:42:45.150
+Bala ji: So, we all know, like, Matplotlib is for doing visualization, and NumPy is for doing some kind of scientific computation, numerical computation, okay? And then also, like, we are importing the count vectorizer.
+
+959
+01:42:45.150 --> 01:42:56.009
+Bala ji: Okay? So, count vectorizer and TFIDF, what are Professor Madhu, like, discussing, right, with you all? So, we'll be, like, importing this thing from a scikit-learn library.
+
+960
+01:42:56.010 --> 01:43:09.580
+Bala ji: Where this, count vectorizer and TFIDF vectorizer are, like, traditional text vectorization, vectorization, method, okay? Like, we all know that count vectorizer, will be, like, converting the.
+
+961
+01:43:09.580 --> 01:43:20.219
+Bala ji: text into a bag of words. It's a kind of matrix, okay? And then TFID effectorizer will be, like, giving weights to the words, okay? So, that is why, like, we are importing this thing.
+
+962
+01:43:20.220 --> 01:43:22.280
+Bala ji: from the SQL library, okay?
+
+963
+01:43:23.150 --> 01:43:29.009
+Bala ji: And also, we'll be doing some set of, clustering, that's why, like, we are importing this k-means.
+
+964
+01:43:29.010 --> 01:43:43.409
+Bala ji: To visualize it in, like, very, like, because we… we have seen that, vectors are, like, in very high dimensions, so we should, like, reduce the dimension. So that's why here we are, using these PCA concepts, okay?
+
+965
+01:43:43.620 --> 01:43:53.770
+Bala ji: And then, we'll be also doing some computation, like, we need this equal den distance and cosine similarity, that's why, like, we are importing this thing, okay?
+
+966
+01:43:54.070 --> 01:44:09.910
+Bala ji: And also, you can able to see, we are also, importing the sentence transformer, which is, like, a pre-trained model, which is based on a transformer architecture, like, Bert will be, like, using here, okay? To generate, some kind of,
+
+967
+01:44:09.910 --> 01:44:20.690
+Bala ji: dense, center embedding, sentence, embeddings, okay? Like, we'll be seeing that, which will be, like, capturing the, semantic meaning of the sentence, whatever, that we are going to…
+
+968
+01:44:21.060 --> 01:44:22.390
+Bala ji: See here, okay?
+
+969
+01:44:23.200 --> 01:44:25.460
+Bala ji: So, I'm executing this also.
+
+970
+01:44:27.940 --> 01:44:39.549
+Bala ji: Okay? And then, this is what Professor Madhu shown in the deck, okay? These are a few sentences, like, we… we are going to, like, embed it, and we are going to do some kind of cluster analysis.
+
+971
+01:44:39.550 --> 01:44:51.740
+Bala ji: So, you can able to see, like, how the, sentence groups are here. Like, each sentence are, like, here, representing a different topic, or it can be, like, different domain.
+
+972
+01:44:51.740 --> 01:45:02.590
+Bala ji: For example, like, here you can able to see, first few sentences are, like, which is, like, related to, cities, okay, different cities around the world, like, Delhi, Tokyo, Paris.
+
+973
+01:45:02.650 --> 01:45:14.310
+Bala ji: New York, London, okay, Sydney. And also, like, we can, yeah, I shared, I shared the link in the chat, okay? Maybe after this session, I'll be also,
+
+974
+01:45:14.500 --> 01:45:17.850
+Bala ji: I'll be also sharing this as an IPONV format, okay?
+
+975
+01:45:18.430 --> 01:45:23.010
+Bala ji: For now, you can open this link, and you can start running it, along with me.
+
+976
+01:45:23.140 --> 01:45:42.170
+Bala ji: Okay? And the next group, like, here, we can able to see something which is, like, related to natural language processing, like LLMs, transformers, LNP models, and tokenization, and language models, okay? So this is, like, next set of group, and we are also having one more group here, which is, like, related to computer vision topics, related to computer vision.
+
+977
+01:45:42.170 --> 01:45:56.589
+Bala ji: Okay? Because we want to see the, like, how these embeddings are happening, so that's why, like, purposefully, like, here, we are having 3 different, set of sentences, okay? We'll be using this for, embedding, and also we'll be visualizing it, okay?
+
+978
+01:46:01.240 --> 01:46:07.049
+Bala ji: Yeah, you can also download it, okay? You can also download it, no problem. Yeah, the option will be there, okay?
+
+979
+01:46:09.090 --> 01:46:15.730
+Bala ji: And then, first thing, like, we are going to see, like, this count vectorizer, okay?
+
+980
+01:46:16.310 --> 01:46:17.330
+Bala ji: So…
+
+981
+01:46:17.520 --> 01:46:33.329
+Bala ji: It is like, we… here we are using this count vectorizer to convert the text into a number, okay? By using bag-of-word method, okay? What we already seen. Professor Madhu discussed, regarding this, bag-of-words method, okay?
+
+982
+01:46:33.500 --> 01:46:40.969
+Bala ji: So, here we are first creating an object, okay? Here we are first creating an object called CV.
+
+983
+01:46:41.130 --> 01:46:51.150
+Bala ji: which is known as the count vectorizer, okay? And then, and then, like, here, here, what, here, what will be happening is, like,
+
+984
+01:46:51.270 --> 01:47:07.219
+Bala ji: It first reads all the sentences in the dataset, okay? What are the dataset that here we are seeing, right? This can be, like, assumed as a dataset. First, it will be, like, reading all the sentences in the dataset, and then it will be creating a vocabulary, okay? Which means, like.
+
+985
+01:47:07.220 --> 01:47:18.019
+Bala ji: It will be having a list, okay, of all the unique words, okay, that appears in these sentences, okay? So, it will be having those informations, okay?
+
+986
+01:47:18.120 --> 01:47:19.930
+Bala ji: And then,
+
+987
+01:47:19.930 --> 01:47:44.620
+Bala ji: like, it will be, like, creating some set of vectors, okay, where the, this, this vector will be, like, having, rows and columns, okay? Where, like, each row will be, like, representing the, one sentence, okay? Because here we can able to see lots of sentences here, okay? So each row in the vector will be, like, representing one sentence, okay? And column will be, like, representing the words, okay, from the vocabulary.
+
+988
+01:47:45.990 --> 01:47:54.150
+Bala ji: Okay, next step, like, here, what we are doing is, we are, fitting, okay, we are fitting and transforming the sentence to array.
+
+989
+01:47:54.150 --> 01:48:12.149
+Bala ji: to array means, like, it will be, like, transformed to, NumPy array for, for, to see, like, how these, vectors are, looks like, okay? How the embeddings are happening. So, here you can able to see this, right? I just executed it. Here, you can able to see, like, lots of zeros are here.
+
+990
+01:48:12.340 --> 01:48:29.260
+Bala ji: Okay? Because, the thing is, here, the result is, like, stored in, like, a sports matrix, which means it is, like, a memory-efficient format, because, like, most of values in this, in this matrix is going to be, like, zero. Okay? We are converting it into a, like, array format.
+
+991
+01:48:29.260 --> 01:48:46.959
+Bala ji: So that it will be, like, for performing, like, any kind of operations, okay, by using NumPy, like, we are doing this two array here, okay? We are seeing this, right? We are converting it, okay? So that's what, here, you can able to see the, countrys vector embedding matrix, okay?
+
+992
+01:48:48.030 --> 01:48:51.610
+Bala ji: So, we all know…
+
+993
+01:48:52.330 --> 01:49:00.149
+Bala ji: Yes, yes, yes, yes, yes, yes, you're correct. So, here you can be able to see, again, I'm saying the rows, okay, which represents the…
+
+994
+01:49:00.150 --> 01:49:10.370
+Bala ji: sentence, okay? And the columns, or the, like, words in the vocabulary, and the value represents, okay? Here, you can also see zeros and ones in this, matrix.
+
+995
+01:49:10.370 --> 01:49:22.010
+Bala ji: Okay, so this value represents, like, how many times each word, okay, appears in the sentence. For example, Tokyo is, like, appear for two means, then 2 times means, then we'll be getting the value of 2.
+
+996
+01:49:22.180 --> 01:49:23.010
+Bala ji: Okay.
+
+997
+01:49:23.920 --> 01:49:48.090
+Bala ji: So, this is, like, one method, okay? Like, by using, count vectorizer. And then, once we are having this, we'll be, like, computing the, distances, okay? That is equivalent in distance, and also, like, we'll be finding the cosine similarity, okay? That's what here we'll be doing. I'll be just giving, like, high, high-level view of this, and for different, techniques, like, we'll be doing this same thing.
+
+998
+01:49:48.090 --> 01:49:53.210
+Bala ji: Okay, this cosine similarity and Euclidean distance, okay?
+
+999
+01:49:53.210 --> 01:49:59.449
+Bala ji: I'm just executing this also. I'll tell, like, a very high level, like, what is happening.
+
+1000
+01:50:00.200 --> 01:50:08.670
+Bala ji: So, we'll be knowing, like, first here, we'll be, like, calculating the Euclidean distance between, all sentences, okay? All sentence vectors.
+
+1001
+01:50:08.670 --> 01:50:26.190
+Bala ji: And then, like, here, what is happening is, like, this equilibrarian distance will be, like, it'll be measuring the stateline distance, okay, between two vectors, okay, in the vector space. So that's what here this equilibrarian distance, function is, like, doing, okay? And also, like, here you can able to see,
+
+1002
+01:50:26.300 --> 01:50:34.099
+Bala ji: We are having the SSD, okay? We are having the SSD, which is the, sum of square distance, okay? Sum of square distance.
+
+1003
+01:50:34.140 --> 01:50:50.260
+Bala ji: So, this will be, like, giving us, like, overall value, like, which will be telling the spread of the sentence vector, like, which are in the vector space, like, how it is, like, spread in the vector space. So, we'll be getting that information by computing this SST, okay?
+
+1004
+01:50:51.080 --> 01:50:57.129
+Bala ji: And then we are finally, like, we are also computing cosine similarity here. Like, we all know, like,
+
+1005
+01:50:57.130 --> 01:51:18.299
+Bala ji: like, what is this, cosine similarities? Like, it is, like, not a, like, a distance kind of thing. Instead, like, it'll be measuring the, angle between two vectors, okay? It will be, like, measuring angle between two vectors, so that's why here we are using this cosine similarity, okay? And we are also printing each and everything. We are printing Euclidean distance.
+
+1006
+01:51:18.300 --> 01:51:24.809
+Bala ji: And then we are also printing the sum of square distance, also cosine similarity, so you can able to see the printed values, okay?
+
+1007
+01:51:24.970 --> 01:51:41.610
+Bala ji: You can also, like, after this session, you can try with some different sentences and see, like, how it looks like. Once this is done, we are going to, like, cluster it, okay? I'm executing it. We know that here, the, like, whatever the sentences that we are having, it is, like.
+
+1008
+01:51:41.610 --> 01:51:52.440
+Bala ji: In three different categories, so that's why I'm setting it as, like, end clusters as 3, okay? And, like, we'll be able to see the, visualization of it. I'm just,
+
+1009
+01:51:52.810 --> 01:51:56.999
+Bala ji: Applying PCIe, PCL, that is a Principal Component Analysis.
+
+1010
+01:51:57.170 --> 01:51:59.800
+Bala ji: Okay? So…
+
+1011
+01:52:00.000 --> 01:52:18.790
+Bala ji: Because, like, it'll be having very high dimension, okay? We… it will be, like, very difficult for us to visualize the high-dimensional data. So, like, we are using PCA to reduce the number of dimension. So, here, like, we are reducing the embeddings to two dimensions, okay? We'll be having, like, X and Y, and we can easily be able to visualize it.
+
+1012
+01:52:19.510 --> 01:52:21.670
+Bala ji: So, here you can able to see the…
+
+1013
+01:52:21.670 --> 01:52:46.559
+Bala ji: how it is, like, clustered, okay? Different sentences, like, whatever we have seen, right? By using this count vectorizer, technique, okay? And then we clustered it, and we, reduce it to, like, two dimensions for visualizing it, okay? You can be able to see, like, how it is, like, spread it, okay? We'll be also, like, seeing, other techniques, like, TFIDF, where to work, and also, bird embedding.
+
+1014
+01:52:46.560 --> 01:52:52.120
+Bala ji: Okay? And this thing is going to be similar, okay? These plot clusters and,
+
+1015
+01:52:52.120 --> 01:53:16.360
+Bala ji: by using this Kmens clustering, okay? This is going to be similar. And also, whatever thing that here we are computer, right? This equilibrarian distance, and the SST, and cosine similarity, this is also, like, going to be similar. I'll be, like, only focusing on the other technique, like, in very high level, okay? And we'll be seeing how it looks like, okay? In terms of, different techniques, or, like, how it is,
+
+1016
+01:53:16.360 --> 01:53:21.149
+Bala ji: Being, like, visualized for a given same set of sentences, okay?
+
+1017
+01:53:24.630 --> 01:53:29.920
+Bala ji: Next, we are moving on to TF IDF, okay? You can also, like, run it and see.
+
+1018
+01:53:30.200 --> 01:53:42.519
+Bala ji: So, here you can be able to see the embedded matrix of this, TF IDF. It will be, like, having some set of weights, okay? It will be having a set of weights. That means, like,
+
+1019
+01:53:42.810 --> 01:53:51.240
+Bala ji: This is nothing like, temp frequency, okay, and the inverse document frequency, so that's what, yeah, the TF IDF is.
+
+1020
+01:53:51.760 --> 01:54:05.549
+Bala ji: So, here, two things we'll be doing. Here, we'll be doing two things. One is to, like, learn all unique words, okay, in the dataset, and, like, we'll be building the vocabulary, and then we are transforming it, okay, and then we are transforming it.
+
+1021
+01:54:05.550 --> 01:54:12.399
+Bala ji: So, it'll be, like, converting each sentence into a, like, numerical vector, okay? Numerical vector on this, TFID of, weights.
+
+1022
+01:54:12.400 --> 01:54:17.350
+Bala ji: So these are all weights, okay? These are all weights, so whatever here you are seeing, right, these are all weights.
+
+1023
+01:54:17.640 --> 01:54:24.759
+Bala ji: Okay, so again here, each row is, like, representing a sentence, and each column, the matrix is going to be.
+
+1024
+01:54:24.760 --> 01:54:38.199
+Bala ji: Which will be, like, representing, a word in the vocabulary, okay? And each value in, each, each of the cell, okay, which will be, like, representing the TFID of weights, okay, of that word in the sentence. So…
+
+1025
+01:54:39.150 --> 01:54:49.570
+Bala ji: These are all weights for the, words in the sentence, okay? So, and then, again, here we are going to compute the distance, okay? Equivalent distance and cosine similarity.
+
+1026
+01:54:49.700 --> 01:54:58.920
+Bala ji: Once this is done, you can be able to see, like, what are all the values, okay? How it is, like, differ from previous computation. That is, by using count vectorizer.
+
+1027
+01:54:59.200 --> 01:55:06.000
+Bala ji: Okay? And then, I'm going to cluster it, and I'm going to reduce the dimension, okay, for visualization purpose.
+
+1028
+01:55:09.650 --> 01:55:17.559
+Bala ji: So now, here you can be able to see, how the, clustering is for this TF and IDF, okay? IDF technique.
+
+1029
+01:55:17.760 --> 01:55:27.359
+Bala ji: Next, we are moving on to the word vector. Here, we'll be, like, we'll be doing some set of small training here, okay?
+
+1030
+01:55:35.850 --> 01:55:37.780
+Bala ji: Yeah. So…
+
+1031
+01:55:37.840 --> 01:55:54.350
+Bala ji: So first step here, what here we'll be doing is, like, we need to preprocess, okay? We need to do some set of pre-processing, because, like, a way to vector, like, does not, like, directly work on the full sentences, like, whatever sentences we give, right? It won't work directly.
+
+1032
+01:55:54.350 --> 01:56:06.019
+Bala ji: It need to be, like, split. Some kind of split need to get, happen. That means, like, we'll be splitting, individual words, okay? Which we'll be calling it as a token, okay? So, that's what here we are doing.
+
+1033
+01:56:06.120 --> 01:56:26.860
+Bala ji: Okay? That means, we are also, like, seen in the deck, okay? It will be, like, converting all text to, like, lowercase, and then it will be removing the punctuations, and it removes the numbers, okay? And then it splits the, sentences into, like, individual words. So that's what the, process, like, first process is about. And then we'll be, like, training this word-vector model.
+
+1034
+01:56:26.860 --> 01:56:27.540
+Bala ji: Okay?
+
+1035
+01:56:28.790 --> 01:56:41.349
+Bala ji: So, we need to train it, because to generate the, word embedding. So, that's what here we are doing. First, we are passing the, those, tokenized sentence, okay? So.
+
+1036
+01:56:41.350 --> 01:56:49.459
+Bala ji: whatever the token is that we are recreated, right? So, we are passing in here, and then we are setting the vector size, that is the embedding dimension as 50.
+
+1037
+01:56:49.460 --> 01:56:56.040
+Bala ji: Okay, so like that, we are passing in some parameters, okay? And here we are using a scriptgram, okay?
+
+1038
+01:56:56.350 --> 01:56:57.420
+Bala ji: And…
+
+1039
+01:56:57.670 --> 01:57:09.759
+Bala ji: Yeah, we are using these parameters, and we'll be training it. Then, like, we'll be getting the, embeddings, okay? Then we'll be getting the embeddings of, by using this word together.
+
+1040
+01:57:10.860 --> 01:57:15.990
+Bala ji: Okay, that means here, now, we have created the sentence embedding, okay, using the We2X model.
+
+1041
+01:57:16.170 --> 01:57:26.229
+Bala ji: So we know that this, web-to-vec is, like, normally will be generating the, embedding for, individual words, okay, and not for the full sentences.
+
+1042
+01:57:26.310 --> 01:57:39.699
+Bala ji: So, here, like, we need to… this method is, like, to convert the word embeddings into, like, sentence embedding. So, that's what here we are, doing, okay? This function is, like, all about,
+
+1043
+01:57:39.700 --> 01:57:58.860
+Bala ji: like, converting the word embedding into a sentence embodying, okay? And then, here the approach that here we are following is, like, we are taking the average of, all word vectors in a sentence, okay? That's what here we are doing. So, this function is, like, taking two different things. One is the token of sentence, okay? One is the token of sentence.
+
+1044
+01:57:58.860 --> 01:58:05.470
+Bala ji: And then the, the trained word-to-width model, okay? These are the two things, this function is taking.
+
+1045
+01:58:05.530 --> 01:58:06.300
+Bala ji: Okay?
+
+1046
+01:58:06.670 --> 01:58:15.850
+Bala ji: Once this is done, like, again, we'll be doing this, distance matrix and, cosine similarity for this, word-to-weck, okay?
+
+1047
+01:58:16.490 --> 01:58:19.650
+Bala ji: Next, now we are going to visualize it.
+
+1048
+01:58:23.420 --> 01:58:36.530
+Bala ji: Okay, now here you can able to see, like, how this, how this being visualized, okay, forward to where. Next, we are, going to move on to the, bird embedding, which is, like, based on transformer-based architecture.
+
+1049
+01:58:36.530 --> 01:58:45.369
+Bala ji: This will be, like, completely different from, like, other techniques, like whatever we have seen. Count vectorizer, TFI, IDF, and the way to work, okay? This is something different.
+
+1050
+01:58:45.370 --> 01:58:48.069
+Bala ji: So, here we are going to load,
+
+1051
+01:58:48.070 --> 01:58:53.499
+Bala ji: sentence, sentence transformer model, okay? We are going to load all mini alums, okay?
+
+1052
+01:58:56.560 --> 01:59:05.259
+Bala ji: So, I hope, like, everyone, like, along with me, right? Along with this. So, this is going to be the last technique that we are going to discuss now, okay?
+
+1053
+01:59:07.000 --> 01:59:08.740
+Bala ji: So,
+
+1054
+01:59:09.920 --> 01:59:32.110
+Bala ji: This all-mini LM is, like, it is a sentence transformer, like, we are using the sentence transformer library, okay, for, loading this model, okay? And this is, like, very, lightweight, best model, which is, like, already… it is, like, trained, okay, on some set of datas to generate, high-quality sentence embedding. So that's why here we are using this model.
+
+1055
+01:59:32.530 --> 01:59:45.690
+Bala ji: And then we'll be, like, using this encode function. That means it will be, like, converting all the sentences into where? All these sentences into where? Like, dense vector representation. That's why, like, here we are using this, encode, okay?
+
+1056
+01:59:46.970 --> 01:59:52.360
+Bala ji: So, here, the each sentence will be, like, represented in a very high-dimensional vector.
+
+1057
+01:59:52.360 --> 02:00:08.010
+Bala ji: Okay, for this particular model, that is, all mini LM, like, each sentence is, going to become as, like, 384, dimensional embedding. Because we are here using this model, this, this is having the dimension of 384, so that's why
+
+1058
+02:00:08.010 --> 02:00:09.739
+Bala ji: It is happening here, okay?
+
+1059
+02:00:09.790 --> 02:00:11.409
+Bala ji: Once this is done.
+
+1060
+02:00:11.540 --> 02:00:29.790
+Bala ji: We can able to see the bird embodying matrix, okay, for the… whatever the sentences that we have given. Next, we are going to compute the Euclidean distance and the cosine similarity, okay? Once this is done, we can able to see the cosine similarity matrix for this bird, okay? This is completely different from other techniques, like whatever we have seen.
+
+1061
+02:00:30.220 --> 02:00:32.239
+Bala ji: And then we are clustering it.
+
+1062
+02:00:33.380 --> 02:00:34.190
+Bala ji: Okay.
+
+1063
+02:00:34.610 --> 02:00:37.850
+Bala ji: And we are reducing the dimension, now we are going to plot it.
+
+1064
+02:00:39.020 --> 02:00:41.120
+Bala ji: So now, here, you can able to see this.
+
+1065
+02:00:42.360 --> 02:00:58.440
+Bala ji: Okay? So, what are these sentences, okay? Sentence 1, 2, 3 are, like, somewhat, like, similar to each other, so we can able to see, it is, like, very, very close, okay? And from sentence, you can able to see this.
+
+1066
+02:00:58.470 --> 02:01:16.580
+Bala ji: 7, 8, 9, these are, like, grouped together, which is, like, something related to, related to the natural language processing, and, sentence, 1 to 6 are something, like, related to the cities, okay, across, globe. And, sentence,
+
+1067
+02:01:16.700 --> 02:01:19.549
+Bala ji: 12 or 13, yeah, sentence 13 to…
+
+1068
+02:01:19.550 --> 02:01:43.110
+Bala ji: 17, we can, RE8, like, we can able to see, these are, like, grouped together, which I… which means, the context is, like, all about computer vision-based techniques, okay? So that's why these are, like, grouped together. And within this cluster here, you can able to see there are some gaps out there, okay? That means, like, based on the, context, okay, the, whatever this BERT model, understood, based on that, like,
+
+1069
+02:01:43.110 --> 02:02:06.069
+Bala ji: we are getting these gaps, okay? Sentence 2 and sentence 3 are, like, something, like, very much closer here. That means it is having a somewhat, like, similar kind of context. That's why it is, like, very much closer here. And restart, like, we can be able to see, other, like, for this, this yellow category and blue categories, okay? You can be able to see, like, how much distance is there, okay? So, that's what, like, about this BERT embodying is about.
+
+1070
+02:02:06.070 --> 02:02:13.640
+Bala ji: Okay? And, we can able to see, like, this bird is, like, performing good when, like, we, compared to, like, other techniques.
+
+1071
+02:02:13.640 --> 02:02:25.509
+Bala ji: Because other techniques are, like, a very traditional way, and this BERT is, like, based on the, attention mechanism, okay? Because it is using transformer architecture there, encoder-only, model, okay?
+
+1072
+02:02:25.510 --> 02:02:37.709
+Bala ji: So that's what, like, about this, entire notebook is about. And I request you to, like, try with some different set of sentences, okay? And see, like, how the, embeddings are taking place, okay?
+
+1073
+02:02:37.810 --> 02:02:48.250
+Bala ji: This is what, like, for this session, and from next session, like, Professor Madhu will be, like, taking you to, like, like, how you can use this,
+
+1074
+02:02:48.440 --> 02:03:12.020
+Bala ji: use this, embedding, okay? How this, how you can use this text embedding for build some kind of, rack pipeline, okay? If you are, like, asking some set of question, like, based on, whatever things that is, like, very much closer, that is a semantic understanding. And also, Professor Madhu, in this session, he introduced about BM25, which is, like, a lexical understanding, like, it is based on keywords.
+
+1075
+02:03:12.020 --> 02:03:29.850
+Bala ji: We'll be doing some set of, like, demo, in, in our upcoming session, okay? So, this is something, like, foundation for moving on to, our, our upcoming session, okay? With these, like, I'll be, stopping the session, okay? Thanks all for, joining, okay?
+
+1076
+02:03:36.310 --> 02:03:46.340
+Bala ji: Thank you, thank you all, let's see during our next session. I'll be sharing this, notebook, okay, with the Emirates team, and you'll be getting it as an IPMB file. Thank you all.
+
+1077
+02:03:47.900 --> 02:03:51.480
+Webinar Specialist: Thank you, Balaji. Thanks, everyone. I'm ending session for all.
+
+1078
+02:03:52.100 --> 02:03:53.320
+Bala ji: Thank you, thank you.
+
+1079
+02:03:53.740 --> 02:03:54.309
+Webinar Specialist: Hang up.
+
