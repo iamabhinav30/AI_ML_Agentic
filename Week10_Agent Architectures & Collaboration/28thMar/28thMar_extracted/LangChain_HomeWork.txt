@@ -1,0 +1,67 @@
+Build an AI system where:
+
+User provides:
+Claim ID
+Query
+Policy ID
+-- --------------------------------------
+System should:
+Fetch claim details from DB
+Read policy document
+
+Compare:
+Policy rules
+Claim attributes
+
+Return:
+Decision
+Reason
+Mismatch (if any)
+
+- --------------------------------------------------
+
+claims_data = {
+    "C101": {
+        "incident": "Car accident",
+        "reported_days": 2,
+        "amount_claimed": 3000,
+        "history": "No previous claims"
+    },
+    "C102": {
+        "incident": "Car accident",
+        "reported_days": 12,
+        "amount_claimed": 4000,
+        "history": "2 previous claims"
+    },
+    "C103": {
+        "incident": "Theft",
+        "reported_days": 1,
+        "amount_claimed": 6000,
+        "history": "No previous claims"
+    }
+}
+
+policy_data = {
+    "P101": {
+        ??:??
+    }
+}
+
+-- --------------------------------------------------
+
+Tasks:
+1. Is claim is valid?
+2. Any violations? - (claim period like 30 days and etc.)
+3. Amount mismatch?
+4. Final decision (Approve / Reject / Partial)
+
+--- -------------------------------------------------
+
+Decision: Reject
+
+Reason:
+- Reported after allowed period (7 days)
+- Claim exceeds policy limit
+
+Recommendation:
+- Partial payout OR reject

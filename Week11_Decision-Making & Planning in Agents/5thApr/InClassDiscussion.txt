@@ -1,0 +1,97 @@
+1. Orchestra -> Centralised + Cooperative
+
+Supervisor -> agent1 ->agent 2 -> agent 3 -> final output
+
+ 
+
+chain = agent1 | agent2 | agent3
+
+chain.invoke({'input':'query'})
+
+ 
+
+2. ATC - Centralised + competitive
+
+router_agent = classify intent -> dispatch to specialist
+
+if intent =='billing' -> billing agent.run()
+
+if intent =='customer' -> customer agent.run()
+
+ 
+
+3. Soccer team - Decentrailised + cooperative
+
+# all agents run simulataneously, shared memory.
+
+from langchain.schema.runnable import RunnableParallel
+
+parallel_chain = RunnableParallel(agent1 = researchagent,agent2 = analystagent, 
+
+agent3= writeeragent)
+
+parallel_chain.invoke({'input':'query'})
+
+ 
+
+4. Trading = Decentrailised + competitive
+
+agent1.run() -- check the condition(ouput) -> exuecute or reject
+
+agent2.run() -- check the condition(ouput) -> exuecute or reject
+
+agent3.run() -- check the condition(ouput) -> exuecute or reject
+
+ 
+
+if score<threshold
+
+	reject_action()
+
+else:
+
+	execute action()
+
+ 
+
+Orchestra: input -> supervisor/router -> a1 -< a2 ->a3
+
+ATC: input -> router -> (a1 or a2 or a3) -> output
+
+Soccer team: input -> [a1+a2+a3 simulataneously] -> merge -> output
+
+Trading -> input -> a1 independt -> validator -> output
+
+		    a2 independt -> validator -> output
+
+ 
+
+ 
+
+1. Amazon order fulfillment
+
+Every agent -> warehouse picker, payment processor, shipping router, notification sender - shared goal - deliver the order to customer.
+
+ 
+
+Warehouse agent -> pick items - same goal
+
+Payment agent -> charges card - same goal
+
+shipping agent - books courier - same goal
+
+ 
+
+2. Airport runway management
+
+every pilot - goal ->lands my plane first, on time, at my gate.
+
+tower goals -> safety + throughput
+
+ 
+
+pilot a goals - lands first, reach gate 12 by 9am
+
+pilot b goal - land first, reach gate 7 by 9am
+
+tower goals -> nobody dies, runway stays clear

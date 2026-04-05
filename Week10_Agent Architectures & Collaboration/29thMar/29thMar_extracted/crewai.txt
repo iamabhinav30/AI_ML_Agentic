@@ -1,0 +1,124 @@
+🧠 1. Finance Domain – Investment Risk Analyst Agent
+📌 Problem Statement
+
+Build an AI agent that takes a user query about a company or asset, performs market research, analyzes risks, and sends a structured investment summary.
+
+Example User Query
+
+“Analyze risks of investing in Tesla for the next 6 months and send me a summary.”
+
+Expected Workflow
+Generate search queries (news, financials, trends)
+Fetch data (stock trends, macro factors, news sentiment)
+Summarize insights
+Identify risks + mitigation
+Send Email / Slack alert
+Sample Output
+Risks: Market volatility, EV competition, regulatory pressure
+Mitigation: Diversification, staggered investment
+🛒 2. E-commerce Domain – Smart Purchase Advisor
+📌 Problem Statement
+
+Build an AI agent that helps users decide what to buy by comparing products, analyzing reviews, and triggering alerts.
+
+Example User Query
+
+“Should I buy iPhone 15 or wait for price drop? Notify me if price drops.”
+
+Expected Workflow
+Generate comparison queries
+Fetch product data + reviews
+Summarize pros/cons
+Detect price trends
+Trigger notification (email/Slack)
+Output
+Recommendation
+Risk: Overpriced now
+Action: Alert when price drops
+🧑‍💻 3. DevOps Domain – Incident Intelligence Agent
+📌 Problem Statement
+
+Build an agent that monitors system issues, summarizes root causes, and notifies teams.
+
+Example User Query
+
+“Check recent outages in Amazon Web Services and notify team with summary.”
+
+Workflow
+Generate queries (AWS outage, incident reports)
+Fetch logs / status pages
+Summarize incidents
+Identify risks (downtime, SLA impact)
+Send alert to Slack / Teams
+🏥 4. Healthcare (Non-PubMed) – Hospital Operations Agent
+📌 Problem Statement
+
+Build an AI agent that analyzes hospital operational issues and recommends actions.
+
+Example Query
+
+“Why are patient wait times increasing in OPD and what can we improve?”
+
+Workflow
+Interpret query
+Fetch internal data / benchmarks
+Analyze bottlenecks
+Suggest improvements
+Send report via email
+📰 5. News & Research – Topic Intelligence Agent
+📌 Problem Statement
+
+Build an agent that tracks a topic, summarizes updates, and flags risks.
+
+Example Query
+
+“Summarize latest developments in AI regulation and send me key risks.”
+
+Workflow
+Generate search queries
+Fetch latest articles
+Summarize trends
+Identify risks (compliance, restrictions)
+Send email digest
+🚚 6. Supply Chain – Delay Prediction Agent
+📌 Problem Statement
+
+Build an agent that predicts shipment delays and notifies stakeholders.
+
+Example Query
+
+“Will my shipment from China be delayed this week?”
+
+Workflow
+Generate queries (weather, port congestion, news)
+Fetch logistics signals
+Predict delay risk
+Suggest mitigation
+Send alert
+🏫 7. Education – Learning Recommendation Agent
+📌 Problem Statement
+
+Build an agent that recommends learning paths based on goals and sends structured plans.
+
+Example Query
+
+“I want to learn AI in 3 months. Create a plan and send it to me.”
+
+Workflow
+Break down goal
+Fetch resources
+Create structured roadmap
+Identify risks (time, difficulty)
+Email plan
+⚙️ How to Frame to Your Group (Simple Version)
+
+You can say:
+
+“Pick any domain. Build an AI agent that:
+
+Understands a user query
+Generates search queries
+Fetches external/internal data
+Summarizes insights
+Identifies risks/decisions
+Triggers an action (email/Slack/Teams)”
