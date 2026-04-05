@@ -24,19 +24,20 @@ WeekN_TopicName/
 ---
 
 ## Week → Topic Map
-| Week | Dates | Folder Topic |
+| Week | Dates | Folder Name |
 |------|-------|-------------|
-| Week1 | Jan 17–18 | Getting Started with Python & ChatGPT |
-| Week2 | Jan 24–25 | Data Types, Variables & Control Flow |
-| Week3 | Jan 31–Feb 1 | Functions & Working with Libraries |
-| Week4 | Feb 7–8 | Fundamentals of AI & ML |
-| Week5 | Feb 14–15 | NLP & Text Processing |
-| Week6 | Feb 21–22 | LLMs & Prompt Engineering |
-| Week7 | Feb 28–Mar 1 | RAG & Vector Databases |
-| Week8 | Mar 13 | Masterclass |
-| Week9 | Mar 21–22 | LangChain & Agents |
-| Week10 | Mar 28–29 | Agent Architectures & Collaboration |
-| Week11 | Apr 4–5 | (upcoming) |
+| Week1 | Jan 17–18 | Week1_Getting Started with Python & ChatGPT |
+| Week2 | Jan 24–25 | Week2_Data Types, Variables & Control Flow |
+| Week3 | Jan 31–Feb 1 | Week3_Functions & Working with Libraries |
+| Week4 | Feb 7–8 | Week4_Fundamentals of AI & ML |
+| Week5 | Feb 14–15 | Week5_Large Language Models (LLMs) |
+| Week6 | Feb 21–22 | Week6_Embedding Models & Vector Basics |
+| Week7 | Feb 28–Mar 1 | Week7_Agentic Tools in Python |
+| Week8 | Mar 7–8 | Week8_Introduction to Agentic AI |
+| Week8 (special) | Mar 13 | Week8_Masterclass (Text Embeddings Demystified) |
+| Week9 | Mar 21–22 | Week9_Programming & Frameworks for Agentic Systems |
+| Week10 | Mar 28–29 | Week10_Agent Architectures & Collaboration |
+| Week11 | Apr 4–5 | Week11_Decision-Making & Planning in Agents |
 
 ---
 
