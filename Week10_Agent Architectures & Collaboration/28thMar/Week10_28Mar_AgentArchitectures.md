@@ -1,6 +1,6 @@
 # Week 10 – Agent Architectures & Collaboration
 ## Session: March 28, 2026 | 10:00 AM IST
-**Presenter:** Ramakrishna T
+**Presenter:** Abhinav Singh
 
 ---
 
@@ -427,7 +427,7 @@ Instead of writing Python code, you:
 
 ### 6.2 Demo: Pharmaceutical Research Agent (Live)
 
-Ramakrishna typed the following into CrewAI Studio's prompt:
+Abhinav Singhyped the following into CrewAI Studio's prompt:
 
 > *"Build a pharmaceutical research agent that takes a drug interaction query, searches PubMed, summarizes evidence, provides clinical recommendations, and sends a summary email to the researcher."*
 

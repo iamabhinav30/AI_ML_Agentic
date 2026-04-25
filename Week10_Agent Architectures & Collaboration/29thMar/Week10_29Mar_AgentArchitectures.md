@@ -1,6 +1,6 @@
 # Week 10 – Agent Architectures & Collaboration
 ## Session: March 29, 2026 | 10:00 AM IST
-**Presenter:** Ramakrishna T
+**Presenter:** Abhinav Singh
 
 ---
 

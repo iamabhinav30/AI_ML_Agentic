@@ -2,7 +2,7 @@
 
 ## Identity
 - **Student:** Abhisss | IITM (Indian Institute of Technology Madras)
-- **Course:** AI/ML Agentic Systems (Jan–Apr 2026) | Presenter: Ramakrishna T
+- **Course:** AI/ML Agentic Systems (Jan–Apr 2026) | Presenter: Abhinav Singh
 - **Root:** `C:\Abhisss\IITM\AI_ML_Agentic\`
 - **Branch:** Always `main`
 
