@@ -62,6 +62,32 @@ Every time you call `crew.kickoff()` or start a LangChain run, the agent starts 
 
 > The context window (working memory) is what you pay for every API call. The vector store (long-term memory) lives outside the LLM — you only retrieve what you need.
 
+```
+  ┌──────────────────────────────────────────────────────────┐
+  │               AGENT MEMORY — 3 LAYERS                    │
+  ├──────────────────────────────────────────────────────────┤
+  │                                                          │
+  │  EPISODIC  ·  "What happened in the past"                │
+  │  ┌────────────────────────────────────────────────────┐  │
+  │  │  ConversationBufferMemory                          │  │
+  │  │  Full turn-by-turn history, stored in order        │  │
+  │  └────────────────────────────────────────────────────┘  │
+  │                                                          │
+  │  SEMANTIC  ·  "What you just know"                       │
+  │  ┌────────────────────────────────────────────────────┐  │
+  │  │  Vector Store  (FAISS / Pinecone / Chroma)         │  │
+  │  │  Facts embedded and searched by meaning            │  │
+  │  └────────────────────────────────────────────────────┘  │
+  │                                                          │
+  │  PROCEDURAL  ·  "How to do things automatically"         │
+  │  ┌────────────────────────────────────────────────────┐  │
+  │  │  Tools  +  System Prompt                           │  │
+  │  │  Behaviour baked in — not stored, not retrieved    │  │
+  │  └────────────────────────────────────────────────────┘  │
+  │                                                          │
+  └──────────────────────────────────────────────────────────┘
+```
+
 ---
 
 ## 3. Three Types of Agent Memory (Episodic, Semantic, Procedural)
@@ -142,6 +168,33 @@ chain_window  = ConversationChain(llm=llm, memory=window_mem,  verbose=False)
 - Best for: Production systems — instructor's personal recommendation
 
 > **Key Insight (Abhinav's production experience):** "I never used buffer in production because our conversation volumes are very high. Window memory works best for us — users almost always ask from recent context, not something from 5 months ago. We set k=15 or 20 and it works well."
+
+```
+  MEMORY AT TURN 10 — What Each Type Sees
+
+  ┌──────────────────────────────────────────────────────────────┐
+  │ Buffer  (k = all)                                            │
+  │ [T1][T2][T3][T4][T5][T6][T7][T8][T9][T10]                   │
+  │  ✓   ✓   ✓   ✓   ✓   ✓   ✓   ✓   ✓   ✓                    │
+  │ Everything kept. T1 account number still accessible.         │
+  │ Cost grows linearly — expensive at scale.                    │
+  └──────────────────────────────────────────────────────────────┘
+
+  ┌──────────────────────────────────────────────────────────────┐
+  │ Summary                                                      │
+  │ [─────────────────── compressed paragraph ─────────────────] │
+  │ "Customer reported duplicate charge, requested refund …"     │
+  │ Fixed output size. Specific values (e.g. AC-7829) may drop.  │
+  └──────────────────────────────────────────────────────────────┘
+
+  ┌──────────────────────────────────────────────────────────────┐
+  │ Window  (k = 3)                                              │
+  │ [  ][  ][  ][  ][  ][  ][  ][T8][T9][T10]                   │
+  │  ✗   ✗   ✗   ✗   ✗   ✗   ✗   ✓   ✓    ✓                   │
+  │ Only last 3 turns visible. T1–T7 permanently gone.           │
+  │ Approximately fixed cost — recommended for production.       │
+  └──────────────────────────────────────────────────────────────┘
+```
 
 ### Live Demo: 10-Turn Customer Conversation
 

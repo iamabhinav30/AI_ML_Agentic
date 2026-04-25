@@ -38,13 +38,27 @@ Before new content, Ramakrishna reviewed the three key takeaways from Day 1:
 ### What RAG Does
 
 ```
-User Question
-     ↓
-FAISS Search (semantic, top-k chunks)
-     ↓
-Retrieved docs injected into prompt (Augment)
-     ↓
-LLM generates answer with grounding (Generate)
+  ┌──────────────────────────────────────────────┐
+  │               User Question                  │
+  └──────────────────────┬───────────────────────┘
+                         │
+                         ▼  RETRIEVE
+  ┌──────────────────────────────────────────────┐
+  │   FAISS Semantic Search                      │
+  │   query → 1536-dim vector → top-k chunks     │
+  └──────────────────────┬───────────────────────┘
+                         │  top-k chunks
+                         ▼  AUGMENT
+  ┌──────────────────────────────────────────────┐
+  │   Build Prompt                               │
+  │   "Context: {chunks}\n\nQuestion: {query}"   │
+  └──────────────────────┬───────────────────────┘
+                         │
+                         ▼  GENERATE
+  ┌──────────────────────────────────────────────┐
+  │   LLM  (gpt-4o-mini)                         │
+  │   Grounded answer  +  source citations       │
+  └──────────────────────────────────────────────┘
 ```
 
 ### Setup — Knowledge Base + FAISS Store
@@ -138,17 +152,34 @@ bare_result = llm.invoke([HumanMessage(content=test_q)]).content  # no grounding
 The instructor demonstrated loading 5 patient PDF files and querying across all of them.
 
 ```
-PDFs
- ↓ Step 1: Load (PyPDFLoader)
-Documents (raw text per page)
- ↓ Step 2: Chunk (RecursiveCharacterTextSplitter)
-Chunks (800-char segments with 100-char overlap)
- ↓ Step 3: Embed (OpenAIEmbeddings)
-Vectors (1536-dim per chunk)
- ↓ Step 4: Index (FAISS.from_documents)
-Searchable vector store
- ↓ Step 5: Query (RetrievalQA)
-Grounded answers from real documents
+  ┌──────────────────────────────────────────────┐
+  │   PDF Files  (patient_*.pdf × 5)             │
+  └──────────────────────┬───────────────────────┘
+                         │  Step 1 · Load
+                         ▼  PyPDFLoader
+  ┌──────────────────────────────────────────────┐
+  │   Documents  (1 object per page, raw text)   │
+  └──────────────────────┬───────────────────────┘
+                         │  Step 2 · Chunk
+                         ▼  RecursiveCharacterTextSplitter
+  ┌──────────────────────────────────────────────┐
+  │   Chunks  (800 chars, overlap = 100)         │
+  └──────────────────────┬───────────────────────┘
+                         │  Step 3 · Embed
+                         ▼  OpenAIEmbeddings
+  ┌──────────────────────────────────────────────┐
+  │   Vectors  (1536-dim float array per chunk)  │
+  └──────────────────────┬───────────────────────┘
+                         │  Step 4 · Index
+                         ▼  FAISS.from_documents()
+  ┌──────────────────────────────────────────────┐
+  │   FAISS Vector Store  (searchable by meaning)│
+  └──────────────────────┬───────────────────────┘
+                         │  Step 5 · Query
+                         ▼  RetrievalQA
+  ┌──────────────────────────────────────────────┐
+  │   Grounded Answer  +  Source Citations       │
+  └──────────────────────────────────────────────┘
 ```
 
 ### Step 1 — Load PDFs
@@ -256,15 +287,25 @@ for q in questions:
 After each interaction, the agent stores its own Q&A back into the FAISS store. On the next query, it retrieves not just knowledge documents but also its own prior conversations — if similar questions were asked before.
 
 ```
-New Query
-    ↓
-FAISS Search → top-k chunks (from both original docs AND prior interactions)
-    ↓
-LLM generates response
-    ↓
-store.add_texts([f"Customer asked: {query} | Agent answered: {response[:120]}"])
-    ↓                                                    ↑
-    └───────────────── MEMORY LOOP ──────────────────────┘
+  New Query
+      │
+      ▼
+  ┌──────────────┐  top-k  ┌──────────────┐  response
+  │   RETRIEVE   │ chunks  │   GENERATE   │ ─────────────► (to user)
+  │  FAISS search│────────►│     LLM      │
+  │ docs + Q&As  │         │  context →   │
+  └──────▲───────┘         │  response    │
+         │                 └──────┬───────┘
+         │                        │
+         │                        ▼
+         │                ┌──────────────┐
+         │                │    STORE     │
+         │                │  add_texts() │
+         │                │  Q&A record  │
+         │                └──────┬───────┘
+         │                       │ new vector appended
+         └───────────────────────┘
+         FAISS grows richer → retrieved on next query
 ```
 
 ### MemoryLoopAgent Class
@@ -358,29 +399,33 @@ If you store all interactions in one store, you mix good answers with bad ones. 
 ### Three-Vector-Store Architecture
 
 ```
-                    ┌─────────────────────────────────┐
-                    │   VDB1: Original Knowledge       │
-                    │   (your 20 policy docs, etc.)    │
-                    └─────────────┬───────────────────┘
+                              New Query
                                   │
-New Query ──────────────────────┤ Retrieve top-3 from all 3 stores
-                                  │
-                    ┌─────────────┼───────────────────┐
-                    │   VDB2: Thumbs-Up Interactions   │
-                    │   (Q&A where user was happy)     │
-                    └─────────────┼───────────────────┘
-                                  │
-                    ┌─────────────┼───────────────────┐
-                    │   VDB3: Thumbs-Down Interactions │
-                    │   (Q&A where user was unhappy)   │
-                    └─────────────┴───────────────────┘
-                                  │
-                         LLM Prompt = {
-                           "query": <current query>,
-                           "context": <from VDB1>,
-                           "similar good answers": <from VDB2>,
-                           "similar wrong answers": <from VDB3>
-                         }
+           ┌──────────────────────┼──────────────────────┐
+           │                      │                      │
+           ▼                      ▼                      ▼
+  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐
+  │  VDB1           │  │  VDB2           │  │  VDB3           │
+  │  Original       │  │  Thumbs-Up      │  │  Thumbs-Down    │
+  │  Knowledge      │  │  Interactions   │  │  Interactions   │
+  │  (policy docs,  │  │  (Q&A where     │  │  (Q&A where     │
+  │   FAQs, etc.)   │  │   user happy)   │  │  user unhappy)  │
+  └────────┬────────┘  └────────┬────────┘  └────────┬────────┘
+           │ top-3 docs         │ top-3 good          │ top-3 bad
+           └────────────────────┼─────────────────────┘
+                                │
+                                ▼
+              ┌─────────────────────────────────────────┐
+              │             LLM Prompt                  │
+              │  query:         <current question>      │
+              │  context:       <docs from VDB1>        │
+              │  good examples: <Q&A pairs from VDB2>   │
+              │  bad examples:  <Q&A pairs from VDB3>   │
+              └─────────────────────────────────────────┘
+                                │
+                                ▼
+                       Grounded Answer
+                  (less likely to repeat past mistakes)
 ```
 
 The LLM now receives:
@@ -497,37 +542,35 @@ MCP (Model Context Protocol) was developed by Anthropic as a standard for how AI
 ### Three-Layer Architecture
 
 ```
-┌─────────────────────────────────────────┐
-│  LAYER 1: HOST                          │
-│  Your application (where AI lives)      │
-│  Examples: Python script, ChatGPT app,  │
-│  Claude Desktop, VS Code extension      │
-│                                         │
-│  ┌───────────────────────────────────┐  │
-│  │  LAYER 2: CLIENT                  │  │
-│  │  Connection manager               │  │
-│  │  - One client per server          │  │
-│  │  - Manages request/response       │  │
-│  │  - Handles authentication         │  │
-│  └──────────────┬────────────────────┘  │
-└─────────────────┼───────────────────────┘
-                  │ (authenticated connection)
-                  ↓
-┌─────────────────────────────────────────┐
-│  LAYER 3: MCP SERVER                    │
-│  Exposes 3 types of capabilities:       │
-│                                         │
-│  ┌──────────┐ ┌───────────┐ ┌────────┐  │
-│  │  TOOLS   │ │ RESOURCES │ │PROMPTS │  │
-│  │ functions│ │   data    │ │reusable│  │
-│  │ APIs     │ │   files   │ │system  │  │
-│  │ calcs    │ │   feeds   │ │prompts │  │
-│  └──────────┘ └───────────┘ └────────┘  │
-│                                         │
-│  Connects to: databases, APIs, files,   │
-│  web services, Slack, code sandboxes,   │
-│  vector stores, calculators, anything   │
-└─────────────────────────────────────────┘
+  ┌──────────────────────────────────────────────────────────┐
+  │  HOST  —  Your Application                               │
+  │  Python script · ChatGPT · Claude Desktop · VS Code      │
+  │                                                          │
+  │  ┌─────────────────────────────────────────────────────┐ │
+  │  │  CLIENT  —  Connection Manager                      │ │
+  │  │  · One client per MCP server                        │ │
+  │  │  · Formats requests / parses responses              │ │
+  │  │  · Handles authentication                           │ │
+  │  │  · Discovers available tools via mcp.listTools()    │ │
+  │  └──────────────────────────┬──────────────────────────┘ │
+  └─────────────────────────────┼────────────────────────────┘
+                                │
+                    JSON-RPC  (stdio / HTTP / SSE)
+                                │
+                                ▼
+  ┌──────────────────────────────────────────────────────────┐
+  │  MCP SERVER  —  Exposes External Capabilities            │
+  │                                                          │
+  │  ┌────────────────┐  ┌────────────────┐  ┌────────────┐  │
+  │  │    TOOLS       │  │   RESOURCES    │  │  PROMPTS   │  │
+  │  │  Functions,    │  │  Files, DB     │  │  Reusable  │  │
+  │  │  APIs, calcs,  │  │  records,      │  │  system    │  │
+  │  │  web search    │  │  live feeds    │  │  templates │  │
+  │  └────────────────┘  └────────────────┘  └────────────┘  │
+  │                                                          │
+  │  Backends: SQL DBs · REST APIs · File Systems            │
+  │            Slack/Teams · Code Sandboxes · Vector Stores  │
+  └──────────────────────────────────────────────────────────┘
 ```
 
 **Three things an MCP Server exposes:**
@@ -539,24 +582,36 @@ MCP (Model Context Protocol) was developed by Anthropic as a standard for how AI
 
 **Without MCP:**
 ```
-Agent 1 → Tool A (custom code in agent 1)
-Agent 1 → Tool B (custom code in agent 1)
-Agent 2 → Tool A (duplicate code in agent 2)
-Agent 2 → Tool C (custom code in agent 2)
-...
-500 agents × 10 tools = massive duplication, no standard, rebuild every time you add/remove a tool
+  ┌─────────┐ ──────────────────────────────► Tool A  (custom code)
+  │ Agent 1 │ ──────────────────────────────► Tool B  (custom code)
+  └─────────┘
+  ┌─────────┐ ──────────────────────────────► Tool A  (duplicate!)
+  │ Agent 2 │ ──────────────────────────────► Tool C  (custom code)
+  └─────────┘
+  ┌─────────┐ ──────────────────────────────► Tool B  (duplicate!)
+  │ Agent 3 │ ──────────────────────────────► Tool D  (custom code)
+  └─────────┘
+  ...500 agents
+
+  Add Tool E?  → update every agent script.
+  Remove Tool A? → update every agent script.
 ```
 
 **With MCP:**
 ```
-Agent 1 ──┐
-Agent 2 ──┤                     ┌── Tool A
-Agent 3 ──┼──→ MCP Server ─────┼── Tool B
-...        │  (one connection)  ├── Tool C
-Agent 500 ─┘                    └── Tool D, E, F...
+  ┌─────────┐ ─┐
+  │ Agent 1 │  │               ┌─────────────────────────┐
+  └─────────┘  │               │       MCP SERVER        │──► Tool A
+  ┌─────────┐  ├──────────────►│                         │──► Tool B
+  │ Agent 2 │  │               │  all tools registered   │──► Tool C
+  └─────────┘  │               │  once, served to all    │──► Tool D
+  ┌─────────┐  │               │  agents on demand       │──► Tool E
+  │ Agent 3 │ ─┘               └─────────────────────────┘
+  └─────────┘
+  ...500 agents
 
-Adding Tool G? Update server once. All 500 agents see it immediately.
-Removing Tool A? One change in server. No agent scripts to touch.
+  Add Tool F?  → update server once. All agents see it immediately.
+  Remove Tool A? → update server once. No agent code to touch.
 ```
 
 > **Key Insight:** "Without MCP, adding a new tool means going into every agent script and adding it manually. With MCP, you add the tool to the server once, update the tool description in your config, and all agents can use it."
